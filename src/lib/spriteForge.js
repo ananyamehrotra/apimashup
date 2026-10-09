@@ -392,7 +392,8 @@ export function foeLook(name = '', rival = false) {
   return { ...base, skin: '#8a8aa0', hair: '#14141c', eye: '#c9c9ff', pri: '#22222e', trim: '#6a6a8a', accent: '#7a5cff' };
 }
 
-const AW = 240, AH = 135; // arena size in logical pixels (16:9)
+const AH = 135; // arena height in logical pixels; the width follows the screen's shape
+const AW_MIN = 240, AW_MAX = 420; // 16:9 up to ultra-wide
 const FLOOR_Y = 78; // where the tiled floor begins
 const FEET_Y = 118; // fighters stand on this line
 const SCALE = 2; // fighters are drawn at 2x so they fill the stage
@@ -404,11 +405,13 @@ const POSES = {
   hurt: [{ dy: 1, aL: -1, aR: -1, lL: 1 }],
 };
 
-// Returns { attack(who, reach), hit(who, strong), guard(who), stun(who, on), ko(who), victory(who), shake(strong), destroy }.
+// Returns { attack(who, reach), hit(who, strong), guard(who), stun(who, on), ko(who), victory(who), shake(strong), resize(width), destroy }.
+// resize(width) re-renders the stage at a new logical width, so it fills any screen without stretching.
 // `who` is 'hero' or 'foe'. `accent` tints the stage (a hex colour); `beep` plays a tone.
 export function createArena(canvas, heroLook, foeLookData, { accent = '#7dd3fc', beep = () => {} } = {}) {
   const cx = canvas.getContext('2d');
-  canvas.width = AW; canvas.height = AH;
+  let aw = AW_MIN;
+  canvas.width = aw; canvas.height = AH;
   cx.imageSmoothingEnabled = false; // keep the 2x pixel art crisp
   const off = document.createElement('canvas'); off.width = W; off.height = H;
   const cache = new Map();
@@ -427,7 +430,7 @@ export function createArena(canvas, heroLook, foeLookData, { accent = '#7dd3fc',
   };
 
   const mk = (look, base, facing) => ({ look, base, x: base, facing, st: 'idle', t: 0, reach: 30, struck: false, kn: 0, flash: 0, stun: false, down: 0, vict: false });
-  const F = { hero: mk(heroLook, 74, 1), foe: mk(foeLookData, 166, -1) };
+  const F = { hero: mk(heroLook, Math.round(aw * 0.31), 1), foe: mk(foeLookData, Math.round(aw * 0.69), -1) };
   const parts = [];
   let time = 0, raf = 0, last = performance.now(), shakeT = 0, shakeAmp = 0;
 
@@ -442,10 +445,11 @@ export function createArena(canvas, heroLook, foeLookData, { accent = '#7dd3fc',
 
   /* ---------- the stage ---------- */
   const wall = mix('#8d97a8', accent, 0.18), wallD = dark(wall, 0.28);
-  const bg = document.createElement('canvas'); bg.width = AW; bg.height = AH;
-  {
+  const bg = document.createElement('canvas');
+  function buildBg() {
+    bg.width = aw; bg.height = AH;
     const g = bg.getContext('2d');
-    for (let y = 0; y < FLOOR_Y; y++) { g.fillStyle = mix(dark(wall, 0.5), light(wall, 0.15), y / FLOOR_Y); g.fillRect(0, y, AW, 1); }
+    for (let y = 0; y < FLOOR_Y; y++) { g.fillStyle = mix(dark(wall, 0.5), light(wall, 0.15), y / FLOOR_Y); g.fillRect(0, y, aw, 1); }
     // stacked cubes, pyramid-shaped on both sides
     const cube = (x, y, s, tone) => {
       const face = mix(wall, tone, 0.12);
@@ -454,29 +458,30 @@ export function createArena(canvas, heroLook, foeLookData, { accent = '#7dd3fc',
       g.fillStyle = dark(face, 0.25); g.fillRect(x + s - 3, y + 2, 3, s - 2);
       g.fillStyle = dark(face, 0.45); g.fillRect(x, y + s - 1, s, 1); g.fillRect(x, y, 1, s);
     };
-    [[0, [5, 4, 3, 2, 1]], [AW - 16 * 5, [1, 2, 3, 4, 5]]].forEach(([x0, hs]) => hs.forEach((h, i) => { for (let r = 0; r < h; r++) cube(x0 + i * 16, FLOOR_Y - 16 * (r + 1), 16, r % 2 ? '#ffffff' : '#000000'); }));
+    [[0, [5, 4, 3, 2, 1]], [aw - 16 * 5, [1, 2, 3, 4, 5]]].forEach(([x0, hs]) => hs.forEach((h, i) => { for (let r = 0; r < h; r++) cube(x0 + i * 16, FLOOR_Y - 16 * (r + 1), 16, r % 2 ? '#ffffff' : '#000000'); }));
     // glass panels in the middle
     for (let i = 0; i < 4; i++) {
-      const x = 92 + i * 15;
+      const x = Math.round(aw / 2 - 28) + i * 15;
       g.fillStyle = `rgba(255,255,255,${0.1 + (i % 2) * 0.06})`; g.fillRect(x, 8, 13, FLOOR_Y - 12);
       g.fillStyle = 'rgba(255,255,255,0.22)'; g.fillRect(x, 8, 13, 1); g.fillRect(x, 8, 1, FLOOR_Y - 12);
     }
     // the tiled floor, in perspective
-    const vx = AW / 2;
-    for (let y = FLOOR_Y; y < AH; y++) { g.fillStyle = mix(light(wall, 0.3), light(wall, 0.55), (y - FLOOR_Y) / (AH - FLOOR_Y)); g.fillRect(0, y, AW, 1); }
-    g.fillStyle = wallD; g.fillRect(0, FLOOR_Y, AW, 1);
+    const vx = aw / 2;
+    for (let y = FLOOR_Y; y < AH; y++) { g.fillStyle = mix(light(wall, 0.3), light(wall, 0.55), (y - FLOOR_Y) / (AH - FLOOR_Y)); g.fillRect(0, y, aw, 1); }
+    g.fillStyle = wallD; g.fillRect(0, FLOOR_Y, aw, 1);
     g.fillStyle = dark(wall, 0.18);
-    for (let i = 0; i < 9; i++) { const t = i / 8; g.fillRect(0, Math.round(FLOOR_Y + 2 + (AH - FLOOR_Y) * t * t * 1.05), AW, 1); }
+    for (let i = 0; i < 9; i++) { const t = i / 8; g.fillRect(0, Math.round(FLOOR_Y + 2 + (AH - FLOOR_Y) * t * t * 1.05), aw, 1); }
     for (let k = -9; k <= 9; k++) {
       const bx = vx + k * 34; // where this line meets the bottom edge
       for (let y = FLOOR_Y; y < AH; y++) {
         const t = (y - FLOOR_Y) / (AH - FLOOR_Y);
         const x = Math.round(vx + (bx - vx) * (0.18 + 0.82 * t));
-        if (x >= 0 && x < AW) g.fillRect(x, y, 1, 1);
+        if (x >= 0 && x < aw) g.fillRect(x, y, 1, 1);
       }
     }
   }
-  const DIAMONDS = Array.from({ length: 7 }, (_, i) => ({ x: hash(i * 7) * AW, y: 10 + hash(i * 7 + 1) * 60, s: 3 + Math.floor(hash(i * 7 + 2) * 4), p: hash(i * 7 + 3) * 6 }));
+  buildBg();
+  const DIAMONDS = Array.from({ length: 12 }, (_, i) => ({ x: hash(i * 7) * AW_MAX, y: 10 + hash(i * 7 + 1) * 60, s: 3 + Math.floor(hash(i * 7 + 2) * 4), p: hash(i * 7 + 3) * 6 }));
 
   /* ---------- actions ---------- */
   const other = (who) => (who === 'hero' ? 'foe' : 'hero');
@@ -586,9 +591,9 @@ export function createArena(canvas, heroLook, foeLookData, { accent = '#7dd3fc',
     parts.forEach((p) => { cx.globalAlpha = Math.max(0, p.life / p.max); cx.fillStyle = p.c; cx.fillRect(Math.round(p.x), Math.round(p.y), 2, 2); });
     cx.globalAlpha = 1;
     // vignette
-    const v = cx.createRadialGradient(AW / 2, AH / 2, 50, AW / 2, AH / 2, 150);
+    const v = cx.createRadialGradient(aw / 2, AH / 2, 50, aw / 2, AH / 2, 150);
     v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,0.38)');
-    cx.fillStyle = v; cx.fillRect(0, 0, AW, AH);
+    cx.fillStyle = v; cx.fillRect(0, 0, aw, AH);
     cx.restore();
   }
 
@@ -599,5 +604,16 @@ export function createArena(canvas, heroLook, foeLookData, { accent = '#7dd3fc',
   }
   raf = requestAnimationFrame(loop);
 
-  return { attack, hit, guard, stun, ko, victory, shake, other, destroy: () => cancelAnimationFrame(raf) };
+  function resize(width) {
+    const next = Math.max(AW_MIN, Math.min(AW_MAX, Math.round(width)));
+    if (next === aw) return;
+    aw = next;
+    canvas.width = aw; canvas.height = AH; // resetting the size clears the context state
+    cx.imageSmoothingEnabled = false;
+    buildBg();
+    F.hero.base = Math.round(aw * 0.31);
+    F.foe.base = Math.round(aw * 0.69);
+  }
+
+  return { attack, hit, guard, stun, ko, victory, shake, other, resize, destroy: () => cancelAnimationFrame(raf) };
 }

@@ -207,7 +207,7 @@ export default function StoryMode({ character, world, origin, onFinish }) {
 
   const finish = (result) => onFinish({ outcome: result, foe: story.foe });
   return (
-    <motion.div className="fixed inset-0 z-30 overflow-hidden bg-black" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+    <motion.div className="fixed inset-0 z-30 overflow-clip bg-black" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <img src={world.image} alt="" className="kenburns absolute inset-0 h-full w-full object-cover" />
       <img src={farImage} alt="" className={`kenburns absolute inset-0 h-full w-full object-cover transition-opacity duration-[1500ms] ${calm ? 'opacity-0' : 'opacity-100'}`} />
       <div className={`absolute inset-0 transition-colors duration-700 ${calm ? 'bg-black/35' : 'bg-[#1a0410]/55'}`} />
@@ -215,7 +215,7 @@ export default function StoryMode({ character, world, origin, onFinish }) {
       {/* stepping out of the white-out that ended the summoning */}
       <motion.div className="pointer-events-none absolute inset-0 bg-white" initial={{ opacity: 1 }} animate={{ opacity: 0 }} transition={{ duration: 1.1 }} />
 
-      <div className="absolute inset-0 overflow-y-auto">
+      <div className={`absolute inset-0 overflow-y-auto ${step === 'battle' ? 'hidden' : ''}`}>
         <div className="mx-auto flex min-h-full max-w-4xl flex-col justify-center gap-3 p-3 pt-14 sm:gap-4 sm:px-6 sm:pb-6">
           {/* ---- the arena: on screen for the story; the battle brings its own ---- */}
           <div className={`grid grid-cols-2 gap-3 sm:gap-5 ${step === 'battle' ? 'hidden' : ''}`}>
@@ -302,10 +302,6 @@ export default function StoryMode({ character, world, origin, onFinish }) {
           {step === 'rising' && <Dialogue key="rising" lines={story.rising} accent={accent} onLine={handleLine} onDone={() => setStep('choice2')} />}
           {step === 'choice2' && <Choice prompt="One night to prepare" options={story.secondChoice} accent={accent} onPick={startBattle} />}
 
-          {step === 'battle' && (
-            <Battle key={`battle-${battleKey}`} character={character} origin={origin} world={world} picks={picks} story={story} look={look} onEnd={endBattle} />
-          )}
-
           {step === 'ending' && (
             <Dialogue
               key={`ending-${outcome}`}
@@ -346,6 +342,12 @@ export default function StoryMode({ character, world, origin, onFinish }) {
           )}
         </div>
       </div>
+
+      {step === 'battle' && (
+        <div className="absolute inset-0 z-10 bg-black/45">
+          <Battle key={`battle-${battleKey}`} character={character} origin={origin} world={world} picks={picks} story={story} look={look} onEnd={endBattle} />
+        </div>
+      )}
 
       <p className="text-shadow pointer-events-none absolute top-4 left-1/2 -translate-x-1/2 font-mono text-[11px] tracking-[0.3em] whitespace-nowrap text-white/85 uppercase">
         {CHAPTERS[step]}

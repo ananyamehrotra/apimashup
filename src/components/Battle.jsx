@@ -17,15 +17,15 @@ function CommandButton({ keyHint, icon, label, note, onClick, disabled }) {
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className="panel border-b-4 border-teal-300/90 bg-black/50 px-3 py-2.5 text-left transition hover:bg-teal-300/15 disabled:opacity-40"
+      className="panel min-w-0 border-b-4 border-teal-300/90 bg-black/50 px-2.5 py-1.5 text-left transition hover:bg-teal-300/15 disabled:opacity-40"
     >
       <span className="flex items-center justify-between gap-2">
-        <span className="truncate text-base font-black tracking-wide text-white uppercase italic">
+        <span className="truncate text-sm font-black tracking-wide text-white uppercase italic sm:text-base">
           {icon} {label}
         </span>
         <kbd className="rounded bg-white/15 px-1.5 text-[11px] text-white/80">{keyHint}</kbd>
       </span>
-      <span className="block text-xs text-white/75">{note}</span>
+      <span className="block truncate text-[11px] text-white/75">{note}</span>
     </button>
   );
 }
@@ -43,7 +43,7 @@ function SpecialCard({ special, keyHint, ap, onUse, onPreview, busy }) {
       onFocus={() => affordable && onPreview(special.cost)}
       onBlur={() => onPreview(0)}
       whileHover={affordable && !busy ? { y: -3, scale: 1.02 } : undefined}
-      className="panel relative overflow-hidden border-b-4 bg-black/55 px-3 py-2.5 text-left transition disabled:opacity-45"
+      className="panel relative min-w-0 overflow-hidden border-b-4 bg-black/55 px-2.5 py-1.5 text-left transition disabled:opacity-45"
       style={{ borderColor: affordable ? color : 'rgba(255,255,255,0.25)', boxShadow: affordable ? `0 0 16px ${color}44` : 'none' }}
     >
       <span className="absolute inset-y-0 left-0 w-1.5" style={{ background: color }} />
@@ -51,7 +51,7 @@ function SpecialCard({ special, keyHint, ap, onUse, onPreview, busy }) {
         <span className="truncate text-sm font-black tracking-wide text-white uppercase italic sm:text-base">{special.name}</span>
         <kbd className="rounded bg-white/15 px-1.5 text-[11px] text-white/80">{keyHint}</kbd>
       </span>
-      <span className="mt-1 flex items-center gap-2 pl-1.5 text-xs text-white/80">
+      <span className="mt-0.5 flex items-center gap-2 pl-1.5 text-[11px] text-white/80">
         <span className="flex gap-1" aria-label={`${special.cost} AP`}>
           {Array.from({ length: special.cost }, (_, i) => (
             <span key={i} className="block h-2.5 w-2.5 rotate-45 rounded-[2px]" style={{ background: affordable ? '#38bdf8' : '#475569' }} />
@@ -61,7 +61,7 @@ function SpecialCard({ special, keyHint, ap, onUse, onPreview, busy }) {
           {special.hits > 1 ? `${special.hits} hits` : '1 hit'} · {FX_LABELS[special.fx]}
         </span>
       </span>
-      {!affordable && <span className="block pl-1.5 text-[11px] text-amber-300">Needs {special.cost - ap} more AP</span>}
+      {!affordable && <span className="block pl-1.5 text-[10px] text-amber-300">Needs {special.cost - ap} more AP</span>}
     </motion.button>
   );
 }
@@ -90,6 +90,8 @@ export default function Battle({ character, origin, world, picks, story, look, o
   const seq = useRef(0);
   const actRef = useRef(null);
   const [arena, animateArena] = useAnimate();
+  const box = useRef(null); // the space the stage may fill
+  const [size, setSize] = useState({ w: 0, h: 0, aw: 240 }); // stage size in CSS px, and its logical pixel width
 
   const { hero, foe } = state;
   const intent = intentFor(state.turn);
@@ -125,6 +127,27 @@ export default function Battle({ character, origin, world, picks, story, look, o
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [look, story.foe]);
+
+  // Fill the window: measure the free space, then render the pixel stage at exactly that shape.
+  useEffect(() => {
+    const el = box.current;
+    if (!el) return undefined;
+    const MIN = 240 / 135, MAX = 420 / 135; // 16:9 up to ultra-wide; narrower screens letterbox
+    const measure = () => {
+      const { width, height } = el.getBoundingClientRect();
+      if (!width || !height) return;
+      const aspect = Math.min(MAX, Math.max(MIN, width / height));
+      const w = Math.min(width, height * aspect);
+      setSize({ w: Math.floor(w), h: Math.floor(w / aspect), aw: Math.round(135 * aspect) });
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+  useEffect(() => {
+    arenaApi.current?.resize(size.aw);
+  }, [size.aw]);
 
   // stars circle the villain's head while it is stunned
   useEffect(() => {
@@ -289,12 +312,13 @@ export default function Battle({ character, origin, world, picks, story, look, o
   const plate = 'truncate text-base font-black tracking-wide uppercase italic sm:text-xl';
 
   return (
-    <div className="flex flex-col gap-3">
-      {/* ---- the stage, with the HUD across the top ---- */}
-      <div ref={arena} className="relative aspect-video w-full overflow-hidden rounded-xl border-2 border-white/40 bg-black shadow-[0_0_40px_rgba(0,0,0,0.6)]">
+    <div className="flex h-full w-full flex-col gap-2 p-2 sm:p-3">
+      {/* ---- the stage fills all the space the controls leave ---- */}
+      <div ref={box} className="flex min-h-0 flex-1 items-center justify-center">
+      <div ref={arena} className="relative shrink-0 overflow-hidden rounded-xl border-2 border-white/40 bg-black shadow-[0_0_40px_rgba(0,0,0,0.6)]" style={{ width: size.w || '100%', height: size.h || '100%' }}>
         <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" style={{ imageRendering: 'pixelated' }} aria-label="The arena: your hero faces the villain" />
 
-        <div className="absolute inset-x-0 top-0 z-20 grid grid-cols-[1fr_auto_1fr] items-start gap-2 bg-gradient-to-b from-black/55 to-transparent p-2 sm:gap-4 sm:p-3">
+        <div className="absolute inset-x-0 top-0 z-20 grid grid-cols-[1fr_auto_1fr] items-start gap-2 bg-gradient-to-b from-black/55 to-transparent px-2 py-2 sm:gap-4 sm:px-16 sm:py-3">
           <div className="flex min-w-0 items-start gap-2">
             <CornerPortrait src={heroImage} side="left" color="#5eead4" fallback="🛡️" />
             <div className="min-w-0 flex-1 pt-1">
@@ -342,41 +366,36 @@ export default function Battle({ character, origin, world, picks, story, look, o
         <ComboCounter combo={combo} />
         <AnimatePresence>{cut && <CutIn key={cut.id} name={cut.name} sub={cut.sub} color={cut.color} />}</AnimatePresence>
         {banner && <SlamBanner key={banner.id} text={banner.text} sub={banner.sub} color={banner.color} size={banner.size} />}
-      </div>
-
-      {/* ---- AP and break gauges ---- */}
-      <div className="grid grid-cols-2 items-center gap-4">
-        <div className="flex items-center gap-3">
-          <ApGems ap={hero.ap} max={hero.maxAp} preview={preview} pulse={apPulse} />
-          <WinMark lit={wins.hero} side="left" />
-        </div>
-        <div className="flex items-center justify-end gap-3">
-          <WinMark lit={wins.foe} side="right" />
-          <div className="w-full max-w-[18rem]">
-            <BreakBar value={foe.brk} max={foe.brkMax} stunned={stunned} />
+      
+        {/* gauges sit on the stage so the whole fight fits the screen */}
+        <div className="absolute inset-x-0 bottom-0 z-20 flex items-end justify-between gap-3 bg-gradient-to-t from-black/65 to-transparent p-2 sm:p-3">
+          <div className="flex items-center gap-3">
+            <ApGems ap={hero.ap} max={hero.maxAp} preview={preview} pulse={apPulse} />
+            <WinMark lit={wins.hero} side="left" />
+          </div>
+          <div className="flex items-center justify-end gap-3">
+            <WinMark lit={wins.foe} side="right" />
+            <div className="w-40 sm:w-72">
+              <BreakBar value={foe.brk} max={foe.brkMax} stunned={stunned} />
+            </div>
           </div>
         </div>
       </div>
-
-      <div className="border-l-4 border-teal-300 bg-black/65 px-4 py-2.5" aria-live="polite">
-        <p className="min-h-[2.5rem] text-sm font-semibold text-white italic sm:text-base">{log}</p>
       </div>
 
-      <div className={`grid grid-cols-2 gap-2 ${picks.includes('ally') ? 'sm:grid-cols-3' : 'sm:grid-cols-2'}`}>
-        <CommandButton keyHint="A" icon="⚔️" label="Attack" note={`${hero.atk}+ damage · +1 AP`} onClick={() => act('attack')} disabled={locked} />
-        <CommandButton keyHint="G" icon="🛡️" label="Guard" note={`block ${Math.round(hero.guardBlock * 100)}% · +1 AP · +8 HP`} onClick={() => act('guard')} disabled={locked} />
+      <div className="border-l-4 border-teal-300 bg-black/65 px-3 py-1.5" aria-live="polite">
+        <p className="truncate text-sm font-semibold text-white italic sm:text-base">{log || '\u00a0'}</p>
+      </div>
+
+      <div className={`grid grid-cols-3 gap-2 ${picks.includes('ally') ? 'lg:grid-cols-6' : 'lg:grid-cols-5'}`}>
+        <CommandButton keyHint="A" icon="⚔️" label="Attack" note={`${hero.atk}+ dmg · +1 AP`} onClick={() => act('attack')} disabled={locked} />
+        <CommandButton keyHint="G" icon="🛡️" label="Guard" note={`block ${Math.round(hero.guardBlock * 100)}% · +1 AP`} onClick={() => act('guard')} disabled={locked} />
         {picks.includes('ally') && (
           <CommandButton keyHint="4" icon="📯" label={hero.allyName ?? 'Ally'} note={hero.allyReady ? 'ally strike · once' : 'used'} onClick={() => act('ally')} disabled={locked || !hero.allyReady} />
         )}
-      </div>
-
-      <div>
-        <p className="mb-1.5 font-mono text-[11px] tracking-[0.3em] text-teal-200/90 uppercase">Move list · specials cost AP</p>
-        <div className="grid gap-2 sm:grid-cols-3">
-          {hero.specials.map((special, i) => (
-            <SpecialCard key={special.id} special={special} keyHint={String(i + 1)} ap={hero.ap} busy={locked} onUse={() => act(special.id)} onPreview={setPreview} />
-          ))}
-        </div>
+        {hero.specials.map((special, i) => (
+          <SpecialCard key={special.id} special={special} keyHint={String(i + 1)} ap={hero.ap} busy={locked} onUse={() => act(special.id)} onPreview={setPreview} />
+        ))}
       </div>
     </div>
   );
