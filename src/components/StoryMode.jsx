@@ -3,12 +3,13 @@ import { motion } from 'motion/react';
 import { hush, narrate } from '../lib/narrator.js';
 import { beep, play } from '../lib/sound.js';
 import { createStage, heroLook } from '../lib/spriteForge.js';
-import { buildStory, createBattle, intentFor, takeTurn } from '../lib/story.js';
+import { createBattle } from '../lib/combat.js';
+import { buildStory } from '../lib/story.js';
 import { WORLDS } from '../lib/worlds.js';
+import Battle from './Battle.jsx';
 import { Particles } from './Effects.jsx';
 
 const TYPE_MS = 16;
-const HALF_TURN_MS = 950;
 const AUTO_NEXT_MS = 550; // pause after the narrator finishes a line
 const CHAPTERS = {
   opening: 'Chapter I · Awakening',
@@ -147,8 +148,7 @@ export default function StoryMode({ character, world, origin, onFinish }) {
   const [picks, setPicks] = useState([]);
   const [battle, setBattle] = useState(null); // live fight state once the battle starts
   const [revealed, setRevealed] = useState(false); // has the villain stepped out of the shadows?
-  const [busy, setBusy] = useState(false);
-  const [log, setLog] = useState('');
+  const [battleKey, setBattleKey] = useState(0); // bumped to start a fresh fight
   const [hit, setHit] = useState({ side: null, id: 0, text: '' });
   // The journey passes through another, randomly chosen land once the sky tears open.
   const [farImage] = useState(() => {
@@ -192,64 +192,25 @@ export default function StoryMode({ character, world, origin, onFinish }) {
   };
 
   const startBattle = (option) => {
-    const allPicks = [...picks, option.id];
+    setBattle(null);
     pick(option, 'battle');
-    setBattle(createBattle(character, origin, allPicks));
-    setLog(`${story.reactions[option.id]} At dawn, ${story.foe} blocks your path. Watch for the heavy attack and guard against it.`);
   };
 
-  const act = (action) => {
-    if (busy || !battle || battle.outcome) return;
-    const { mid, end, heroEvent, foeEvent } = takeTurn(battle, action);
-    setBusy(true);
-    setBattle(mid);
-    setLog(heroEvent.text);
-    if (heroEvent.kind === 'guard') {
-      setHit((h) => ({ side: 'buff', id: h.id + 1, text: `+${heroEvent.heal} HP` }));
-      play('blip');
-    } else {
-      stageRef.current?.attack();
-      setHit((h) => ({ side: 'foe', id: h.id + 1, text: `-${heroEvent.damage}` }));
-      play(heroEvent.kind === 'attack' ? 'land' : 'reveal');
-    }
-
-    setTimeout(() => {
-      if (foeEvent) {
-        setBattle(end);
-        setLog(foeEvent.text);
-        setHit((h) => ({ side: 'hero', id: h.id + 1, text: `-${foeEvent.damage}` }));
-        play(foeEvent.kind === 'heavy' ? 'impact' : 'land');
-      }
-      if (!end.outcome) return setBusy(false);
-      stageRef.current?.press('right', false); // the journey ends here, one way or the other
-      if (end.outcome === 'victory') {
-        stageRef.current?.victory();
-        play('legendary');
-      }
-      setTimeout(() => {
-        setBusy(false);
-        setStep('ending');
-      }, 1300);
-    }, HALF_TURN_MS);
+  // The fight reports back once it is decided; the arena then shows the final numbers.
+  const endBattle = ({ state }) => {
+    setBattle(state);
+    setStep('ending');
   };
 
   const retry = () => {
-    setBattle(createBattle(character, origin, picks));
-    setLog(`You stand back up. ${story.foe} is waiting.`);
+    setBattle(null);
+    setBattleKey((k) => k + 1);
     setStep('battle');
     stageRef.current?.press('right', true);
     stageRef.current?.jump();
   };
 
   const finish = (result) => onFinish({ outcome: result, foe: story.foe });
-  const heavyNext = step === 'battle' && !outcome && !busy && intentFor(turn) === 'heavy';
-  const commands = [
-    { id: 'attack', label: '⚔️ Attack', note: `${hero.atk}+ damage` },
-    { id: 'skill', label: '✨ Skill', note: `${hero.charges} left`, disabled: hero.charges === 0 },
-    { id: 'guard', label: '🛡️ Guard', note: 'block + heal' },
-    picks.includes('ally') ? { id: 'ally', label: `📯 ${hero.allyName}`, note: hero.allyReady ? 'ally strike' : 'used', disabled: !hero.allyReady } : null,
-  ].filter(Boolean);
-
   return (
     <motion.div className="fixed inset-0 z-30 overflow-hidden bg-black" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <img src={world.image} alt="" className="kenburns absolute inset-0 h-full w-full object-cover" />
@@ -261,8 +222,8 @@ export default function StoryMode({ character, world, origin, onFinish }) {
 
       <div className="absolute inset-0 overflow-y-auto">
         <div className="mx-auto flex min-h-full max-w-4xl flex-col justify-center gap-3 p-3 pt-14 sm:gap-4 sm:px-6 sm:pb-6">
-          {/* ---- the arena: always on screen ---- */}
-          <div className="grid grid-cols-2 gap-3 sm:gap-5">
+          {/* ---- the arena: on screen for the story; the battle brings its own ---- */}
+          <div className={`grid grid-cols-2 gap-3 sm:gap-5 ${step === 'battle' ? 'hidden' : ''}`}>
             <motion.div
               className="panel relative rounded-2xl border border-white/20 p-3"
               animate={{ x: hit.side === 'hero' ? [0, -10, 10, -6, 6, 0] : 0 }}
@@ -295,7 +256,7 @@ export default function StoryMode({ character, world, origin, onFinish }) {
                 <Bar value={hero.hp} max={hero.maxHp} color="linear-gradient(90deg,#16a34a,#4ade80)" />
               </div>
               <p className="mt-1 text-xs text-white/85">
-                HP {hero.hp} / {hero.maxHp} · ⚔ {hero.atk} · ✨ {hero.charges}
+                HP {hero.hp} / {hero.maxHp} · ⚔ {hero.atk} · AP {hero.ap}
               </p>
             </motion.div>
 
@@ -347,31 +308,7 @@ export default function StoryMode({ character, world, origin, onFinish }) {
           {step === 'choice2' && <Choice prompt="One night to prepare" options={story.secondChoice} accent={accent} onPick={startBattle} />}
 
           {step === 'battle' && (
-            <>
-              <div className="panel rounded-xl border border-white/20 px-4 py-3" aria-live="polite">
-                <p className="min-h-[3rem] text-sm text-white sm:text-base">{log}</p>
-                {heavyNext && (
-                  <motion.p className="mt-1 text-sm font-bold text-amber-300" animate={{ opacity: [1, 0.4, 1] }} transition={{ duration: 0.9, repeat: Infinity }}>
-                    ⚠ {story.foe} is gathering power for a heavy attack!
-                  </motion.p>
-                )}
-              </div>
-              <div className={`grid grid-cols-2 gap-2 ${commands.length === 4 ? 'sm:grid-cols-4' : 'sm:grid-cols-3'}`}>
-                {commands.map((command) => (
-                  <button
-                    key={command.id}
-                    type="button"
-                    onClick={() => act(command.id)}
-                    disabled={busy || command.disabled || Boolean(outcome)}
-                    className="panel rounded-xl border px-3 py-3 text-center transition hover:bg-white/15 disabled:opacity-40"
-                    style={{ borderColor: `${world.accent}99` }}
-                  >
-                    <span className="block truncate text-base font-bold text-white">{command.label}</span>
-                    <span className="text-xs text-white/75">{command.note}</span>
-                  </button>
-                ))}
-              </div>
-            </>
+            <Battle key={`battle-${battleKey}`} character={character} origin={origin} world={world} picks={picks} story={story} look={look} onEnd={endBattle} />
           )}
 
           {step === 'ending' && (
