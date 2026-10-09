@@ -1,0 +1,77 @@
+{
+  "id": "lothric", "name": "Lothric", "game": "Dark Souls 3", "icon": "🔥",
+  "tagline": "The flame fades. Ember, Unkindled.",
+  "coords": { "lat": 0, "lng": 0 },
+  "story": [
+    "The First Flame gutters, and the Lords of Cinder, who were meant to link it, have abandoned their thrones. The kingdom of Lothric is dying and its knights are hollowing.",
+    "From the Cemetery of Ash to the High Wall, the land is filled with the hollowed, and with great champions who refuse to rest. The Fire Keeper waits in the Firelink Shrine.",
+    "You are an Unkindled, an ember that does not belong in the grave. Return the Lords to their thrones, and decide whether the flame burns on or fades."
+  ],
+  "ending": "The Lords return to their thrones, and the bonfire roars. Whether the flame is linked or let fade is a decision for another age.",
+  "characters": [
+    { "id": "knight", "name": "Knight", "icon": "🏰", "weapon": "broadsword",
+      "backstory": "A knight of Lothric who lost his banner and kept his oaths.",
+      "stats": { "HP": 16, "ATK": 14, "DEF": 14, "SPD": 8, "MAG": 7 },
+      "trait": { "name": "Oathkeeper", "desc": "+3 DEF", "effect": { "def": 3 } } },
+    { "id": "herald", "name": "Herald", "icon": "🌞", "weapon": "mace",
+      "backstory": "A sunlit healer whose prayers are old, and whose faith was never fully extinguished.",
+      "stats": { "HP": 14, "ATK": 12, "DEF": 12, "SPD": 9, "MAG": 12 },
+      "trait": { "name": "Estus Bearer", "desc": "+1 flask", "effect": { "flasks": 1 } } },
+    { "id": "sorcerer", "name": "Sorcerer", "icon": "🔭", "weapon": "sorcerers_staff",
+      "backstory": "A scholar of the Dragon Archives, in a Lothric that no longer wants scholars.",
+      "stats": { "HP": 10, "ATK": 8, "DEF": 8, "SPD": 10, "MAG": 18 },
+      "trait": { "name": "Focused Soul", "desc": "Start each fight with +1 AP", "effect": { "start_ap": 1 } } },
+    { "id": "pyromancer", "name": "Pyromancer", "icon": "🌋", "weapon": "pyromancy_flame",
+      "backstory": "A wanderer from Izalith who carries a flame in the palm and no fear of the dark.",
+      "stats": { "HP": 12, "ATK": 10, "DEF": 10, "SPD": 11, "MAG": 15 },
+      "trait": { "name": "Burning Hands", "desc": "Break gauge fills 25% faster", "effect": { "break": 1.25 } } }
+  ],
+  "bosses": [
+    { "id": "iudex_gundyr", "name": "Iudex Gundyr", "title": "Champion of Ash", "icon": "⚰️",
+      "lore": "The first champion, still half-buried in the Cemetery of Ash, an Unkindled that never left his post. Something far uglier rises from his back.",
+      "stats": { "HP": 200, "ATK": 12, "DEF": 12 },
+      "moves": [
+        { "name": "Halberd Thrust", "power": 1.0, "hits": 1, "telegraph": 900, "weight": 3 },
+        { "name": "Sweeping Arc", "power": 0.7, "hits": 2, "telegraph": 780, "weight": 3 },
+        { "name": "Writhing Slam", "power": 1.6, "hits": 1, "telegraph": 1150, "weight": 1 }
+      ],
+      "drop": "dark_sword",
+      "apiRef": null },
+    { "id": "vordt", "name": "Vordt of the Boreal Valley", "title": "The Frozen Hound-Knight", "icon": "🐕",
+      "lore": "A Lord's guardian turned monster, with a hammer for a mace and a frozen breath that rattles through the High Wall.",
+      "stats": { "HP": 280, "ATK": 14, "DEF": 14 },
+      "moves": [
+        { "name": "Mace Smash", "power": 1.3, "hits": 1, "telegraph": 1000, "weight": 3 },
+        { "name": "Frost Breath", "power": 0.7, "hits": 3, "telegraph": 780, "weight": 2 },
+        { "name": "Charging Stomp", "power": 1.8, "hits": 1, "telegraph": 1200, "weight": 1 }
+      ],
+      "drop": "sellsword_twinblades",
+      "apiRef": null },
+    { "id": "dancer", "name": "Dancer of the Boreal Valley", "title": "The Dancer in Ash", "icon": "💃",
+      "lore": "An undying dancer whose steps are a ritual, and whose twin swords hold the last of the fire. She was a lord's keeper long before the flame began to fade.",
+      "stats": { "HP": 360, "ATK": 16, "DEF": 12 },
+      "moves": [
+        { "name": "Twin Flame Dance", "power": 0.6, "hits": 4, "telegraph": 690, "weight": 3 },
+        { "name": "Ember Slash", "power": 1.2, "hits": 2, "telegraph": 820, "weight": 3 },
+        { "name": "Flame Pirouette", "power": 2.0, "hits": 1, "telegraph": 1200, "weight": 1 }
+      ],
+      "drop": "moonlight_greatsword",
+      "apiRef": null },
+    { "id": "dragonslayer_armour", "name": "Dragonslayer Armour", "title": "Guardian of the Cathedral", "icon": "🛡️",
+      "lore": "A giant armoured guardian of the Cathedral of the Deep, whose hollow helm hides only the will to slay. It is the strongest knight Lothric ever made.",
+      "stats": { "HP": 460, "ATK": 18, "DEF": 17 },
+      "moves": [
+        { "name": "Greataxe Chop", "power": 1.4, "hits": 1, "telegraph": 1000, "weight": 3 },
+        { "name": "Shield Bash Combo", "power": 0.7, "hits": 3, "telegraph": 760, "weight": 2 },
+        { "name": "Lightning Smite", "power": 2.2, "hits": 1, "telegraph": 1250, "weight": 2 }
+      ],
+      "drop": "lorians_greatsword",
+      "apiRef": null }
+  ],
+  "npcs": [
+    { "id": "fire_keeper", "name": "The Fire Keeper", "role": "Keeper of the Shrine", "where": "Firelink Shrine", "quote": "Ashen One, hearken my words. Together we shall kindle the flame.", "apiRef": null },
+    { "id": "andre", "name": "Andre of Astora", "role": "Blacksmith", "where": "Firelink Shrine", "quote": "Hmph. I've been at this since before any of you were born.", "apiRef": null },
+    { "id": "ludleth", "name": "Ludleth of Courland", "role": "Lord of Cinder", "where": "Firelink Shrine", "quote": "Aye, I'll trade. One sip of the Lords' ash and it's yours.", "apiRef": null },
+    { "id": "yuria", "name": "Yuria of Londor", "role": "Shadow Walker", "where": "Firelink Shrine", "quote": "A kindred spirit, then. I shall keep you company.", "apiRef": null }
+  ]
+}

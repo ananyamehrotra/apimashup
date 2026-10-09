@@ -1,0 +1,77 @@
+{
+  "id": "yharnam", "name": "Yharnam", "game": "Bloodborne", "icon": "🌕",
+  "tagline": "A city of healing blood, and the night it turned.",
+  "coords": { "lat": 0, "lng": 0 },
+  "story": [
+    "Yharnam, the old city of blood-healing, welcomes every outsider who comes seeking a cure. The Church of the Healing blood gives it, and the price is hidden.",
+    "On the night of the hunt the city is empty. The streets are slick with fog and gaslight, and the townsfolk are barred in their homes, listening to the things that prowl outside.",
+    "You wake in a clinic with a contract and no memory. Take up the saw cleaver, hunt the beasts and see whether the night ends. The Hunter's Dream is waiting."
+  ],
+  "ending": "The last blood is spilled and the sky pales. The hunt ends, though the dream is never entirely gone.",
+  "characters": [
+    { "id": "lone_survivor", "name": "Lone Survivor", "icon": "🎩", "weapon": "threaded_cane",
+      "backstory": "A hunter who has outlasted every other hunter by running from half of them.",
+      "stats": { "HP": 14, "ATK": 13, "DEF": 10, "SPD": 14, "MAG": 8 },
+      "trait": { "name": "Knows When to Run", "desc": "+10% critical chance", "effect": { "crit": 0.1 } } },
+    { "id": "military_veteran", "name": "Military Veteran", "icon": "🪖", "weapon": "hunter_axe",
+      "backstory": "A soldier from a distant war who learned to trust the weight of a good axe.",
+      "stats": { "HP": 17, "ATK": 14, "DEF": 14, "SPD": 8, "MAG": 7 },
+      "trait": { "name": "Seasoned", "desc": "+3 DEF", "effect": { "def": 3 } } },
+    { "id": "noble_lineage", "name": "Noble Lineage", "icon": "🍷", "weapon": "saw_cleaver",
+      "backstory": "A scion of a Cainhurst family, restless and well-bred, hunting to prove the line has not thinned.",
+      "stats": { "HP": 12, "ATK": 13, "DEF": 10, "SPD": 12, "MAG": 13 },
+      "trait": { "name": "Blood Vial", "desc": "+1 flask", "effect": { "flasks": 1 } } },
+    { "id": "waif", "name": "Waif", "icon": "🕷️", "weapon": "stake_driver",
+      "backstory": "A scavenger from the unsavoury edges of the city, who sells blood and survives on it.",
+      "stats": { "HP": 11, "ATK": 14, "DEF": 8, "SPD": 15, "MAG": 10 },
+      "trait": { "name": "Quick Hands", "desc": "Start each fight with +1 AP", "effect": { "start_ap": 1 } } }
+  ],
+  "bosses": [
+    { "id": "cleric_beast", "name": "Cleric Beast", "title": "A Beast That Was Once a Cleric", "icon": "🐺",
+      "lore": "A giant beast that stalks the streets of central Yharnam. It was a cleric of the Healing Church, and it has been long ravaged by the scourge.",
+      "stats": { "HP": 200, "ATK": 12, "DEF": 10 },
+      "moves": [
+        { "name": "Claw Swipe", "power": 0.9, "hits": 2, "telegraph": 800, "weight": 3 },
+        { "name": "Lunging Bite", "power": 1.4, "hits": 1, "telegraph": 1050, "weight": 2 },
+        { "name": "Frenzied Flurry", "power": 0.6, "hits": 4, "telegraph": 700, "weight": 2 }
+      ],
+      "drop": "stake_driver",
+      "apiRef": null },
+    { "id": "gascoigne", "name": "Father Gascoigne", "title": "The Hunter Who Lost His Mind", "icon": "🪓",
+      "lore": "A hunter of the old city, and a father. When the beast within him takes control, his hatchet and his rage are the same thing.",
+      "stats": { "HP": 260, "ATK": 13, "DEF": 12 },
+      "moves": [
+        { "name": "Hatchet Chop", "power": 1.1, "hits": 1, "telegraph": 900, "weight": 3 },
+        { "name": "Twin Slash", "power": 0.7, "hits": 2, "telegraph": 760, "weight": 3 },
+        { "name": "Beast Roar Pounce", "power": 1.8, "hits": 1, "telegraph": 1200, "weight": 1 }
+      ],
+      "drop": "blade_of_mercy",
+      "apiRef": null },
+    { "id": "blood_starved_beast", "name": "Blood-Starved Beast", "title": "The Beast Behind the Chalice", "icon": "🩸",
+      "lore": "A creature of the Healing Church's hidden crypt, kept alive on stolen blood. It still remembers the taste.",
+      "stats": { "HP": 340, "ATK": 15, "DEF": 13 },
+      "moves": [
+        { "name": "Savage Maul", "power": 1.2, "hits": 2, "telegraph": 850, "weight": 3 },
+        { "name": "Blood Spray", "power": 0.55, "hits": 5, "telegraph": 680, "weight": 2 },
+        { "name": "Starved Leap", "power": 1.9, "hits": 1, "telegraph": 1200, "weight": 2 }
+      ],
+      "drop": "ludwig_holy_blade",
+      "apiRef": null },
+    { "id": "vicar_amelia", "name": "Vicar Amelia", "title": "The Vicar of the Cathedral Ward", "icon": "⛪",
+      "lore": "The head of the Healing Church, now a monstrous beast in front of her own great cathedral. She bleeds the blood she once preached.",
+      "stats": { "HP": 440, "ATK": 17, "DEF": 15 },
+      "moves": [
+        { "name": "Crushing Fist", "power": 1.3, "hits": 1, "telegraph": 950, "weight": 3 },
+        { "name": "Holy Fury", "power": 0.65, "hits": 4, "telegraph": 700, "weight": 2 },
+        { "name": "Cathedral's Wrath", "power": 2.1, "hits": 1, "telegraph": 1250, "weight": 2 }
+      ],
+      "drop": "kirkhammer",
+      "apiRef": null }
+  ],
+  "npcs": [
+    { "id": "gehrman", "name": "Gehrman", "role": "The First Hunter", "where": "The Hunter's Dream", "quote": "Welcome, good hunter. What is it you desire?", "apiRef": null },
+    { "id": "doll", "name": "The Doll", "role": "Caretaker", "where": "The Hunter's Dream", "quote": "Welcome home, good hunter. Do you wish to level up?", "apiRef": null },
+    { "id": "eileen", "name": "Eileen the Crow", "role": "Hunter of Hunters", "where": "Central Yharnam", "quote": "I'm sorry for what happens to hunters who lose their way.", "apiRef": null },
+    { "id": "iosefka", "name": "Iosefka", "role": "Clinic Physician", "where": "Iosefka's Clinic", "quote": "Please, stay a moment. I can help.", "apiRef": null }
+  ]
+}

@@ -17,7 +17,7 @@
 | 2 | **Yharnam** | Bloodborne | Gothic plague city, beasts, cosmic dread | Hand-written local JSON (no public API found) |
 | 3 | **Lothric** | Dark Souls 3 | Dying kingdom, linking the flame, ash | Hand-written local JSON (only a 2017 build-planner API exists, offline when tested) |
 
-Not in this phase: the globe spin, final character art, combat balance, sound, share card.
+Not in this phase: the globe spin, final character art, sound, share card.
 
 ---
 
@@ -71,23 +71,36 @@ Elden Ring lore is merged from the API at boot into the Limgrave record; Yharnam
 
 ---
 
+## The game: boss runs (Expedition 33-style combat)
+Pick a land and a character, then fight that land's four bosses in order. A **bonfire** between fights fully heals you and lets you change weapon. Beat all four to liberate the land.
+
+**Your turn:** `Attack` (free, +1 AP) · `Skill` (the equipped weapon's skill, costs AP) · `Flask` (heal 40%, 3 per fight).
+**Timing ring:** every attack and skill shows a closing ring. Press SPACE (or tap) at impact: PERFECT 1.4x, GOOD 1.0x, MISS 0.75x. PERFECT also gives +1 AP.
+**Boss turn:** each hit is telegraphed with a ring on you. Press inside the window to **dodge** (no damage). Press right at impact to **parry** (no damage, counter-attack, +1 AP). SPD widens both windows.
+**Break gauge:** attacks and skills fill it. When full the boss is **staggered**: it skips a turn and takes +50% damage on your next action.
+**Enrage:** below 50% HP the boss hits 25% harder.
+**Effects:** `dot` skills make the boss bleed for 3 turns; `heal` skills heal you.
+
+**Weapons:** 22 weapons across Common, Uncommon, Rare, Epic and Legendary. Rarity sets crit chance (5% to 22%); every weapon has its own attack, break value and skill. Staffs and seals scale with MAG, the rest with ATK. Each boss drops one weapon, rarer toward the final boss.
+
+Numbers live in `public/js/combat.js` (`Combat.R`). A bot simulation puts a skilled player at about 95-100% wins, an average one at about 45-55% on final bosses, and a player who never dodges is walled by the third boss.
+
 ## Milestones
 | Step | What |
 |---|---|
-| 1 | Data schema + JSON for the 3 locations (this doc set) |
-| 2 | Express server: `/api/locations`, `/api/locations/:id` |
-| 3 | Character select + location lore pages (frontend) |
-| 4 | Globe spin that lands on one of the 3 locations |
-| 5 | Boss encounters (open question below) |
-| 6 | More locations, polish, sound |
+| 1 | Data schema + JSON for the 3 locations (done) |
+| 2 | Express server: `/api/locations`, `/api/locations/:id`, `/api/weapons` (done) |
+| 3 | Picker, location lore, character select (done) |
+| 4 | Boss runs: combat, weapons, bonfire, ending (done) |
+| 5 | Globe spin that lands on one of the 3 locations |
+| 6 | Real art, sound, more locations, balance pass |
 
 ## Open questions
-- **Boss encounters:** the earlier plan had a Top Trumps card duel with narration. Should that carry over as the boss fight (player card vs boss card, stat per round), or become something else?
 - **Globe coordinates:** real-world places that echo each land (e.g. Alpine, Gothic Prague, medieval Spain), or a fictional globe?
-- **Boss stats:** the API often returns `healthPoints: "???"`, so combat stats are hand-written for every boss.
-- **Elden Ring API terms and uptime:** it is a community API; the snapshot fallback covers downtime.
+- **Party:** Expedition 33 uses a party of several characters; the current game has one hero.
+- **Persistence:** a run is lost on reload. Should progress and owned weapons be saved?
 
-## Run (once step 2 exists)
+## Run
 ```bash
 npm install
 npm run dev            # http://localhost:3000

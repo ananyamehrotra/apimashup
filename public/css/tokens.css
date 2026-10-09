@@ -1,0 +1,31 @@
+:root {
+  --bg: #0b0a0c;
+  --bg-2: #16131a;
+  --panel: rgba(255, 255, 255, .05);
+  --panel-brd: rgba(255, 255, 255, .12);
+  --text: #ece6da;
+  --text-dim: #9b937f;
+  --accent: #e2662a;
+  --accent-2: #f5b36b;
+  --hp: #c0392b;
+  --ap: #38bdf8;
+  --break: #f59e0b;
+  --good: #4ade80;
+
+  --common: #9ca3af;
+  --uncommon: #4ade80;
+  --rare: #60a5fa;
+  --epic: #c084fc;
+  --legendary: #fbbf24;
+
+  --font-title: 'Cinzel', Georgia, serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --r-sm: 6px;
+  --r-md: 12px;
+  --ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+/* per-location themes: set data-theme on the app root */
+[data-theme="limgrave"] { --accent: #d9a441; --accent-2: #f3d58a; --stage-a: #3a3220; --stage-b: #11110d; }
+[data-theme="yharnam"]  { --accent: #b5283b; --accent-2: #e8a0a8; --stage-a: #2b1a24; --stage-b: #0d090c; }
+[data-theme="lothric"]  { --accent: #e2662a; --accent-2: #f5b36b; --stage-a: #33211a; --stage-b: #0e0a09; }

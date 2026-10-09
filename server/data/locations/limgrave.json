@@ -1,0 +1,77 @@
+{
+  "id": "limgrave", "name": "Limgrave", "game": "Elden Ring", "icon": "🌳",
+  "tagline": "Where the Tarnished first see the Erdtree.",
+  "coords": { "lat": 0, "lng": 0 },
+  "story": [
+    "The Elden Ring is shattered. Its fragments, the Great Runes, were seized by the demigods who now rule the Lands Between, and the Erdtree burns gold above the horizon.",
+    "Limgrave is the first land the Tarnished see: windswept fields, ruined forts and the grey walls of Stormveil Castle, where Godrick the Grafted rules with a hoard of stolen limbs.",
+    "Called back from death by a grace that few remember, you are one of the Tarnished. Cross the fields, break the guardians that bar the road, and take the Great Rune of the land."
+  ],
+  "ending": "Godrick falls and his Great Rune is yours. The grace of Limgrave burns brighter, and the road to Liurnia opens.",
+  "characters": [
+    { "id": "vagabond", "name": "Vagabond", "icon": "🛡️", "weapon": "rogiers_rapier",
+      "backstory": "A wandering knight who survived the war without a banner. He trusts his armour more than any god.",
+      "stats": { "HP": 16, "ATK": 14, "DEF": 13, "SPD": 9, "MAG": 8 },
+      "trait": { "name": "Iron Will", "desc": "+3 DEF", "effect": { "def": 3 } } },
+    { "id": "samurai", "name": "Samurai", "icon": "🎌", "weapon": "uchigatana",
+      "backstory": "A swordsman from the Land of Reeds, who came to the Lands Between for glory and stayed for the duel.",
+      "stats": { "HP": 13, "ATK": 15, "DEF": 10, "SPD": 13, "MAG": 9 },
+      "trait": { "name": "Keen Edge", "desc": "+10% critical chance", "effect": { "crit": 0.1 } } },
+    { "id": "astrologer", "name": "Astrologer", "icon": "🌠", "weapon": "astrologers_staff",
+      "backstory": "A glintstone scholar who reads the stars and trusts what they say about the end.",
+      "stats": { "HP": 10, "ATK": 9, "DEF": 8, "SPD": 10, "MAG": 17 },
+      "trait": { "name": "Stargazer", "desc": "Start each fight with +1 AP", "effect": { "start_ap": 1 } } },
+    { "id": "prophet", "name": "Prophet", "icon": "🕯️", "weapon": "finger_seal",
+      "backstory": "A cast-off priest with an incantation for every wound. Faith keeps them standing.",
+      "stats": { "HP": 12, "ATK": 10, "DEF": 10, "SPD": 9, "MAG": 15 },
+      "trait": { "name": "Blessed", "desc": "+1 flask", "effect": { "flasks": 1 } } }
+  ],
+  "bosses": [
+    { "id": "tree_sentinel", "name": "Tree Sentinel", "title": "Golden Guardian of the Road", "icon": "🐴",
+      "lore": "A golden knight on a golden steed, set to guard the road since before the Shattering. It attacks everything that is not the Erdtree's.",
+      "stats": { "HP": 200, "ATK": 11, "DEF": 14 },
+      "moves": [
+        { "name": "Halberd Sweep", "power": 1.0, "hits": 1, "telegraph": 950, "weight": 3 },
+        { "name": "Charging Trample", "power": 1.4, "hits": 1, "telegraph": 1100, "weight": 2 },
+        { "name": "Golden Combo", "power": 0.65, "hits": 3, "telegraph": 780, "weight": 2 }
+      ],
+      "drop": "uchigatana",
+      "apiRef": { "source": "eldenring", "name": "Tree Sentinel" } },
+    { "id": "margit", "name": "Margit, the Fell Omen", "title": "Foe of the Tarnished", "icon": "🔨",
+      "lore": "A hunched omen who exists to turn the Tarnished back. It carries a hammer shaped from a thousand wishes, and daggers of holy light.",
+      "stats": { "HP": 270, "ATK": 13, "DEF": 12 },
+      "moves": [
+        { "name": "Hammer Slam", "power": 1.2, "hits": 1, "telegraph": 1000, "weight": 3 },
+        { "name": "Dagger Volley", "power": 0.55, "hits": 4, "telegraph": 720, "weight": 2 },
+        { "name": "Fell Curse", "power": 1.7, "hits": 1, "telegraph": 1200, "weight": 1 }
+      ],
+      "drop": "claymore",
+      "apiRef": { "source": "eldenring", "name": "Margit, the Fell Omen" } },
+    { "id": "agheel", "name": "Flying Dragon Agheel", "title": "Wing of the Fallen Sky", "icon": "🐉",
+      "lore": "An ancient dragon nesting in the ruins of Limgrave. It scorches the plains with flame and falls upon the Tarnished from above.",
+      "stats": { "HP": 360, "ATK": 15, "DEF": 14 },
+      "moves": [
+        { "name": "Claw Rake", "power": 0.8, "hits": 2, "telegraph": 820, "weight": 3 },
+        { "name": "Fire Breath", "power": 1.3, "hits": 1, "telegraph": 1050, "weight": 2 },
+        { "name": "Plunging Dive", "power": 1.9, "hits": 1, "telegraph": 1250, "weight": 1 }
+      ],
+      "drop": "carian_regal_scepter",
+      "apiRef": { "source": "eldenring", "name": "Flying Dragon Agheel" } },
+    { "id": "godrick", "name": "Godrick the Grafted", "title": "Shardbearer of Stormveil", "icon": "👑",
+      "lore": "A demigod who grafted the limbs of the fallen onto his own body to feel worthy of his lineage. At last he grafts a dragon's head to his arm.",
+      "stats": { "HP": 480, "ATK": 17, "DEF": 16 },
+      "moves": [
+        { "name": "Axe of Godrick", "power": 1.3, "hits": 1, "telegraph": 950, "weight": 3 },
+        { "name": "Spinning Cleave", "power": 0.6, "hits": 4, "telegraph": 700, "weight": 2 },
+        { "name": "Grafted Dragon", "power": 2.0, "hits": 1, "telegraph": 1200, "weight": 2 }
+      ],
+      "drop": "rivers_of_blood",
+      "apiRef": { "source": "eldenring", "name": "Godrick The Grafted" } }
+  ],
+  "npcs": [
+    { "id": "melina", "name": "Melina", "role": "Guide", "where": "Grace sites at night", "quote": "Take my hand. I shall give you what you need to keep going.", "apiRef": null },
+    { "id": "kale", "name": "Merchant Kalé", "role": "Merchant", "where": "Church of Elleh", "quote": "Hee hee. A Tarnished! There's coin in it for the both of us.", "apiRef": { "source": "eldenring", "name": "Merchant Kalé" } },
+    { "id": "roderika", "name": "Roderika", "role": "Spirit Tuner", "where": "Church of Elleh", "quote": "I want to help the spirits, not just use them.", "apiRef": null },
+    { "id": "varre", "name": "Varré", "role": "Mohg's Emissary", "where": "Limgrave's shore", "quote": "Well, if it isn't a maidenless Tarnished.", "apiRef": null }
+  ]
+}

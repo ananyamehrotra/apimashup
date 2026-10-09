@@ -14,7 +14,7 @@ server/
 ├── index.js                 # app, middleware, static, routes, error handler, boot preload
 ├── config.js                # PORT, TTLs, URLs, SNAPSHOT_MODE
 ├── routes/
-│   ├── locations.js         # GET /api/locations, GET /api/locations/:id
+│   ├── locations.js         # GET /api/locations, /api/locations/:id, /api/weapons
 │   └── health.js            # GET /api/health
 ├── services/
 │   ├── cache.js             # memory Map + disk JSON, TTL, in-flight de-dupe
@@ -24,6 +24,7 @@ server/
 ├── utils/
 │   └── errors.js            # ApiError, asyncHandler
 ├── data/
+│   ├── weapons.json         # rarities + 22 weapons with skills
 │   ├── locations/           # limgrave.json, yharnam.json, lothric.json (hand-written)
 │   ├── cache/               # runtime (gitignored)
 │   └── snapshots/           # bundled Elden Ring API fallback JSON
@@ -79,6 +80,7 @@ Base `https://eldenring.fanapis.com/api`. Endpoints used: `/bosses`, `/npcs`, `/
 | GET | `/api/health` | status, cache stats, snapshot mode |
 | GET | `/api/locations` | summary list for the globe/picker |
 | GET | `/api/locations/:id` | full location record |
+| GET | `/api/weapons` | rarities and all weapons |
 
 **Validation:** unknown `:id` → 404. **Errors:** one handler → `{ error: { status, code, message } }`. **Header:** `X-Cache: HIT | MISS | SNAPSHOT`.
 

@@ -9,18 +9,22 @@
 public/
 ├── index.html
 ├── css/
-│   ├── tokens.css      # colours, fonts, per-location themes
-│   ├── base.css        # reset, background, typography
-│   └── views.css       # location, character select, lore lists
+│   ├── tokens.css      # colours, fonts, rarity colours, per-location themes
+│   ├── base.css        # reset, buttons, embers, toasts
+│   ├── views.css       # picker, location, character select, weapon chips, bonfire
+│   └── battle.css      # arena, HP/break bars, fighters, effects, timing ring
 ├── js/
-│   ├── api.js          # fetch wrapper → /api/*, error normalisation
-│   ├── state.js        # tiny store + subscribe()
-│   ├── router.js       # #loc=limgrave · #loc=yharnam&char=hunter
-│   ├── picker.js       # location picker (3 cards now; globe replaces it later)
-│   ├── location.js     # story, bosses, NPCs render
-│   ├── characters.js   # character select
-│   ├── ui.js           # toasts, skeletons
-│   └── main.js         # boot, wiring
+│   ├── ui.js           # el() builder, sleep, toast, skeleton, embers
+│   ├── api.js          # fetch wrapper → /api/*, offline badge
+│   ├── state.js        # App: locations, weapons, current run
+│   ├── router.js       # hash routes → App.views
+│   ├── picker.js       # location picker (globe replaces this later)
+│   ├── location.js     # story, bosses, NPCs; loadLocation()
+│   ├── characters.js   # character select; weaponChip()
+│   ├── combat.js       # pure combat engine + Run (owned/equipped weapons)
+│   ├── fx.js           # animations, banners, timing ring
+│   ├── battle.js       # bonfire, boss fight UI, ending
+│   └── main.js         # boot
 └── assets/
 ```
 
@@ -83,7 +87,8 @@ Hash routes: `#loc=limgrave` · `#loc=yharnam&char=lone-survivor`.
 2. `api.js` + picker with 3 cards
 3. Location view (story, bosses, NPCs)
 4. Character select + hash routing
-5. Globe spin (next phase)
+5. Boss runs: combat engine, fx, bonfire, ending (done)
+6. Globe spin (next phase)
 
 ## Test checklist
 - [ ] Picker shows 3 locations; each opens its own theme and content

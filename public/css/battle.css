@@ -1,0 +1,123 @@
+.arena { display: grid; gap: 12px; user-select: none; }
+.arena.shake { animation: screenshake .35s; }
+@keyframes screenshake { 20% { transform: translate(-7px, 3px); } 40% { transform: translate(6px, -4px); } 60% { transform: translate(-4px, 2px); } 80% { transform: translate(3px, -2px); } }
+
+.hud { display: grid; gap: 6px; }
+.hud-boss { text-align: center; }
+.hud-boss h2 { margin: 0; font-size: clamp(1.1rem, 3vw, 1.6rem); color: var(--accent-2); }
+.hud-boss .title { color: var(--text-dim); font-size: 13px; font-style: italic; }
+.bar { position: relative; height: 14px; background: #000; border: 1px solid var(--panel-brd); border-radius: 3px; overflow: hidden; }
+.bar .trail, .bar .fill { position: absolute; inset: 0 auto 0 0; width: 100%; }
+.bar .fill { background: linear-gradient(180deg, #e0523f, var(--hp)); transition: width .25s var(--ease); }
+.bar .trail { background: #f3d9c8; transition: width .9s .3s ease-out; }
+.bar.break { height: 7px; }
+.bar.break .fill { background: linear-gradient(180deg, #fbbf24, var(--break)); }
+.bar.break .trail { display: none; }
+.bar.player .fill { background: linear-gradient(180deg, #55c78b, #2f9e63); }
+.bar .num { position: absolute; inset: 0; display: grid; place-items: center; font-size: 11px; text-shadow: 0 0 3px #000; z-index: 1; }
+.tags { display: flex; gap: 8px; justify-content: center; min-height: 22px; }
+.tag { font-size: 11px; letter-spacing: .12em; padding: 1px 9px; border-radius: 99px; border: 1px solid; }
+.tag.broken { color: var(--break); animation: blink .6s infinite; }
+.tag.enraged { color: #ff5a4a; }
+.tag.dot { color: #ff7ab0; }
+
+.stage { position: relative; height: clamp(260px, 42vh, 380px); border-radius: var(--r-md); overflow: hidden; border: 1px solid var(--panel-brd);
+  background: radial-gradient(ellipse at 50% 85%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 60%), linear-gradient(180deg, var(--stage-a), var(--stage-b)); }
+.stage::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, .65)); pointer-events: none; }
+.stage.dim::before { content: ''; position: absolute; inset: 0; background: rgba(0, 0, 0, .55); z-index: 3; animation: fadein .25s; }
+@keyframes fadein { from { opacity: 0; } }
+.ground { position: absolute; left: 0; right: 0; bottom: 0; height: 28%; background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .55)); }
+
+.fighter { position: absolute; bottom: 14%; display: grid; place-items: center; transition: transform .25s var(--ease), opacity .6s, filter .2s; z-index: 2; }
+.fighter .sprite { display: grid; place-items: center; border-radius: 50%; overflow: hidden; background: radial-gradient(circle, rgba(255, 255, 255, .1), rgba(0, 0, 0, .55)); border: 2px solid color-mix(in srgb, var(--accent) 60%, #000); box-shadow: 0 0 30px -6px var(--accent); }
+.fighter .sprite img { width: 100%; height: 100%; object-fit: cover; }
+.fighter.player { left: 12%; }
+.fighter.player .sprite { width: 110px; height: 110px; font-size: 62px; }
+.fighter.boss { right: 12%; }
+.fighter.boss .sprite { width: 170px; height: 170px; font-size: 96px; border-color: var(--hp); box-shadow: 0 0 40px -6px var(--hp); }
+.fighter .shadow { width: 90px; height: 14px; background: radial-gradient(ellipse, rgba(0, 0, 0, .7), transparent 70%); margin-top: 4px; }
+.fighter.player.aura .sprite { box-shadow: 0 0 50px 8px var(--wc, var(--accent)); }
+.fighter.dead { opacity: 0; transform: translateY(24px) scale(.9); filter: grayscale(1) brightness(.4); }
+
+.fighter.windup .sprite { animation: windup .5s ease-in-out infinite alternate; box-shadow: 0 0 55px 4px #ff3b30; }
+@keyframes windup { to { transform: scale(1.07) translateY(-4px); } }
+.fighter.player.lunge { animation: lunge-r .3s var(--ease); }
+.fighter.boss.lunge { animation: lunge-l .35s var(--ease); }
+@keyframes lunge-r { 40% { transform: translateX(min(34vw, 280px)); } 100% { transform: translateX(0); } }
+@keyframes lunge-l { 40% { transform: translateX(max(-34vw, -280px)); } 100% { transform: translateX(0); } }
+.fighter.hit { animation: hitrecoil .3s; }
+.fighter.hit .sprite { filter: brightness(2.2) saturate(.2); }
+@keyframes hitrecoil { 20% { transform: translateX(14px) rotate(3deg); } 50% { transform: translateX(-8px); } }
+.fighter.player.hit { animation: hitrecoil-p .3s; }
+@keyframes hitrecoil-p { 20% { transform: translateX(-14px) rotate(-3deg); } 50% { transform: translateX(8px); } }
+.fighter.dodge { animation: dodge .45s var(--ease); }
+@keyframes dodge { 30% { transform: translateX(-70px) skewX(14deg); opacity: .35; } 100% { transform: translateX(0); opacity: 1; } }
+.fighter.heal .sprite { box-shadow: 0 0 50px 8px #4ade80; }
+.fighter.stagger .sprite { animation: stagger .6s infinite alternate; }
+@keyframes stagger { to { transform: rotate(6deg) translateY(6px); filter: brightness(1.4); } }
+
+/* effects */
+.float { position: absolute; z-index: 6; transform: translate(-50%, 0); font: 900 28px var(--font-title); color: #fff; text-shadow: 0 0 8px #000, 0 2px 0 #000; pointer-events: none; animation: floatup 1.1s ease-out forwards; }
+.float.crit { color: var(--legendary); font-size: 40px; }
+.float.heal { color: var(--good); }
+.float.perfect { color: var(--legendary); font-size: 22px; letter-spacing: .1em; }
+.float.good { color: #fff; font-size: 20px; }
+.float.miss { color: #888; font-size: 20px; }
+.float.parry { color: var(--ap); font-size: 30px; letter-spacing: .1em; }
+.float.player-dmg { color: #ff6b5b; }
+@keyframes floatup { 0% { opacity: 0; margin-top: 10px; scale: .6; } 15% { opacity: 1; scale: 1.15; } 100% { opacity: 0; margin-top: -70px; } }
+.slash { position: absolute; z-index: 5; width: 220px; height: 5px; margin: -2px 0 0 -110px; background: linear-gradient(90deg, transparent, var(--c), #fff, var(--c), transparent); transform: rotate(var(--rot)) scaleX(0); box-shadow: 0 0 18px var(--c); animation: slash .4s ease-out forwards; pointer-events: none; }
+@keyframes slash { 30% { transform: rotate(var(--rot)) scaleX(1); opacity: 1; } 100% { transform: rotate(var(--rot)) scaleX(1.1); opacity: 0; } }
+.spark { position: absolute; z-index: 5; width: 6px; height: 6px; border-radius: 50%; background: var(--c); box-shadow: 0 0 10px var(--c); animation: spark .75s ease-out forwards; pointer-events: none; }
+@keyframes spark { to { transform: translate(var(--dx), var(--dy)) scale(.2); opacity: 0; } }
+.flash { position: absolute; inset: 0; z-index: 7; background: var(--c); opacity: 0; pointer-events: none; animation: flash .3s ease-out; }
+@keyframes flash { 10% { opacity: .55; } 100% { opacity: 0; } }
+
+.banner { position: absolute; inset: 0; z-index: 8; display: grid; place-content: center; text-align: center; pointer-events: none; animation: bannerin 1.4s var(--ease) forwards; background: linear-gradient(90deg, transparent, rgba(0, 0, 0, .75) 20%, rgba(0, 0, 0, .75) 80%, transparent); }
+.banner-title { font: 900 clamp(1.6rem, 6vw, 3.2rem) var(--font-title); letter-spacing: .12em; color: var(--c); text-shadow: 0 0 28px var(--c); }
+.banner-sub { color: var(--text-dim); letter-spacing: .15em; font-size: 13px; text-transform: uppercase; }
+.banner.died .banner-title { color: #b02a2a; letter-spacing: .35em; text-shadow: 0 0 40px #5a0e0e; font-size: clamp(2rem, 9vw, 4.6rem); }
+@keyframes bannerin { 0% { opacity: 0; transform: scaleX(.6); } 15% { opacity: 1; transform: scaleX(1); } 85% { opacity: 1; } 100% { opacity: 0; } }
+
+/* timing ring */
+.tap { position: absolute; inset: 0; z-index: 9; cursor: pointer; }
+.ring { position: absolute; z-index: 6; width: 0; height: 0; pointer-events: none; }
+.ring-core, .ring-outer { position: absolute; border-radius: 50%; translate: -50% -50%; }
+.ring-core { width: 96px; height: 96px; border: 3px solid #fff; box-shadow: 0 0 14px #fff, inset 0 0 14px rgba(255, 255, 255, .4); }
+.ring-outer { width: 96px; height: 96px; border: 4px solid var(--ap); box-shadow: 0 0 16px var(--ap); animation: ringclose linear forwards; }
+.ring.danger .ring-outer { border-color: #ff3b30; box-shadow: 0 0 16px #ff3b30; }
+@keyframes ringclose { from { scale: 3.2; opacity: .2; } to { scale: 1; opacity: 1; } }
+.ring-label { position: absolute; translate: -50% 72px; font: 700 12px var(--font-ui); letter-spacing: .25em; color: #fff; text-shadow: 0 0 6px #000; white-space: nowrap; }
+.ring-hit .ring-core { border-color: var(--legendary); }
+.ring-fade { opacity: .3; }
+
+/* player controls */
+.hud-player { display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; align-items: center; }
+.who { font-family: var(--font-title); color: var(--accent-2); }
+.pips { display: flex; gap: 6px; align-items: center; }
+.pip { width: 16px; height: 16px; rotate: 45deg; border: 1px solid var(--ap); background: transparent; transition: background .2s, box-shadow .2s; }
+.pip.on { background: var(--ap); box-shadow: 0 0 10px var(--ap); }
+.pip.gain { animation: pipgain .5s; }
+@keyframes pipgain { 40% { scale: 1.8; } }
+.menu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.menu .btn { display: grid; gap: 2px; text-align: center; padding: 12px 8px; }
+.menu .btn small { color: var(--text-dim); letter-spacing: .04em; }
+.menu .btn .key { color: var(--accent-2); }
+.menu .skill { --rc: var(--common); border-color: var(--rc); }
+.menu .skill[data-rarity="uncommon"] { --rc: var(--uncommon); }
+.menu .skill[data-rarity="rare"] { --rc: var(--rare); }
+.menu .skill[data-rarity="epic"] { --rc: var(--epic); }
+.menu .skill[data-rarity="legendary"] { --rc: var(--legendary); }
+.menu .skill:hover:not(:disabled) { box-shadow: 0 0 18px -4px var(--rc); border-color: var(--rc); }
+.hint { text-align: center; color: var(--text-dim); font-size: 13px; min-height: 20px; }
+.hint b { color: var(--accent-2); }
+
+.loot { margin: 14px auto; max-width: 420px; animation: lootin .8s var(--ease); }
+.loot .banner-sub { margin-bottom: 8px; text-align: center; }
+@keyframes lootin { from { opacity: 0; transform: translateY(20px) scale(.9); } }
+
+@media (max-width: 600px) {
+  .menu { grid-template-columns: 1fr; }
+  .fighter.boss .sprite { width: 120px; height: 120px; font-size: 64px; }
+  .fighter.player .sprite { width: 84px; height: 84px; font-size: 46px; }
+}

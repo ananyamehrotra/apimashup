@@ -1,0 +1,2 @@
+UI.embers();
+Router.render();
