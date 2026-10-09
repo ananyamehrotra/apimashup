@@ -45,6 +45,18 @@ const EFFECTS = {
     tone(ac, { freq: 110, to: 880, duration: 2.6, type: 'sine', gain: 0.1 });
     tone(ac, { freq: 165, to: 1320, duration: 2.6, type: 'triangle', gain: 0.05 });
   },
+  slash: (ac) => {
+    tone(ac, { freq: 2400, to: 320, duration: 0.14, type: 'sawtooth', gain: 0.06 });
+    tone(ac, { freq: 200, to: 70, duration: 0.18, type: 'triangle', gain: 0.16, start: 0.03 });
+  },
+  special: (ac) =>
+    [392, 523, 698, 932].forEach((freq, i) => tone(ac, { freq, to: freq * 1.6, start: i * 0.06, duration: 0.4, type: 'sawtooth', gain: 0.06 })),
+  guard: (ac) => tone(ac, { freq: 340, to: 190, duration: 0.22, type: 'triangle', gain: 0.2 }),
+  heal: (ac) => [660, 880, 1175].forEach((freq, i) => tone(ac, { freq, start: i * 0.07, duration: 0.3, type: 'sine', gain: 0.08 })),
+  break: (ac) => {
+    tone(ac, { freq: 900, to: 50, duration: 0.8, type: 'square', gain: 0.16 });
+    tone(ac, { freq: 2000, to: 300, duration: 0.35, type: 'sawtooth', gain: 0.07 });
+  },
   blip: (ac) => tone(ac, { freq: 1320, to: 1760, duration: 0.12, type: 'square', gain: 0.04 }),
   reveal: (ac) =>
     [523, 659, 784, 1047].forEach((freq, i) => tone(ac, { freq, start: i * 0.09, duration: 0.5, type: 'triangle' })),
