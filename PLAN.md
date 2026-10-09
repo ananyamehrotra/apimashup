@@ -1,171 +1,96 @@
-# 🌀 ISEKAI: Reincarnation Generator × Battle Cards
+# ⚔️ SOULBOUND: Spin the Globe, Be Reborn in a Lost Land
 
-> **"You died. The globe spins. Where, and who, will you be reborn as… and can you win the duel?"**
+> **"The globe turns. A land calls to you. Choose who you were… and face what waits there."**
 
-1. **Reincarnate:** spin the globe and you're reborn in a real country. Its real data (REST Countries) becomes your **RPG character sheet**. Your stats decide your **class**, the class picks your **anime world**, and a main character from it becomes **your form** (Jikan).
-2. **Battle Cards:** your sheet becomes a **Top Trumps-style fighter card**. Challenge another country (or a judge's spin). Pick a stat; the higher *real* value wins the round, with dramatic shonen narration:
-   *"ULTIMATE MOVE: 1.4 BILLION PEOPLE!"*
-
-The APIs are **chained**, not just sitting side by side:
-```
-Spin → Country (REST) → Stats (percentile-ranked real data) → Class → Jikan genre IDs
-     → Anime world (Jikan genre search) → Main character = your form (Jikan characters)
-     → Party = bordering countries (REST borders) → Battle uses raw REST values
-```
-The same country always gets the same stats and class (deterministic logic).
+1. **Spin the globe** and it lands on a location from a Souls-like world. Each location has its own story, bosses, NPCs and playable characters.
+2. **Choose a character** from that location's roster (e.g. a Vagabond in Limgrave, a Hunter in Yharnam).
+3. **Read the lore, meet the NPCs, face the bosses** of that land.
 
 ---
 
-## Plan files
-| File | Contents |
-|---|---|
-| `PLAN.md` | Overview, features, scope, timeline, rubric mapping, demo script, risks |
-| `BACKEND_PLAN.md` | Express server, stat engine, class rules, Jikan queue, cache, battle engine, fallbacks |
-| `FRONTEND_PLAN.md` | Screens, summon animation, character sheet, fighter cards, battle arena, design system |
-| `API_CONTRACT.md` | Exact JSON shapes between frontend and backend |
+## Scope of this phase
+**Three locations first.** The globe, the full character roster and the combat tuning come after the content exists.
+
+| # | Location | Game | Tone | Data source |
+|---|---|---|---|---|
+| 1 | **Limgrave** | Elden Ring | Open fields, golden Erdtree, ruined castles | Elden Ring Fan API (`eldenring.fanapis.com`) + hand-written story/characters |
+| 2 | **Yharnam** | Bloodborne | Gothic plague city, beasts, cosmic dread | Hand-written local JSON (no public API found) |
+| 3 | **Lothric** | Dark Souls 3 | Dying kingdom, linking the flame, ash | Hand-written local JSON (only a 2017 build-planner API exists, offline when tested) |
+
+Not in this phase: the globe spin, final character art, combat balance, sound, share card.
 
 ---
 
-## Features
+## What every location contains
+```
+Location
+├── id, name, game, tagline, coordinates (placeholder until the globe phase)
+├── story        : 3 short paragraphs (the land's history, the current threat, your reason to be here)
+├── characters[] : 4 playable archetypes (name, backstory, starting stats, signature trait)
+├── bosses[]     : 4 bosses in encounter order (name, title, lore, stats, signature move, optional API id)
+└── npcs[]       : 3–5 NPCs (name, role, location inside the land, one quote or hint)
+```
+The same shape is used for all three games, so the frontend never branches on game.
 
-### 1. 🌍 Summoning (landing)
-Dark-fantasy screen with a glowing rune circle around a 3D globe. Press **REINCARNATE**: the globe spins fast, slows down, and lands on a country, which lights up. White flash, then the sheet reveal.
+---
 
-### 2. 📜 Character Sheet
-| Stat | Source (REST Countries) | Card value (raw, used in battle) | Sheet value |
-|---|---|---|---|
-| ❤️ **HP** Vitality | `population` | 1,428,627,663 | percentile 1–99 |
-| 🛡️ **DEF** Fortitude | `area` km² | 3,287,263 km² | percentile |
-| ✨ **MP** Arcana | number of `languages` | 4 tongues | percentile |
-| 💨 **SPD** Agility | number of `timezones` | 12 zones | percentile |
-| 🤝 **CHA** Alliance | number of `borders` | 14 neighbours | percentile |
-| 🍀 **LUK** Fate | seeded RNG (`cca3` + reroll) | 77 | 1–99 |
+## Starter content (hand-written, to be reviewed for lore accuracy)
 
-Also on the sheet:
-- **Gold** = currency name + symbol
-- **Crest** = `coatOfArms` (falls back to the flag)
-- **Traits** from `landlocked`, island, multilingual and so on
-- **Rarity** (SSR/SR/R/N) from total power
-- **Title:** *"The Archmage of Switzerland, the Beloved"*
+### Limgrave (Elden Ring)
+- **Story:** the Tarnished return to the Lands Between, guided by grace; the shattered Elden Ring has made demigods of the Shardbearers, and Godrick holds Stormveil.
+- **Characters:** Vagabond, Samurai, Astrologer, Prophet.
+- **Bosses:** Tree Sentinel, Margit the Fell Omen, Flying Dragon Agheel, Godrick the Grafted. API supplies Godrick, Agheel and Darriwil; Margit and the Tree Sentinel are checked at build time and hand-written if absent.
+- **NPCs:** Melina, Merchant Kalé (API), Roderika, Varré.
 
-**Class = highest stat → Jikan genres (+ Isekai genre):**
-| Highest | Class | Anime-world genres |
-|---|---|---|
-| HP | ⚔️ Berserker | Action |
-| DEF | 🛡️ Paladin | Fantasy + Military |
-| MP | 🔮 Archmage | Fantasy + Supernatural |
-| SPD | 🗡️ Rogue | Adventure |
-| CHA | 🎻 Bard | Comedy + Romance |
-| island & small | 🏝️ Hermit | Slice of Life |
+### Yharnam (Bloodborne)
+- **Story:** a blood-healing city sliding into a night of beasts; a hunter wakes in the clinic with a contract and no memory.
+- **Characters:** Hunter archetypes: Lone Survivor, Military Veteran, Noble Lineage, Waif.
+- **Bosses:** Cleric Beast, Father Gascoigne, Blood-Starved Beast, Vicar Amelia.
+- **NPCs:** Gehrman, The Doll, Eileen the Crow, Iosefka.
 
-### 3. 🎬 Destiny: anime world + form
-A well-rated anime (score ≥ 7) in your class's genres. A **Main** character from it is your avatar ("reborn as Frieren"). The synopsis is shown as your *origin story*. **Reroll destiny** keeps the country and redraws LUK, the anime and the form.
-
-### 4. 🤝 Party
-Bordering countries appear as ally mini-cards (flag, class, power). Click one to reincarnate as them.
-
-### 5. ⚔️ Battle Cards (Top Trumps duel)
-- Your sheet collapses into a **fighter card**: anime character portrait as the "spirit", country flag, class, 6 stats with raw values.
-- **Opponent:** spin again (a judge plays), pick a party ally, or a random rival.
-- **Rounds (best of 5):** the round's attacker picks a stat. Both raw values are revealed and the higher one wins. The winner of each round picks next (classic Top Trumps). The AI picks its own best percentile stat.
-- **Dramatic narration** from templates, e.g.:
-  - HP: *"ULTIMATE MOVE: 1.4 BILLION PEOPLE!"*
-  - DEF: *"ABSOLUTE TERRITORY: 17 MILLION KM² OF IRON WILL!"*
-  - MP: *"FORBIDDEN CHANT IN 4 TONGUES!"*
-  - SPD: *"TIME-SKIP ACROSS 12 TIMEZONES!"*
-  - CHA: *"SUMMON 14 NEIGHBOURING ALLIES!"*
-  - Close call (< 5% gap): *"…IT'S NEARLY A DRAW, BUT ___ HOLDS!"*
-- Screen shake, damage numbers, a power-up aura on the winning card, and a VICTORY banner with a confetti burst.
-
-### 6. 🖼️ Share card (stretch)
-Download your fighter card as a PNG (images go through the backend proxy so the export works).
+### Lothric (Dark Souls 3)
+- **Story:** the First Flame fades; the Lords of Cinder have abandoned their thrones and an Unkindled must link the flame or let it die.
+- **Characters:** Knight, Herald, Sorcerer, Pyromancer.
+- **Bosses:** Iudex Gundyr, Vordt of the Boreal Valley, Dancer of the Boreal Valley, Dragonslayer Armour.
+- **NPCs:** The Fire Keeper, Andre of Astora, Ludleth of Courland, Yuria of Londor.
 
 ---
 
 ## Architecture
 ```
- Browser (public/)                        Node/Express (server/)                External
-┌──────────────────────────┐  /api/*  ┌──────────────────────────────┐
-│ Summon globe (globe.gl)  │────────▶│ routes → services             │──▶ restcountries.com/v3.1
-│ Character sheet + radar  │         │  • Stat engine (percentiles)  │
-│ Fighter cards + arena    │◀────────│  • Class rules → genre IDs    │──▶ api.jikan.moe/v4
-│ Party, reroll, share     │  JSON    │  • Jikan queue (3 rps)+retry  │
-└──────────────────────────┘         │  • Cache (memory + disk)      │
-                                      │  • Battle engine + narration  │
-                                      │  • Image proxy · snapshots    │
-                                      └──────────────────────────────┘
+ Browser (public/)                    Node/Express (server/)                   External
+┌───────────────────────┐  /api/*  ┌────────────────────────────────┐
+│ Landing + location    │────────▶│ routes → services               │──▶ eldenring.fanapis.com/api
+│ picker (globe later)  │         │  • Location service (merges)    │
+│ Character select      │◀────────│  • Cache (memory + disk)        │
+│ Lore/boss/NPC views   │  JSON    │  • Snapshot fallback            │
+└───────────────────────┘         │  • data/locations/*.json (local)│
+                                   └────────────────────────────────┘
 ```
+Elden Ring lore is merged from the API at boot into the Limgrave record; Yharnam and Lothric come from local JSON only. The API is cached 24h and falls back to a bundled snapshot, so the app works offline.
 
 ---
 
-## Scope
-### MUST ship
-1. Summon spin → country
-2. `/api/reincarnate`: stats, class, traits, anime world, form, party
-3. Character sheet UI (portrait, radar chart, stats, crest, gold, traits, origin story)
-4. **Battle Cards duel**: pick stat → reveal → narration → best of 5 → winner
-5. Reroll, click ally, deep links
-6. Backend queue, cache, retries, snapshot fallback
-
-### Stretch (cut from the bottom)
-- Sound effects
-- Download card PNG (+ image proxy)
-- Battle vs. AI opponent picking smartly (the fallback is the AI picking at random)
-
----
-
-## 90-minute timeline
-| Min | Backend | Frontend |
-|---|---|---|
-| 0–10 | Scaffold, cache, `restCountries` (2 calls merged), `/api/countries` | Shell, tokens, fonts, rune/star background |
-| 10–22 | Stat engine + classes + traits | Globe + spin-and-land animation |
-| 22–38 | Jikan queue + destiny + `/api/reincarnate` | Character sheet: portrait, radar, stats, crest, origin story |
-| 38–50 | Battle engine + narration + `/api/battle` | Party cards, reroll, deep link |
-| 50–65 | Snapshot script + fallback, validation | **Battle arena**: cards, stat pick, reveal, narration, best of 5 |
-| 65–75 | Image proxy (stretch) | Polish: reveal flash, rarity glow, screen shake, mobile, loading/error states |
-| 75–82 | Run snapshot, final test | Share card (stretch), final test |
-| 82–90 | Rehearse demo ×2, buffer | |
-
-**Feature freeze at minute 65.**
-
----
-
-## Rubric mapping
-| Criterion | Marks | What earns it |
-|---|---|---|
-| Tech & API | 25 | 3-hop API chain, percentile stat engine, rate-limited queue + backoff, two-tier cache, server-side battle engine, image proxy, offline snapshots |
-| Product & logic | 20 | Deterministic stats from real data, explainable class rules, traits, rarity, Top Trumps rules, narration from real values |
-| UI/frontend | 20 | Summon globe, dark-fantasy sheet, animated radar, holographic fighter cards, battle effects |
-| UX/usability | 15 | One-button start, reroll, click allies, stat tooltips explaining the source data, deep links, mobile, loading states |
-| Presentation | 20 | A judge spins live and duels us, dramatic narration gets a laugh, offline-safe |
-
----
-
-## Demo script (2 min)
-1. **Hook:** *"Every isekai starts the same way: you die and get reborn somewhere new. We built that from real-world data."*
-2. **Spin**, landing on Switzerland: *"4 official languages, so MP is its highest stat: **Archmage**. Archmages get Fantasy worlds… reborn as **Frieren**."* Hover a stat to show *"Population 8.7M, beats 52% of countries"*.
-3. **Reroll destiny** once: new anime, same stats. *"The stats are real, so only fate changes."*
-4. **"Judge, your turn"**: they spin and land on, say, India. **Battle Cards.**
-5. They pick HP: *"ULTIMATE MOVE: 1.4 BILLION PEOPLE!"* We pick MP and win the round back. Play to the victory banner.
-6. **Close:** *"Three-hop API chain, a rate-limited and cached backend, battles computed server-side, and it all runs offline if the Wi-Fi dies."*
-
----
-
-## Risks & mitigations
-| Risk | Mitigation |
+## Milestones
+| Step | What |
 |---|---|
-| Jikan limits (3/s, 60/min) or downtime | Queue + backoff + cache + full snapshots |
-| REST Countries allows max 10 `fields` | Two calls, merged by `cca3`, cached 24h |
-| Genre search comes back empty | Fallback: class genres + Isekai → class genres → Fantasy top |
-| Character without image | Skip MAL `questionmark` images; fall back to the anime poster |
-| Tiny territories are boring | Spin pool = UN members with population > 0 |
-| Battle stat ties | Tie → compare LUK; still tied → "DRAW", round replayed |
-| Wi-Fi dies | `SNAPSHOT_MODE=1`, vendored CDN libs, OFFLINE badge |
+| 1 | Data schema + JSON for the 3 locations (this doc set) |
+| 2 | Express server: `/api/locations`, `/api/locations/:id` |
+| 3 | Character select + location lore pages (frontend) |
+| 4 | Globe spin that lands on one of the 3 locations |
+| 5 | Boss encounters (open question below) |
+| 6 | More locations, polish, sound |
 
-## Run
+## Open questions
+- **Boss encounters:** the earlier plan had a Top Trumps card duel with narration. Should that carry over as the boss fight (player card vs boss card, stat per round), or become something else?
+- **Globe coordinates:** real-world places that echo each land (e.g. Alpine, Gothic Prague, medieval Spain), or a fictional globe?
+- **Boss stats:** the API often returns `healthPoints: "???"`, so combat stats are hand-written for every boss.
+- **Elden Ring API terms and uptime:** it is a community API; the snapshot fallback covers downtime.
+
+## Run (once step 2 exists)
 ```bash
 npm install
 npm run dev            # http://localhost:3000
-npm run snapshot       # pre-cache all class pools + characters
+npm run snapshot       # cache the Elden Ring API data
 SNAPSHOT_MODE=1 npm start
 ```
