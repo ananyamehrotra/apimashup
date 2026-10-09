@@ -61,19 +61,41 @@ npm run dev
 
 Open http://localhost:5173. Run the unit tests with `npm test`.
 
+Production-style, one process serving the built app and the API:
+
+```bash
+npm run build
+npm start              # http://localhost:3001 (PORT in .env)
+```
+
+## Backend
+
+`server/` is an Express app (`server/app.js`) that `npm run dev` mounts inside Vite and `npm start` runs on its own, so both use the same code:
+
+| Route | What it does |
+| ----- | ------------ |
+| `GET /api/countries` | Every country from REST Countries v5 (3 paginated requests), cached in memory and on disk for 7 days so the free 1000-requests/month tier lasts; retries with backoff; falls back to `server/data/snapshots/countries.json` if REST Countries is down |
+| `GET /api/flag?code=jp` | Flag SVG proxy (the flag CDN sends no CORS header), cached on disk |
+| `GET /api/jikan/*` | Jikan proxy for the five endpoints `src/lib/jikan.js` uses. One server-side queue keeps all visitors under Jikan's limits (≥350 ms apart, ≤58/min), answers are cached 6 h and saved for offline use. If Jikan is down it answers 503 at once for a minute, and the frontend switches to its archive |
+| `GET /api/health` | Key set?, Jikan reachable?, cache stats |
+
+Every API response carries `X-Cache: HIT | MISS | STALE | SNAPSHOT`.
+
+Offline demo: run `npm run snapshot` once while online (saves countries, all flags and Jikan's anime pages for every world genre), then `SNAPSHOT_MODE=1 npm start` never touches the network.
+
 ## Deploy on Vercel
 
 1. Push the repository to GitHub and import it in Vercel (it detects Vite automatically).
 2. In the project's **Settings → Environment Variables**, add `COUNTRY_API` with your REST Countries key.
 3. Deploy.
 
-The key stays on the server: the browser calls `/api/countries` and `/api/flag`, which are small Vercel functions in [api/](api/) that call REST Countries. During `npm run dev`, the same routes are served by a plugin in [vite.config.js](vite.config.js).
+The key stays on the server: the browser calls `/api/countries`, `/api/flag` and `/api/jikan/*`, which are small Vercel functions in [api/](api/) that reuse the services in [server/](server/). During `npm run dev`, the Express app in `server/app.js` serves the same routes through a plugin in [vite.config.js](vite.config.js).
 
 ## Project layout
 
 ```
-api/                  Vercel functions (countries list, flag proxy)
-server/upstream.js    REST Countries calls shared by dev and production
+api/                  Vercel functions (countries list, flag proxy, Jikan proxy)
+server/               Express backend: app.js (routes), index.js (npm start), services/ (REST Countries, Jikan queue, cache, snapshots), data/snapshots/ (offline copies)
 src/
   components/         GlobeView, IntroSequence, StoryMode, HeroBanner, HeroStage, CharacterSheet, OriginStory
   lib/                countries, jikan, worlds, story, spriteForge, statGenerator, sound, music

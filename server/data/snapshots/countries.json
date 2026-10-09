@@ -1,0 +1,9320 @@
+{
+ "savedAt": "2026-10-09T09:25:00.294Z",
+ "data": [
+  {
+   "code": "AFG",
+   "code2": "AF",
+   "name": "Afghanistan",
+   "official": "Islamic Republic of Afghanistan",
+   "capital": "Kabul",
+   "emoji": "🇦🇫",
+   "colors": [
+    "#000000",
+    "#d43e34",
+    "#007e3d"
+   ],
+   "region": "Asia",
+   "subregion": "Southern Asia",
+   "area": 652230,
+   "borders": [
+    "IRN",
+    "PAK",
+    "TKM",
+    "UZB",
+    "TJK",
+    "CHN"
+   ],
+   "lat": 33,
+   "lng": 65,
+   "currencies": [
+    {
+     "code": "AFN",
+     "name": "Afghan afghani",
+     "symbol": "؋"
+    }
+   ],
+   "languages": [
+    "Dari",
+    "Pashto",
+    "Turkmen"
+   ],
+   "population": 43844000,
+   "landlocked": true,
+   "demonym": "Afghan",
+   "blurb": "Afghanistan is a landlocked country in South and Central Asia, crossed by the Hindu Kush range."
+  },
+  {
+   "code": "ALB",
+   "code2": "AL",
+   "name": "Albania",
+   "official": "Republic of Albania",
+   "capital": "Tirana",
+   "emoji": "🇦🇱",
+   "colors": [
+    "#010000",
+    "#ff1419",
+    "#8c0002"
+   ],
+   "region": "Europe",
+   "subregion": "Southeast Europe",
+   "area": 28748,
+   "borders": [
+    "MNE",
+    "GRC",
+    "MKD",
+    "UNK"
+   ],
+   "lat": 41,
+   "lng": 20,
+   "currencies": [
+    {
+     "code": "ALL",
+     "name": "Albanian lek",
+     "symbol": "L"
+    }
+   ],
+   "languages": [
+    "Albanian"
+   ],
+   "population": 2335930,
+   "landlocked": false,
+   "demonym": "Albanian",
+   "blurb": "Albania is a parliamentary republic in the western Balkans, on the Adriatic and Ionian seas."
+  },
+  {
+   "code": "DZA",
+   "code2": "DZ",
+   "name": "Algeria",
+   "official": "People's Democratic Republic of Algeria",
+   "capital": "Algiers",
+   "emoji": "🇩🇿",
+   "colors": [
+    "#fbfaf5",
+    "#d0143e",
+    "#006733"
+   ],
+   "region": "Africa",
+   "subregion": "Northern Africa",
+   "area": 2381741,
+   "borders": [
+    "TUN",
+    "LBY",
+    "NER",
+    "ESH",
+    "MRT",
+    "MLI",
+    "MAR"
+   ],
+   "lat": 28,
+   "lng": 3,
+   "currencies": [
+    {
+     "code": "DZD",
+     "name": "Algerian dinar",
+     "symbol": "د.ج"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 47400000,
+   "landlocked": false,
+   "demonym": "Algerian",
+   "blurb": "Algeria is the largest country in Africa by area, on the Mediterranean with the Sahara to its south."
+  },
+  {
+   "code": "ASM",
+   "code2": "AS",
+   "name": "American Samoa",
+   "official": "American Samoa",
+   "capital": "Pago Pago",
+   "emoji": "🇦🇸",
+   "colors": [
+    "#030266",
+    "#c7380c",
+    "#f8f6f0"
+   ],
+   "region": "Oceania",
+   "subregion": "Polynesia",
+   "area": 199,
+   "borders": [],
+   "lat": -14.33333333,
+   "lng": -170,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Samoan"
+   ],
+   "population": 43268,
+   "landlocked": false,
+   "demonym": "American Samoan",
+   "blurb": "American Samoa is an unincorporated United States territory made up of five islands and two atolls."
+  },
+  {
+   "code": "AND",
+   "code2": "AD",
+   "name": "Andorra",
+   "official": "Principality of Andorra",
+   "capital": "Andorra la Vella",
+   "emoji": "🇦🇩",
+   "colors": [
+    "#0707a3",
+    "#d20541",
+    "#ffda11"
+   ],
+   "region": "Europe",
+   "subregion": "Southern Europe",
+   "area": 468,
+   "borders": [
+    "FRA",
+    "ESP"
+   ],
+   "lat": 42.5,
+   "lng": 1.5,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Catalan"
+   ],
+   "population": 90105,
+   "landlocked": true,
+   "demonym": "Andorran",
+   "blurb": "Andorra is a small landlocked principality in the eastern Pyrenees, bordered by France and Spain."
+  },
+  {
+   "code": "AGO",
+   "code2": "AO",
+   "name": "Angola",
+   "official": "Republic of Angola",
+   "capital": "Luanda",
+   "emoji": "🇦🇴",
+   "colors": [
+    "#000000",
+    "#d31114",
+    "#facd00"
+   ],
+   "region": "Africa",
+   "subregion": "Middle Africa",
+   "area": 1246700,
+   "borders": [
+    "COG",
+    "COD",
+    "ZMB",
+    "NAM"
+   ],
+   "lat": -12.5,
+   "lng": 18.5,
+   "currencies": [
+    {
+     "code": "AOA",
+     "name": "Angolan kwanza",
+     "symbol": "Kz"
+    }
+   ],
+   "languages": [
+    "Portuguese"
+   ],
+   "population": 38778554,
+   "landlocked": false,
+   "demonym": "Angolan",
+   "blurb": "Angola is a republic on the Atlantic coast of southern Africa, bordering Namibia and Zambia."
+  },
+  {
+   "code": "AIA",
+   "code2": "AI",
+   "name": "Anguilla",
+   "official": "Anguilla",
+   "capital": "The Valley",
+   "emoji": "🇦🇮",
+   "colors": [
+    "#0c226c",
+    "#b40a0e",
+    "#e79a6c"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 91,
+   "borders": [],
+   "lat": 18.25,
+   "lng": -63.16666666,
+   "currencies": [
+    {
+     "code": "XCD",
+     "name": "Eastern Caribbean dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 16010,
+   "landlocked": false,
+   "demonym": "Anguillian",
+   "blurb": "Anguilla is a British overseas territory at the northern end of the eastern Caribbean chain."
+  },
+  {
+   "code": "ATA",
+   "code2": "AQ",
+   "name": "Antarctica",
+   "official": "Antarctica",
+   "capital": null,
+   "emoji": "🇦🇶",
+   "colors": [
+    "#fcfbf7",
+    "#00a3dd",
+    "#e5f5fb"
+   ],
+   "region": "Antarctic",
+   "subregion": "",
+   "area": 14000000,
+   "borders": [],
+   "lat": -90,
+   "lng": 0,
+   "currencies": [],
+   "languages": [],
+   "population": 1300,
+   "landlocked": false,
+   "demonym": "Antarctican",
+   "blurb": "Antarctica is the southernmost continent, governed by treaty rather than by any single state."
+  },
+  {
+   "code": "ATG",
+   "code2": "AG",
+   "name": "Antigua and Barbuda",
+   "official": "Antigua and Barbuda",
+   "capital": "Saint John's",
+   "emoji": "🇦🇬",
+   "colors": [
+    "#000000",
+    "#d30f1c",
+    "#fbe9ad"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 442,
+   "borders": [],
+   "lat": 17.05,
+   "lng": -61.8,
+   "currencies": [
+    {
+     "code": "XCD",
+     "name": "Eastern Caribbean dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 106365,
+   "landlocked": false,
+   "demonym": "Antiguan, Barbudan",
+   "blurb": "Antigua and Barbuda is a Caribbean state made up of two main islands and several smaller ones."
+  },
+  {
+   "code": "ARG",
+   "code2": "AR",
+   "name": "Argentina",
+   "official": "Argentine Republic",
+   "capital": "Buenos Aires",
+   "emoji": "🇦🇷",
+   "colors": [
+    "#74b1e1",
+    "#c17f2c",
+    "#faf9f4"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 2780400,
+   "borders": [
+    "BOL",
+    "BRA",
+    "CHL",
+    "PRY",
+    "URY"
+   ],
+   "lat": -34,
+   "lng": -64,
+   "currencies": [
+    {
+     "code": "ARS",
+     "name": "Argentine peso",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Guarani",
+    "Spanish"
+   ],
+   "population": 46466688,
+   "landlocked": false,
+   "demonym": "Argentine",
+   "blurb": "Argentina is a federal republic across southern South America, from the Andes to the Atlantic."
+  },
+  {
+   "code": "ARM",
+   "code2": "AM",
+   "name": "Armenia",
+   "official": "Republic of Armenia",
+   "capital": "Yerevan",
+   "emoji": "🇦🇲",
+   "colors": [
+    "#feaa04",
+    "#d80000",
+    "#1535a5"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 29743,
+   "borders": [
+    "AZE",
+    "GEO",
+    "IRN",
+    "TUR"
+   ],
+   "lat": 40,
+   "lng": 45,
+   "currencies": [
+    {
+     "code": "AMD",
+     "name": "Armenian dram",
+     "symbol": "֏"
+    }
+   ],
+   "languages": [
+    "Armenian"
+   ],
+   "population": 3103900,
+   "landlocked": true,
+   "demonym": "Armenian",
+   "blurb": "Armenia is a landlocked South Caucasus republic bordering Turkey, Georgia, Azerbaijan and Iran."
+  },
+  {
+   "code": "ABW",
+   "code2": "AW",
+   "name": "Aruba",
+   "official": "Aruba",
+   "capital": "Oranjestad",
+   "emoji": "🇦🇼",
+   "colors": [
+    "#fcc300",
+    "#448fe0",
+    "#368ef1"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 180,
+   "borders": [],
+   "lat": 12.5,
+   "lng": -69.96666666,
+   "currencies": [
+    {
+     "code": "AWG",
+     "name": "Aruban florin",
+     "symbol": "ƒ"
+    }
+   ],
+   "languages": [
+    "Dutch",
+    "Papiamento"
+   ],
+   "population": 110625,
+   "landlocked": false,
+   "demonym": "Aruban",
+   "blurb": "Aruba is a constituent country of the Kingdom of the Netherlands, north of the Venezuelan coast."
+  },
+  {
+   "code": "AUS",
+   "code2": "AU",
+   "name": "Australia",
+   "official": "Commonwealth of Australia",
+   "capital": "Canberra",
+   "emoji": "🇦🇺",
+   "colors": [
+    "#0c226c",
+    "#d30e12",
+    "#f39562"
+   ],
+   "region": "Oceania",
+   "subregion": "Australia and New Zealand",
+   "area": 7692024,
+   "borders": [],
+   "lat": -27,
+   "lng": 133,
+   "currencies": [
+    {
+     "code": "AUD",
+     "name": "Australian dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 27921150,
+   "landlocked": false,
+   "demonym": "Australian",
+   "blurb": "Australia is a federal country covering its own continent, Tasmania and many smaller islands."
+  },
+  {
+   "code": "AUT",
+   "code2": "AT",
+   "name": "Austria",
+   "official": "Republic of Austria",
+   "capital": "Vienna",
+   "emoji": "🇦🇹",
+   "colors": [
+    "#ffffff",
+    "#c8102d",
+    "#c60d2c"
+   ],
+   "region": "Europe",
+   "subregion": "Central Europe",
+   "area": 83871,
+   "borders": [
+    "CZE",
+    "DEU",
+    "HUN",
+    "ITA",
+    "LIE",
+    "SVK",
+    "SVN",
+    "CHE"
+   ],
+   "lat": 47.33333333,
+   "lng": 13.33333333,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "German"
+   ],
+   "population": 9217573,
+   "landlocked": true,
+   "demonym": "Austrian",
+   "blurb": "Austria is a landlocked federal republic in Central Europe, most of it lying within the Alps."
+  },
+  {
+   "code": "AZE",
+   "code2": "AZ",
+   "name": "Azerbaijan",
+   "official": "Republic of Azerbaijan",
+   "capital": "Baku",
+   "emoji": "🇦🇿",
+   "colors": [
+    "#00b29a",
+    "#ea3231",
+    "#fcfbf7"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 86600,
+   "borders": [
+    "ARM",
+    "GEO",
+    "IRN",
+    "RUS",
+    "TUR"
+   ],
+   "lat": 40.5,
+   "lng": 47.5,
+   "currencies": [
+    {
+     "code": "AZN",
+     "name": "Azerbaijani manat",
+     "symbol": "₼"
+    }
+   ],
+   "languages": [
+    "Azerbaijani"
+   ],
+   "population": 10273450,
+   "landlocked": true,
+   "demonym": "Azerbaijani",
+   "blurb": "Azerbaijan is a South Caucasus republic on the Caspian Sea, bordering Iran, Russia and Georgia."
+  },
+  {
+   "code": "BHS",
+   "code2": "BS",
+   "name": "Bahamas",
+   "official": "Commonwealth of the Bahamas",
+   "capital": "Nassau",
+   "emoji": "🇧🇸",
+   "colors": [
+    "#08748d",
+    "#5d926c",
+    "#ffc628"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 13943,
+   "borders": [],
+   "lat": 25.0343,
+   "lng": -77.3963,
+   "currencies": [
+    {
+     "code": "BSD",
+     "name": "Bahamian dollar",
+     "symbol": "$"
+    },
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 398165,
+   "landlocked": false,
+   "demonym": "Bahamian",
+   "blurb": "The Bahamas is an archipelago of hundreds of islands and cays southeast of the United States."
+  },
+  {
+   "code": "BHR",
+   "code2": "BH",
+   "name": "Bahrain",
+   "official": "Kingdom of Bahrain",
+   "capital": "Manama",
+   "emoji": "🇧🇭",
+   "colors": [
+    "#fcfbf7",
+    "#dd231f",
+    "#fcecec"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 765,
+   "borders": [],
+   "lat": 26,
+   "lng": 50.55,
+   "currencies": [
+    {
+     "code": "BHD",
+     "name": "Bahraini dinar",
+     "symbol": ".د.ب"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 1603260,
+   "landlocked": false,
+   "demonym": "Bahraini",
+   "blurb": "Bahrain is an island state in the Persian Gulf, linked to Saudi Arabia by a road causeway."
+  },
+  {
+   "code": "BGD",
+   "code2": "BD",
+   "name": "Bangladesh",
+   "official": "People's Republic of Bangladesh",
+   "capital": "Dhaka",
+   "emoji": "🇧🇩",
+   "colors": [
+    "#126647",
+    "#f9342d",
+    "#974645"
+   ],
+   "region": "Asia",
+   "subregion": "Southern Asia",
+   "area": 147570,
+   "borders": [
+    "MMR",
+    "IND"
+   ],
+   "lat": 24,
+   "lng": 90,
+   "currencies": [
+    {
+     "code": "BDT",
+     "name": "Bangladeshi taka",
+     "symbol": "৳"
+    }
+   ],
+   "languages": [
+    "Bengali"
+   ],
+   "population": 169828911,
+   "landlocked": false,
+   "demonym": "Bangladeshi",
+   "blurb": "Bangladesh is a South Asian republic on the Bay of Bengal, on the Ganges and Brahmaputra delta."
+  },
+  {
+   "code": "BRB",
+   "code2": "BB",
+   "name": "Barbados",
+   "official": "Barbados",
+   "capital": "Bridgetown",
+   "emoji": "🇧🇧",
+   "colors": [
+    "#0d2784",
+    "#00737b",
+    "#ffc52a"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 430,
+   "borders": [],
+   "lat": 13.16666666,
+   "lng": -59.53333333,
+   "currencies": [
+    {
+     "code": "BBD",
+     "name": "Barbadian dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 261692,
+   "landlocked": false,
+   "demonym": "Barbadian",
+   "blurb": "Barbados is an island country in the Lesser Antilles, the easternmost of the Caribbean states."
+  },
+  {
+   "code": "BLR",
+   "code2": "BY",
+   "name": "Belarus",
+   "official": "Republic of Belarus",
+   "capital": "Minsk",
+   "emoji": "🇧🇾",
+   "colors": [
+    "#007d3b",
+    "#cd1f1c",
+    "#fae7e0"
+   ],
+   "region": "Europe",
+   "subregion": "Eastern Europe",
+   "area": 207600,
+   "borders": [
+    "LVA",
+    "LTU",
+    "POL",
+    "RUS",
+    "UKR"
+   ],
+   "lat": 53,
+   "lng": 28,
+   "currencies": [
+    {
+     "code": "BYN",
+     "name": "Belarusian ruble",
+     "symbol": "Br"
+    }
+   ],
+   "languages": [
+    "Belarusian",
+    "Russian"
+   ],
+   "population": 9056080,
+   "landlocked": true,
+   "demonym": "Belarusian",
+   "blurb": "Belarus is a landlocked republic bordered by Russia, Ukraine, Poland, Lithuania and Latvia."
+  },
+  {
+   "code": "BEL",
+   "code2": "BE",
+   "name": "Belgium",
+   "official": "Kingdom of Belgium",
+   "capital": "Brussels",
+   "emoji": "🇧🇪",
+   "colors": [
+    "#000000",
+    "#ef343f",
+    "#fbda24"
+   ],
+   "region": "Europe",
+   "subregion": "Western Europe",
+   "area": 30528,
+   "borders": [
+    "FRA",
+    "DEU",
+    "LUX",
+    "NLD"
+   ],
+   "lat": 50.83333333,
+   "lng": 4,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "German",
+    "French",
+    "Dutch"
+   ],
+   "population": 11942772,
+   "landlocked": false,
+   "demonym": "Belgian",
+   "blurb": "Belgium is a federal constitutional monarchy in Western Europe, with three self-governing regions."
+  },
+  {
+   "code": "BLZ",
+   "code2": "BZ",
+   "name": "Belize",
+   "official": "Belize",
+   "capital": "Belmopan",
+   "emoji": "🇧🇿",
+   "colors": [
+    "#071a96",
+    "#cf2710",
+    "#f3f0e3"
+   ],
+   "region": "Americas",
+   "subregion": "Central America",
+   "area": 22966,
+   "borders": [
+    "GTM",
+    "MEX"
+   ],
+   "lat": 17.25,
+   "lng": -88.75,
+   "currencies": [
+    {
+     "code": "BZD",
+     "name": "Belize dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Belize Kriol",
+    "English",
+    "Spanish"
+   ],
+   "population": 418982,
+   "landlocked": false,
+   "demonym": "Belizean",
+   "blurb": "Belize is a Central American country on the Caribbean coast, between Mexico and Guatemala."
+  },
+  {
+   "code": "BEN",
+   "code2": "BJ",
+   "name": "Benin",
+   "official": "Republic of Benin",
+   "capital": "Porto-Novo",
+   "emoji": "🇧🇯",
+   "colors": [
+    "#1d8649",
+    "#e31316",
+    "#f5d000"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 112622,
+   "borders": [
+    "BFA",
+    "NER",
+    "NGA",
+    "TGO"
+   ],
+   "lat": 9.5,
+   "lng": 2.25,
+   "currencies": [
+    {
+     "code": "XOF",
+     "name": "West African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 13551992,
+   "landlocked": false,
+   "demonym": "Beninese",
+   "blurb": "Benin is a West African republic running north from a short coastline on the Gulf of Guinea."
+  },
+  {
+   "code": "BMU",
+   "code2": "BM",
+   "name": "Bermuda",
+   "official": "Bermuda",
+   "capital": "Hamilton",
+   "emoji": "🇧🇲",
+   "colors": [
+    "#f6eddf",
+    "#c30d19",
+    "#0f2b70"
+   ],
+   "region": "Americas",
+   "subregion": "North America",
+   "area": 54,
+   "borders": [],
+   "lat": 32.33333333,
+   "lng": -64.75,
+   "currencies": [
+    {
+     "code": "BMD",
+     "name": "Bermudian dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 64055,
+   "landlocked": false,
+   "demonym": "Bermudian",
+   "blurb": "Bermuda is a British overseas territory in the North Atlantic, east of the United States mainland."
+  },
+  {
+   "code": "BTN",
+   "code2": "BT",
+   "name": "Bhutan",
+   "official": "Kingdom of Bhutan",
+   "capital": "Thimphu",
+   "emoji": "🇧🇹",
+   "colors": [
+    "#f7cd00",
+    "#ff6527",
+    "#e5e0d9"
+   ],
+   "region": "Asia",
+   "subregion": "Southern Asia",
+   "area": 38394,
+   "borders": [
+    "CHN",
+    "IND"
+   ],
+   "lat": 27.5,
+   "lng": 90.5,
+   "currencies": [
+    {
+     "code": "BTN",
+     "name": "Bhutanese ngultrum",
+     "symbol": "Nu."
+    },
+    {
+     "code": "INR",
+     "name": "Indian rupee",
+     "symbol": "₹"
+    }
+   ],
+   "languages": [
+    "Dzongkha"
+   ],
+   "population": 790718,
+   "landlocked": true,
+   "demonym": "Bhutanese",
+   "blurb": "Bhutan is a landlocked kingdom in the eastern Himalayas, sitting between China and India."
+  },
+  {
+   "code": "BOL",
+   "code2": "BO",
+   "name": "Bolivia",
+   "official": "Plurinational State of Bolivia",
+   "capital": "Sucre",
+   "emoji": "🇧🇴",
+   "colors": [
+    "#007335",
+    "#cd2519",
+    "#ebe130"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 1098581,
+   "borders": [
+    "ARG",
+    "BRA",
+    "CHL",
+    "PRY",
+    "PER"
+   ],
+   "lat": -17,
+   "lng": -65,
+   "currencies": [
+    {
+     "code": "BOB",
+     "name": "Bolivian boliviano",
+     "symbol": "Bs."
+    }
+   ],
+   "languages": [
+    "Aymara",
+    "Guarani",
+    "Quechua",
+    "Spanish"
+   ],
+   "population": 11365333,
+   "landlocked": true,
+   "demonym": "Bolivian",
+   "blurb": "Bolivia is a landlocked republic in central South America, spanning the Andes and the Amazon."
+  },
+  {
+   "code": "BIH",
+   "code2": "BA",
+   "name": "Bosnia and Herzegovina",
+   "official": "Bosnia and Herzegovina",
+   "capital": "Sarajevo",
+   "emoji": "🇧🇦",
+   "colors": [
+    "#092090",
+    "#a08d38",
+    "#f5d000"
+   ],
+   "region": "Europe",
+   "subregion": "Southeast Europe",
+   "area": 51209,
+   "borders": [
+    "HRV",
+    "MNE",
+    "SRB"
+   ],
+   "lat": 44,
+   "lng": 18,
+   "currencies": [
+    {
+     "code": "BAM",
+     "name": "Bosnia and Herzegovina convertible mark",
+     "symbol": "KM"
+    }
+   ],
+   "languages": [
+    "Bosnian",
+    "Croatian",
+    "Serbian"
+   ],
+   "population": 3412000,
+   "landlocked": false,
+   "demonym": "Bosnian, Herzegovinian",
+   "blurb": "Bosnia and Herzegovina is a Balkan republic made up of two entities and one self-governing district."
+  },
+  {
+   "code": "BWA",
+   "code2": "BW",
+   "name": "Botswana",
+   "official": "Republic of Botswana",
+   "capital": "Gaborone",
+   "emoji": "🇧🇼",
+   "colors": [
+    "#72a7cf",
+    "#000000",
+    "#e0dfda"
+   ],
+   "region": "Africa",
+   "subregion": "Southern Africa",
+   "area": 582000,
+   "borders": [
+    "NAM",
+    "ZAF",
+    "ZMB",
+    "ZWE"
+   ],
+   "lat": -22,
+   "lng": 24,
+   "currencies": [
+    {
+     "code": "BWP",
+     "name": "Botswana pula",
+     "symbol": "P"
+    }
+   ],
+   "languages": [
+    "English",
+    "Tswana"
+   ],
+   "population": 2515633,
+   "landlocked": true,
+   "demonym": "Motswana",
+   "blurb": "Botswana is a landlocked republic in Southern Africa, much of it in the Kalahari Desert basin."
+  },
+  {
+   "code": "BVT",
+   "code2": "BV",
+   "name": "Bouvet Island",
+   "official": "Bouvet Island",
+   "capital": null,
+   "emoji": "🇧🇻",
+   "colors": [
+    "#081c5c",
+    "#bd1b3e",
+    "#fdfbf6"
+   ],
+   "region": "Antarctic",
+   "subregion": "",
+   "area": 49,
+   "borders": [],
+   "lat": -54.4208,
+   "lng": 3.3464,
+   "currencies": [],
+   "languages": [
+    "Norwegian"
+   ],
+   "population": 0,
+   "landlocked": false,
+   "demonym": null,
+   "blurb": "Bouvet Island is an uninhabited, glacier-covered volcanic island held by Norway as a dependency."
+  },
+  {
+   "code": "BRA",
+   "code2": "BR",
+   "name": "Brazil",
+   "official": "Federative Republic of Brazil",
+   "capital": "Brasília",
+   "emoji": "🇧🇷",
+   "colors": [
+    "#f4d00f",
+    "#009544",
+    "#2e2e86"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 8515767,
+   "borders": [
+    "ARG",
+    "BOL",
+    "COL",
+    "GUF",
+    "GUY",
+    "PRY",
+    "PER",
+    "SUR",
+    "URY",
+    "VEN"
+   ],
+   "lat": -10,
+   "lng": -55,
+   "currencies": [
+    {
+     "code": "BRL",
+     "name": "Brazilian real",
+     "symbol": "R$"
+    }
+   ],
+   "languages": [
+    "Portuguese"
+   ],
+   "population": 214211951,
+   "landlocked": false,
+   "demonym": "Brazilian",
+   "blurb": "Brazil is a federal republic covering nearly half of South America and most of the Amazon basin."
+  },
+  {
+   "code": "IOT",
+   "code2": "IO",
+   "name": "British Indian Ocean Territory",
+   "official": "British Indian Ocean Territory",
+   "capital": "Diego Garcia",
+   "emoji": "🇮🇴",
+   "colors": [
+    "#0c226c",
+    "#c3161d",
+    "#f8f4ed"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 60,
+   "borders": [],
+   "lat": -6,
+   "lng": 71.5,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 2000,
+   "landlocked": false,
+   "demonym": "Indian",
+   "blurb": "The British Indian Ocean Territory is the Chagos Archipelago in the central Indian Ocean."
+  },
+  {
+   "code": "VGB",
+   "code2": "VG",
+   "name": "British Virgin Islands",
+   "official": "Virgin Islands",
+   "capital": "Road Town",
+   "emoji": "🇻🇬",
+   "colors": [
+    "#0c226c",
+    "#dc8a59",
+    "#0e5f2b"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 151,
+   "borders": [],
+   "lat": 18.431383,
+   "lng": -64.62305,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 38984,
+   "landlocked": false,
+   "demonym": "Virgin Islander",
+   "blurb": "The British Virgin Islands are a British overseas territory in the northeast Caribbean Sea."
+  },
+  {
+   "code": "BRN",
+   "code2": "BN",
+   "name": "Brunei",
+   "official": "Nation of Brunei, the Abode of Peace",
+   "capital": "Bandar Seri Begawan",
+   "emoji": "🇧🇳",
+   "colors": [
+    "#ebe12c",
+    "#ce2a14",
+    "#faf8f4"
+   ],
+   "region": "Asia",
+   "subregion": "South-Eastern Asia",
+   "area": 5765,
+   "borders": [
+    "MYS"
+   ],
+   "lat": 4.5,
+   "lng": 114.66666666,
+   "currencies": [
+    {
+     "code": "BND",
+     "name": "Brunei dollar",
+     "symbol": "$"
+    },
+    {
+     "code": "SGD",
+     "name": "Singapore dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Malay"
+   ],
+   "population": 458600,
+   "landlocked": false,
+   "demonym": "Bruneian",
+   "blurb": "Brunei is a sovereign sultanate on the north coast of Borneo, split in two by Malaysian land."
+  },
+  {
+   "code": "BGR",
+   "code2": "BG",
+   "name": "Bulgaria",
+   "official": "Republic of Bulgaria",
+   "capital": "Sofia",
+   "emoji": "🇧🇬",
+   "colors": [
+    "#fcfbf7",
+    "#da3028",
+    "#24986f"
+   ],
+   "region": "Europe",
+   "subregion": "Southeast Europe",
+   "area": 110879,
+   "borders": [
+    "GRC",
+    "MKD",
+    "ROU",
+    "SRB",
+    "TUR"
+   ],
+   "lat": 43,
+   "lng": 25,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Bulgarian"
+   ],
+   "population": 6423207,
+   "landlocked": false,
+   "demonym": "Bulgarian",
+   "blurb": "Bulgaria is a republic in southeastern Europe on the Black Sea coast, south of the Danube river."
+  },
+  {
+   "code": "BFA",
+   "code2": "BF",
+   "name": "Burkina Faso",
+   "official": "Burkina Faso",
+   "capital": "Ouagadougou",
+   "emoji": "🇧🇫",
+   "colors": [
+    "#009f4e",
+    "#ef2824",
+    "#f5d000"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 272967,
+   "borders": [
+    "BEN",
+    "CIV",
+    "GHA",
+    "MLI",
+    "NER",
+    "TGO"
+   ],
+   "lat": 13,
+   "lng": -2,
+   "currencies": [
+    {
+     "code": "XOF",
+     "name": "West African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 22489126,
+   "landlocked": true,
+   "demonym": "Burkinabe",
+   "blurb": "Burkina Faso is a landlocked West African country bordered by Mali, Niger, Benin, Togo and Ghana."
+  },
+  {
+   "code": "BDI",
+   "code2": "BI",
+   "name": "Burundi",
+   "official": "Republic of Burundi",
+   "capital": "Gitega",
+   "emoji": "🇧🇮",
+   "colors": [
+    "#faf9f3",
+    "#4ab12c",
+    "#c30d19"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 27834,
+   "borders": [
+    "COD",
+    "RWA",
+    "TZA"
+   ],
+   "lat": -3.5,
+   "lng": 30,
+   "currencies": [
+    {
+     "code": "BIF",
+     "name": "Burundian franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French",
+    "Rundi"
+   ],
+   "population": 12332788,
+   "landlocked": true,
+   "demonym": "Burundian",
+   "blurb": "Burundi is a landlocked East African republic bordering Rwanda, Tanzania and the DR Congo."
+  },
+  {
+   "code": "CPV",
+   "code2": "CV",
+   "name": "Cabo Verde",
+   "official": "Republic of Cabo Verde",
+   "capital": "Praia",
+   "emoji": "🇨🇻",
+   "colors": [
+    "#1b3a97",
+    "#ce241f",
+    "#fcfaf5"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 4033,
+   "borders": [],
+   "lat": 16.5388,
+   "lng": -23.0418,
+   "currencies": [
+    {
+     "code": "CVE",
+     "name": "Cape Verdean escudo",
+     "symbol": "Esc"
+    }
+   ],
+   "languages": [
+    "Portuguese"
+   ],
+   "population": 491233,
+   "landlocked": false,
+   "demonym": "Cape Verdian",
+   "blurb": "Cabo Verde is an Atlantic archipelago of ten volcanic islands off the west coast of Africa."
+  },
+  {
+   "code": "KHM",
+   "code2": "KH",
+   "name": "Cambodia",
+   "official": "Kingdom of Cambodia",
+   "capital": "Phnom Penh",
+   "emoji": "🇰🇭",
+   "colors": [
+    "#0c27a0",
+    "#e20d1e",
+    "#e8e6e2"
+   ],
+   "region": "Asia",
+   "subregion": "South-Eastern Asia",
+   "area": 181035,
+   "borders": [
+    "LAO",
+    "THA",
+    "VNM"
+   ],
+   "lat": 13,
+   "lng": 105,
+   "currencies": [
+    {
+     "code": "KHR",
+     "name": "Cambodian riel",
+     "symbol": "៛"
+    },
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Khmer"
+   ],
+   "population": 17816143,
+   "landlocked": false,
+   "demonym": "Cambodian",
+   "blurb": "Cambodia is a Southeast Asian kingdom on the Gulf of Thailand, along the lower Mekong river."
+  },
+  {
+   "code": "CMR",
+   "code2": "CM",
+   "name": "Cameroon",
+   "official": "Republic of Cameroon",
+   "capital": "Yaoundé",
+   "emoji": "🇨🇲",
+   "colors": [
+    "#007c63",
+    "#d31114",
+    "#f6d000"
+   ],
+   "region": "Africa",
+   "subregion": "Middle Africa",
+   "area": 475442,
+   "borders": [
+    "CAF",
+    "TCD",
+    "COG",
+    "GNQ",
+    "GAB",
+    "NGA"
+   ],
+   "lat": 6,
+   "lng": 12,
+   "currencies": [
+    {
+     "code": "XAF",
+     "name": "Central African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "English",
+    "French"
+   ],
+   "population": 29442327,
+   "landlocked": false,
+   "demonym": "Cameroonian",
+   "blurb": "Cameroon is a republic on the Gulf of Guinea in Central Africa, bordering Nigeria and Chad."
+  },
+  {
+   "code": "CAN",
+   "code2": "CA",
+   "name": "Canada",
+   "official": "Canada",
+   "capital": "Ottawa",
+   "emoji": "🇨🇦",
+   "colors": [
+    "#fcfaf5",
+    "#ff181b",
+    "#ff8d94"
+   ],
+   "region": "Americas",
+   "subregion": "North America",
+   "area": 9984670,
+   "borders": [
+    "USA"
+   ],
+   "lat": 60,
+   "lng": -95,
+   "currencies": [
+    {
+     "code": "CAD",
+     "name": "Canadian dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "French"
+   ],
+   "population": 41798407,
+   "landlocked": false,
+   "demonym": "Canadian",
+   "blurb": "Canada is a federal parliamentary state in northern North America, second in the world by area."
+  },
+  {
+   "code": "BES",
+   "code2": "BQ",
+   "name": "Caribbean Netherlands",
+   "official": "Bonaire, Sint Eustatius and Saba",
+   "capital": "Kralendijk",
+   "emoji": "🇧🇶",
+   "colors": [
+    "#14308c",
+    "#d20040",
+    "#fbfaf5"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 328,
+   "borders": [],
+   "lat": 12.18,
+   "lng": -68.25,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Dutch",
+    "Papiamento"
+   ],
+   "population": 31980,
+   "landlocked": false,
+   "demonym": "Dutch",
+   "blurb": "The Caribbean Netherlands is made up of three Dutch islands: Bonaire, Saba and Sint Eustatius."
+  },
+  {
+   "code": "CYM",
+   "code2": "KY",
+   "name": "Cayman Islands",
+   "official": "Cayman Islands",
+   "capital": "George Town",
+   "emoji": "🇰🇾",
+   "colors": [
+    "#09246d",
+    "#de8a57",
+    "#dbdce9"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 264,
+   "borders": [],
+   "lat": 19.3133,
+   "lng": -81.2546,
+   "currencies": [
+    {
+     "code": "KYD",
+     "name": "Cayman Islands dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 90577,
+   "landlocked": false,
+   "demonym": "Caymanian",
+   "blurb": "The Cayman Islands are a British overseas territory made up of three islands in the western Caribbean."
+  },
+  {
+   "code": "CAF",
+   "code2": "CF",
+   "name": "Central African Republic",
+   "official": "Central African Republic",
+   "capital": "Bangui",
+   "emoji": "🇨🇫",
+   "colors": [
+    "#f2cd00",
+    "#379200",
+    "#fbfaf5"
+   ],
+   "region": "Africa",
+   "subregion": "Middle Africa",
+   "area": 622984,
+   "borders": [
+    "CMR",
+    "TCD",
+    "COD",
+    "COG",
+    "SSD",
+    "SDN"
+   ],
+   "lat": 7,
+   "lng": 21,
+   "currencies": [
+    {
+     "code": "XAF",
+     "name": "Central African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French",
+    "Sango"
+   ],
+   "population": 5513282,
+   "landlocked": true,
+   "demonym": "Central African",
+   "blurb": "The Central African Republic is a landlocked state at the centre of the African continent."
+  },
+  {
+   "code": "TCD",
+   "code2": "TD",
+   "name": "Chad",
+   "official": "Republic of Chad",
+   "capital": "N'Djamena",
+   "emoji": "🇹🇩",
+   "colors": [
+    "#002664",
+    "#c60b30",
+    "#fecb05"
+   ],
+   "region": "Africa",
+   "subregion": "Middle Africa",
+   "area": 1284000,
+   "borders": [
+    "CMR",
+    "CAF",
+    "LBY",
+    "NER",
+    "NGA",
+    "SDN"
+   ],
+   "lat": 15,
+   "lng": 19,
+   "currencies": [
+    {
+     "code": "XAF",
+     "name": "Central African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "Arabic",
+    "French"
+   ],
+   "population": 20031602,
+   "landlocked": true,
+   "demonym": "Chadian",
+   "blurb": "Chad is a landlocked republic in north-central Africa, with the Sahara across its northern third."
+  },
+  {
+   "code": "CHL",
+   "code2": "CL",
+   "name": "Chile",
+   "official": "Republic of Chile",
+   "capital": "Santiago",
+   "emoji": "🇨🇱",
+   "colors": [
+    "#fcfbf7",
+    "#de2521",
+    "#1636a4"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 756102,
+   "borders": [
+    "ARG",
+    "BOL",
+    "PER"
+   ],
+   "lat": -30,
+   "lng": -71,
+   "currencies": [
+    {
+     "code": "CLP",
+     "name": "Chilean peso",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 20150948,
+   "landlocked": false,
+   "demonym": "Chilean",
+   "blurb": "Chile is a republic along the western edge of South America, between the Andes and the Pacific."
+  },
+  {
+   "code": "CHN",
+   "code2": "CN",
+   "name": "China",
+   "official": "People's Republic of China",
+   "capital": "Beijing",
+   "emoji": "🇨🇳",
+   "colors": [
+    "#fff100",
+    "#ee2421",
+    "#f54424"
+   ],
+   "region": "Asia",
+   "subregion": "Eastern Asia",
+   "area": 9706961,
+   "borders": [
+    "AFG",
+    "BTN",
+    "MMR",
+    "HKG",
+    "IND",
+    "KAZ",
+    "NPL",
+    "PRK",
+    "KGZ",
+    "LAO",
+    "MAC",
+    "MNG",
+    "PAK",
+    "RUS",
+    "TJK",
+    "VNM"
+   ],
+   "lat": 35,
+   "lng": 105,
+   "currencies": [
+    {
+     "code": "CNY",
+     "name": "Chinese yuan",
+     "symbol": "¥"
+    }
+   ],
+   "languages": [
+    "Chinese"
+   ],
+   "population": 1404890000,
+   "landlocked": false,
+   "demonym": "Chinese",
+   "blurb": "China is an East Asian state, third in the world by land area, bordering fourteen countries."
+  },
+  {
+   "code": "CXR",
+   "code2": "CX",
+   "name": "Christmas Island",
+   "official": "Territory of Christmas Island",
+   "capital": "Flying Fish Cove",
+   "emoji": "🇨🇽",
+   "colors": [
+    "#08236c",
+    "#41b31c",
+    "#f6d43c"
+   ],
+   "region": "Oceania",
+   "subregion": "Australia and New Zealand",
+   "area": 135,
+   "borders": [],
+   "lat": -10.5,
+   "lng": 105.66666666,
+   "currencies": [
+    {
+     "code": "AUD",
+     "name": "Australian dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 1692,
+   "landlocked": false,
+   "demonym": "Christmas Islander",
+   "blurb": "Christmas Island is an Australian external territory in the Indian Ocean, south of Indonesia."
+  },
+  {
+   "code": "CCK",
+   "code2": "CC",
+   "name": "Cocos (Keeling) Islands",
+   "official": "Territory of the Cocos (Keeling) Islands",
+   "capital": "West Island",
+   "emoji": "🇨🇨",
+   "colors": [
+    "#ffda00",
+    "#057f00",
+    "#e0dd0f"
+   ],
+   "region": "Oceania",
+   "subregion": "Australia and New Zealand",
+   "area": 14,
+   "borders": [],
+   "lat": -12.1642,
+   "lng": 96.871,
+   "currencies": [
+    {
+     "code": "AUD",
+     "name": "Australian dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 593,
+   "landlocked": false,
+   "demonym": "Cocos Islander",
+   "blurb": "The Cocos Islands are an Australian external territory of two atolls in the Indian Ocean."
+  },
+  {
+   "code": "COL",
+   "code2": "CO",
+   "name": "Colombia",
+   "official": "Republic of Colombia",
+   "capital": "Bogotá",
+   "emoji": "🇨🇴",
+   "colors": [
+    "#f6d000",
+    "#c10a18",
+    "#15318d"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 1141748,
+   "borders": [
+    "BRA",
+    "ECU",
+    "PAN",
+    "PER",
+    "VEN"
+   ],
+   "lat": 4,
+   "lng": -72,
+   "currencies": [
+    {
+     "code": "COP",
+     "name": "Colombian peso",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 53399171,
+   "landlocked": false,
+   "demonym": "Colombian",
+   "blurb": "Colombia is a republic in northwestern South America, with Caribbean and Pacific coastlines."
+  },
+  {
+   "code": "COM",
+   "code2": "KM",
+   "name": "Comoros",
+   "official": "Union of the Comoros",
+   "capital": "Moroni",
+   "emoji": "🇰🇲",
+   "colors": [
+    "#1636a3",
+    "#ea3526",
+    "#f5d000"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 1862,
+   "borders": [],
+   "lat": -12.16666666,
+   "lng": 44.25,
+   "currencies": [
+    {
+     "code": "KMF",
+     "name": "Comorian franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "Arabic",
+    "French",
+    "Ngazidja Comorian"
+   ],
+   "population": 944388,
+   "landlocked": false,
+   "demonym": "Comoran",
+   "blurb": "The Comoros is an archipelago republic in the Indian Ocean between Mozambique and Madagascar."
+  },
+  {
+   "code": "COG",
+   "code2": "CG",
+   "name": "Congo",
+   "official": "Republic of the Congo",
+   "capital": "Brazzaville",
+   "emoji": "🇨🇬",
+   "colors": [
+    "#009449",
+    "#df2420",
+    "#fada4e"
+   ],
+   "region": "Africa",
+   "subregion": "Middle Africa",
+   "area": 342000,
+   "borders": [
+    "AGO",
+    "CMR",
+    "CAF",
+    "COD",
+    "GAB"
+   ],
+   "lat": -1,
+   "lng": 15,
+   "currencies": [
+    {
+     "code": "XAF",
+     "name": "Central African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French",
+    "Kongo",
+    "Lingala"
+   ],
+   "population": 6332961,
+   "landlocked": false,
+   "demonym": "Congolese",
+   "blurb": "The Congo is a republic on the Atlantic coast of Central Africa, west of the Congo river."
+  },
+  {
+   "code": "COK",
+   "code2": "CK",
+   "name": "Cook Islands",
+   "official": "Cook Islands",
+   "capital": "Avarua",
+   "emoji": "🇨🇰",
+   "colors": [
+    "#0c226c",
+    "#e39469",
+    "#e1e0eb"
+   ],
+   "region": "Oceania",
+   "subregion": "Polynesia",
+   "area": 236,
+   "borders": [],
+   "lat": -21.23333333,
+   "lng": -159.76666666,
+   "currencies": [
+    {
+     "code": "CKD",
+     "name": "Cook Islands dollar",
+     "symbol": "$"
+    },
+    {
+     "code": "NZD",
+     "name": "New Zealand dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Cook Islands Maori"
+   ],
+   "population": 15040,
+   "landlocked": false,
+   "demonym": "Cook Islander",
+   "blurb": "The Cook Islands are a self-governing South Pacific state of fifteen islands, linked to New Zealand."
+  },
+  {
+   "code": "CRI",
+   "code2": "CR",
+   "name": "Costa Rica",
+   "official": "Republic of Costa Rica",
+   "capital": "San José",
+   "emoji": "🇨🇷",
+   "colors": [
+    "#061686",
+    "#dc2521",
+    "#fbfaf5"
+   ],
+   "region": "Americas",
+   "subregion": "Central America",
+   "area": 51100,
+   "borders": [
+    "NIC",
+    "PAN"
+   ],
+   "lat": 10,
+   "lng": -84,
+   "currencies": [
+    {
+     "code": "CRC",
+     "name": "Costa Rican colón",
+     "symbol": "₡"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 5160700,
+   "landlocked": false,
+   "demonym": "Costa Rican",
+   "blurb": "Costa Rica is a Central American republic between Nicaragua and Panama, with two coastlines."
+  },
+  {
+   "code": "HRV",
+   "code2": "HR",
+   "name": "Croatia",
+   "official": "Republic of Croatia",
+   "capital": "Zagreb",
+   "emoji": "🇭🇷",
+   "colors": [
+    "#092099",
+    "#ff1c28",
+    "#fcfaf4"
+   ],
+   "region": "Europe",
+   "subregion": "Southeast Europe",
+   "area": 56594,
+   "borders": [
+    "BIH",
+    "HUN",
+    "MNE",
+    "SRB",
+    "SVN"
+   ],
+   "lat": 45.16666666,
+   "lng": 15.5,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Croatian"
+   ],
+   "population": 3874993,
+   "landlocked": false,
+   "demonym": "Croatian",
+   "blurb": "Croatia is a republic curving from Central Europe along an island-dotted Adriatic coastline."
+  },
+  {
+   "code": "CUB",
+   "code2": "CU",
+   "name": "Cuba",
+   "official": "Republic of Cuba",
+   "capital": "Havana",
+   "emoji": "🇨🇺",
+   "colors": [
+    "#102d93",
+    "#cd2023",
+    "#fbfaf5"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 109884,
+   "borders": [],
+   "lat": 21.5,
+   "lng": -80,
+   "currencies": [
+    {
+     "code": "CUP",
+     "name": "Cuban peso",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 9434593,
+   "landlocked": false,
+   "demonym": "Cuban",
+   "blurb": "Cuba is a single-party socialist republic on the largest island in the Caribbean, south of Florida."
+  },
+  {
+   "code": "CUW",
+   "code2": "CW",
+   "name": "Curaçao",
+   "official": "Country of Curaçao",
+   "capital": "Willemstad",
+   "emoji": "🇨🇼",
+   "colors": [
+    "#10297c",
+    "#425c9c",
+    "#f6ee1d"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 444,
+   "borders": [],
+   "lat": 12.116667,
+   "lng": -68.933333,
+   "currencies": [
+    {
+     "code": "XCG",
+     "name": "Caribbean guilder",
+     "symbol": "Cg"
+    }
+   ],
+   "languages": [
+    "English",
+    "Dutch",
+    "Papiamento"
+   ],
+   "population": 155826,
+   "landlocked": false,
+   "demonym": "Curaçaoan",
+   "blurb": "Curaçao is a constituent country of the Kingdom of the Netherlands, north of the Venezuelan coast."
+  },
+  {
+   "code": "CYP",
+   "code2": "CY",
+   "name": "Cyprus",
+   "official": "Republic of Cyprus",
+   "capital": "Nicosia",
+   "emoji": "🇨🇾",
+   "colors": [
+    "#fbfaf5",
+    "#d87d00",
+    "#4b592b"
+   ],
+   "region": "Europe",
+   "subregion": "Southern Europe",
+   "area": 9251,
+   "borders": [],
+   "lat": 35,
+   "lng": 33,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Greek",
+    "Turkish"
+   ],
+   "population": 983000,
+   "landlocked": false,
+   "demonym": "Cypriot",
+   "blurb": "Cyprus is an island republic in the eastern Mediterranean, split by a ceasefire line since 1974."
+  },
+  {
+   "code": "CZE",
+   "code2": "CZ",
+   "name": "Czechia",
+   "official": "Czech Republic",
+   "capital": "Prague",
+   "emoji": "🇨🇿",
+   "colors": [
+    "#fcfbf7",
+    "#d30e12",
+    "#17477d"
+   ],
+   "region": "Europe",
+   "subregion": "Central Europe",
+   "area": 78865,
+   "borders": [
+    "AUT",
+    "DEU",
+    "POL",
+    "SVK"
+   ],
+   "lat": 49.75,
+   "lng": 15.5,
+   "currencies": [
+    {
+     "code": "CZK",
+     "name": "Czech koruna",
+     "symbol": "Kč"
+    }
+   ],
+   "languages": [
+    "Czech",
+    "Slovak"
+   ],
+   "population": 10903655,
+   "landlocked": true,
+   "demonym": "Czech",
+   "blurb": "Czechia is a landlocked republic in Central Europe, bordering Germany, Poland and Austria."
+  },
+  {
+   "code": "COD",
+   "code2": "CD",
+   "name": "DRC",
+   "official": "Democratic Republic of the Congo",
+   "capital": "Kinshasa",
+   "emoji": "🇨🇩",
+   "colors": [
+    "#d21415",
+    "#0080f9",
+    "#fcd615"
+   ],
+   "region": "Africa",
+   "subregion": "Middle Africa",
+   "area": 2344858,
+   "borders": [
+    "AGO",
+    "BDI",
+    "CAF",
+    "COG",
+    "RWA",
+    "SSD",
+    "TZA",
+    "UGA",
+    "ZMB"
+   ],
+   "lat": 0,
+   "lng": 25,
+   "currencies": [
+    {
+     "code": "CDF",
+     "name": "Congolese franc",
+     "symbol": "FC"
+    }
+   ],
+   "languages": [
+    "French",
+    "Kongo",
+    "Lingala",
+    "Luba-Lulua",
+    "Swahili"
+   ],
+   "population": 116452000,
+   "landlocked": false,
+   "demonym": "Congolese",
+   "blurb": "The Democratic Republic of the Congo is a Central African state across most of the Congo basin."
+  },
+  {
+   "code": "DNK",
+   "code2": "DK",
+   "name": "Denmark",
+   "official": "Kingdom of Denmark",
+   "capital": "Copenhagen",
+   "emoji": "🇩🇰",
+   "colors": [
+    "#fcfbf7",
+    "#c30c10",
+    "#f5d6d9"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 43094,
+   "borders": [
+    "DEU"
+   ],
+   "lat": 56,
+   "lng": 10,
+   "currencies": [
+    {
+     "code": "DKK",
+     "name": "Danish krone",
+     "symbol": "kr"
+    }
+   ],
+   "languages": [
+    "Danish"
+   ],
+   "population": 6032304,
+   "landlocked": false,
+   "demonym": "Danish",
+   "blurb": "Denmark is a Nordic constitutional monarchy on the Jutland peninsula and many nearby islands."
+  },
+  {
+   "code": "DJI",
+   "code2": "DJ",
+   "name": "Djibouti",
+   "official": "Republic of Djibouti",
+   "capital": "Djibouti",
+   "emoji": "🇩🇯",
+   "colors": [
+    "#6cb2e7",
+    "#2ca913",
+    "#fbfaf5"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 23200,
+   "borders": [
+    "ERI",
+    "ETH",
+    "SOM"
+   ],
+   "lat": 11.5,
+   "lng": 43,
+   "currencies": [
+    {
+     "code": "DJF",
+     "name": "Djiboutian franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "Arabic",
+    "French"
+   ],
+   "population": 1066809,
+   "landlocked": false,
+   "demonym": "Djibouti",
+   "blurb": "Djibouti is a republic on the Horn of Africa at the southern entrance to the Red Sea, by Ethiopia."
+  },
+  {
+   "code": "DMA",
+   "code2": "DM",
+   "name": "Dominica",
+   "official": "Commonwealth of Dominica",
+   "capital": "Roseau",
+   "emoji": "🇩🇲",
+   "colors": [
+    "#0b6832",
+    "#ca0a3a",
+    "#f3e49e"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 751,
+   "borders": [],
+   "lat": 15.41666666,
+   "lng": -61.33333333,
+   "currencies": [
+    {
+     "code": "XCD",
+     "name": "Eastern Caribbean dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 65514,
+   "landlocked": false,
+   "demonym": "Dominican",
+   "blurb": "Dominica is a mountainous island republic in the Lesser Antilles, between Guadeloupe and Martinique."
+  },
+  {
+   "code": "DOM",
+   "code2": "DO",
+   "name": "Dominican Republic",
+   "official": "Dominican Republic",
+   "capital": "Santo Domingo",
+   "emoji": "🇩🇴",
+   "colors": [
+    "#002c60",
+    "#d10b1b",
+    "#fbfaf5"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 48671,
+   "borders": [
+    "HTI"
+   ],
+   "lat": 19,
+   "lng": -70.66666666,
+   "currencies": [
+    {
+     "code": "DOP",
+     "name": "Dominican peso",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 11532151,
+   "landlocked": false,
+   "demonym": "Dominican",
+   "blurb": "The Dominican Republic is a state covering the eastern two-thirds of Hispaniola in the Caribbean."
+  },
+  {
+   "code": "ECU",
+   "code2": "EC",
+   "name": "Ecuador",
+   "official": "Republic of Ecuador",
+   "capital": "Quito",
+   "emoji": "🇪🇨",
+   "colors": [
+    "#ffd915",
+    "#ec320a",
+    "#004ca0"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 276841,
+   "borders": [
+    "COL",
+    "PER"
+   ],
+   "lat": -2,
+   "lng": -77.5,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 18135478,
+   "landlocked": false,
+   "demonym": "Ecuadorean",
+   "blurb": "Ecuador is a republic on the Pacific coast of South America, crossed by the equator and Andes."
+  },
+  {
+   "code": "EGY",
+   "code2": "EG",
+   "name": "Egypt",
+   "official": "Arab Republic of Egypt",
+   "capital": "Cairo",
+   "emoji": "🇪🇬",
+   "colors": [
+    "#000000",
+    "#d31114",
+    "#f9f7f0"
+   ],
+   "region": "Africa",
+   "subregion": "Northern Africa",
+   "area": 1002450,
+   "borders": [
+    "ISR",
+    "LBY",
+    "PSE",
+    "SDN"
+   ],
+   "lat": 27,
+   "lng": 30,
+   "currencies": [
+    {
+     "code": "EGP",
+     "name": "Egyptian pound",
+     "symbol": "ج.م"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 108613296,
+   "landlocked": false,
+   "demonym": "Egyptian",
+   "blurb": "Egypt is a republic joining northeast Africa to the Sinai Peninsula, astride the Suez Canal."
+  },
+  {
+   "code": "SLV",
+   "code2": "SV",
+   "name": "El Salvador",
+   "official": "Republic of El Salvador",
+   "capital": "San Salvador",
+   "emoji": "🇸🇻",
+   "colors": [
+    "#2042a8",
+    "#388e2b",
+    "#faf9f2"
+   ],
+   "region": "Americas",
+   "subregion": "Central America",
+   "area": 21041,
+   "borders": [
+    "GTM",
+    "HND"
+   ],
+   "lat": 13.83333333,
+   "lng": -88.91666666,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 6029976,
+   "landlocked": false,
+   "demonym": "Salvadoran",
+   "blurb": "El Salvador is the smallest Central American republic by area, lying on the Pacific coast."
+  },
+  {
+   "code": "GNQ",
+   "code2": "GQ",
+   "name": "Equatorial Guinea",
+   "official": "Republic of Equatorial Guinea",
+   "capital": "Malabo",
+   "emoji": "🇬🇶",
+   "colors": [
+    "#e21014",
+    "#3c9c1f",
+    "#faf9f4"
+   ],
+   "region": "Africa",
+   "subregion": "Middle Africa",
+   "area": 28051,
+   "borders": [
+    "CMR",
+    "GAB"
+   ],
+   "lat": 2,
+   "lng": 10,
+   "currencies": [
+    {
+     "code": "XAF",
+     "name": "Central African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French",
+    "Portuguese",
+    "Spanish"
+   ],
+   "population": 1795834,
+   "landlocked": false,
+   "demonym": "Equatorial Guinean",
+   "blurb": "Equatorial Guinea is a Central African republic made up of a mainland region and islands."
+  },
+  {
+   "code": "ERI",
+   "code2": "ER",
+   "name": "Eritrea",
+   "official": "State of Eritrea",
+   "capital": "Asmara",
+   "emoji": "🇪🇷",
+   "colors": [
+    "#e21618",
+    "#42b230",
+    "#488ee0"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 117600,
+   "borders": [
+    "DJI",
+    "ETH",
+    "SDN"
+   ],
+   "lat": 15,
+   "lng": 39,
+   "currencies": [
+    {
+     "code": "ERN",
+     "name": "Eritrean nakfa",
+     "symbol": "Nfk"
+    }
+   ],
+   "languages": [
+    "Arabic",
+    "English",
+    "Tigrinya"
+   ],
+   "population": 3682669,
+   "landlocked": false,
+   "demonym": "Eritrean",
+   "blurb": "Eritrea is a republic on the Red Sea coast of the Horn of Africa, north of Ethiopia and Djibouti."
+  },
+  {
+   "code": "EST",
+   "code2": "EE",
+   "name": "Estonia",
+   "official": "Republic of Estonia",
+   "capital": "Tallinn",
+   "emoji": "🇪🇪",
+   "colors": [
+    "#fcfbf7",
+    "#0e70d0",
+    "#000000"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 45227,
+   "borders": [
+    "LVA",
+    "RUS"
+   ],
+   "lat": 59,
+   "lng": 26,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Estonian"
+   ],
+   "population": 1360745,
+   "landlocked": false,
+   "demonym": "Estonian",
+   "blurb": "Estonia is a Baltic republic on the Gulf of Finland, bordering Russia and Latvia across flat terrain."
+  },
+  {
+   "code": "SWZ",
+   "code2": "SZ",
+   "name": "Eswatini",
+   "official": "Kingdom of Eswatini",
+   "capital": "Mbabane",
+   "emoji": "🇸🇿",
+   "colors": [
+    "#3f61b8",
+    "#ae190f",
+    "#fce079"
+   ],
+   "region": "Africa",
+   "subregion": "Southern Africa",
+   "area": 17364,
+   "borders": [
+    "MOZ",
+    "ZAF"
+   ],
+   "lat": -26.5,
+   "lng": 31.5,
+   "currencies": [
+    {
+     "code": "SZL",
+     "name": "Swazi lilangeni",
+     "symbol": "L"
+    },
+    {
+     "code": "ZAR",
+     "name": "South African rand",
+     "symbol": "R"
+    }
+   ],
+   "languages": [
+    "English",
+    "Swazi"
+   ],
+   "population": 1235549,
+   "landlocked": true,
+   "demonym": "Swazi",
+   "blurb": "Eswatini is a landlocked kingdom in Southern Africa, between South Africa and Mozambique."
+  },
+  {
+   "code": "ETH",
+   "code2": "ET",
+   "name": "Ethiopia",
+   "official": "Federal Democratic Republic of Ethiopia",
+   "capital": "Addis Ababa",
+   "emoji": "🇪🇹",
+   "colors": [
+    "#00893e",
+    "#dd231f",
+    "#ffda11"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 1104300,
+   "borders": [
+    "DJI",
+    "ERI",
+    "KEN",
+    "SOM",
+    "SSD",
+    "SDN"
+   ],
+   "lat": 8,
+   "lng": 38,
+   "currencies": [
+    {
+     "code": "ETB",
+     "name": "Ethiopian birr",
+     "symbol": "Br"
+    }
+   ],
+   "languages": [
+    "Amharic"
+   ],
+   "population": 111652998,
+   "landlocked": true,
+   "demonym": "Ethiopian",
+   "blurb": "Ethiopia is a landlocked federal republic in the Horn of Africa, on a high interior plateau."
+  },
+  {
+   "code": "FLK",
+   "code2": "FK",
+   "name": "Falkland Islands",
+   "official": "Falkland Islands",
+   "capital": "Stanley",
+   "emoji": "🇫🇰",
+   "colors": [
+    "#08236c",
+    "#377beb",
+    "#de916b"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 12173,
+   "borders": [],
+   "lat": -51.75,
+   "lng": -59,
+   "currencies": [
+    {
+     "code": "FKP",
+     "name": "Falkland Islands pound",
+     "symbol": "£"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 3662,
+   "landlocked": false,
+   "demonym": "Falkland Islander",
+   "blurb": "The Falkland Islands are a British overseas territory east of the southern tip of South America."
+  },
+  {
+   "code": "FRO",
+   "code2": "FO",
+   "name": "Faroe Islands",
+   "official": "Faroe Islands",
+   "capital": "Tórshavn",
+   "emoji": "🇫🇴",
+   "colors": [
+    "#fcfbf7",
+    "#ea3332",
+    "#376ebf"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 1393,
+   "borders": [],
+   "lat": 62,
+   "lng": -7,
+   "currencies": [
+    {
+     "code": "DKK",
+     "name": "Danish krone",
+     "symbol": "kr"
+    },
+    {
+     "code": "FOK",
+     "name": "Faroese króna",
+     "symbol": "kr"
+    }
+   ],
+   "languages": [
+    "Danish",
+    "Faroese"
+   ],
+   "population": 56210,
+   "landlocked": false,
+   "demonym": "Faroese",
+   "blurb": "The Faroe Islands are a self-governing archipelago of eighteen islands within the Danish realm."
+  },
+  {
+   "code": "FJI",
+   "code2": "FJ",
+   "name": "Fiji",
+   "official": "Republic of Fiji",
+   "capital": "Suva",
+   "emoji": "🇫🇯",
+   "colors": [
+    "#5db6e0",
+    "#00a04a",
+    "#dd8359"
+   ],
+   "region": "Oceania",
+   "subregion": "Melanesia",
+   "area": 18272,
+   "borders": [],
+   "lat": -17.7134,
+   "lng": 178.065,
+   "currencies": [
+    {
+     "code": "FJD",
+     "name": "Fijian dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Fijian",
+    "Fiji Hindi"
+   ],
+   "population": 902623,
+   "landlocked": false,
+   "demonym": "Fijian",
+   "blurb": "Fiji is an archipelago republic of more than 300 South Pacific islands, north of New Zealand."
+  },
+  {
+   "code": "FIN",
+   "code2": "FI",
+   "name": "Finland",
+   "official": "Republic of Finland",
+   "capital": "Helsinki",
+   "emoji": "🇫🇮",
+   "colors": [
+    "#fcfbf7",
+    "#003370",
+    "#e1e7ef"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 338424,
+   "borders": [
+    "NOR",
+    "SWE",
+    "RUS"
+   ],
+   "lat": 64,
+   "lng": 26,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Finnish",
+    "Swedish"
+   ],
+   "population": 5659324,
+   "landlocked": false,
+   "demonym": "Finnish",
+   "blurb": "Finland is a Nordic republic between Sweden and Russia, with thousands of lakes and forest."
+  },
+  {
+   "code": "FRA",
+   "code2": "FR",
+   "name": "France",
+   "official": "French Republic",
+   "capital": "Paris",
+   "emoji": "🇫🇷",
+   "colors": [
+    "#002654",
+    "#ce1023",
+    "#ffffff"
+   ],
+   "region": "Europe",
+   "subregion": "Western Europe",
+   "area": 551695,
+   "borders": [
+    "AND",
+    "BEL",
+    "DEU",
+    "ITA",
+    "LUX",
+    "MCO",
+    "ESP",
+    "CHE"
+   ],
+   "lat": 46,
+   "lng": 2,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 69081996,
+   "landlocked": false,
+   "demonym": "French",
+   "blurb": "France is a republic in Western Europe with overseas regions on three continents and in the Pacific."
+  },
+  {
+   "code": "GUF",
+   "code2": "GF",
+   "name": "French Guiana",
+   "official": "Guiana",
+   "capital": "Cayenne",
+   "emoji": "🇬🇫",
+   "colors": [
+    "#ffd90b",
+    "#00893d",
+    "#dd1d1b"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 83534,
+   "borders": [
+    "BRA",
+    "SUR"
+   ],
+   "lat": 4,
+   "lng": -53,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 254541,
+   "landlocked": false,
+   "demonym": "Guianan",
+   "blurb": "French Guiana is an overseas department of France on the northeast coast of South America."
+  },
+  {
+   "code": "PYF",
+   "code2": "PF",
+   "name": "French Polynesia",
+   "official": "French Polynesia",
+   "capital": "Papeetē",
+   "emoji": "🇵🇫",
+   "colors": [
+    "#fbfaf5",
+    "#d10f1c",
+    "#6d8fc7"
+   ],
+   "region": "Oceania",
+   "subregion": "Polynesia",
+   "area": 4167,
+   "borders": [],
+   "lat": -17.6797,
+   "lng": -149.4068,
+   "currencies": [
+    {
+     "code": "XPF",
+     "name": "CFP franc",
+     "symbol": "₣"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 278786,
+   "landlocked": false,
+   "demonym": "French Polynesian",
+   "blurb": "French Polynesia is an overseas collectivity of France spread across the South Pacific Ocean."
+  },
+  {
+   "code": "ATF",
+   "code2": "TF",
+   "name": "French Southern and Antarctic Lands",
+   "official": "Territory of the French Southern and Antarctic Lands",
+   "capital": "Port-aux-Français",
+   "emoji": "🇹🇫",
+   "colors": [
+    "#2a4895",
+    "#e8322b",
+    "#f9f6ec"
+   ],
+   "region": "Antarctic",
+   "subregion": "",
+   "area": 7747,
+   "borders": [],
+   "lat": -49.25,
+   "lng": 69.167,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 400,
+   "landlocked": false,
+   "demonym": "French",
+   "blurb": "The French Southern and Antarctic Lands are a French territory in the southern Indian Ocean."
+  },
+  {
+   "code": "GAB",
+   "code2": "GA",
+   "name": "Gabon",
+   "official": "Gabonese Republic",
+   "capital": "Libreville",
+   "emoji": "🇬🇦",
+   "colors": [
+    "#f5d000",
+    "#279c57",
+    "#2b72c2"
+   ],
+   "region": "Africa",
+   "subregion": "Middle Africa",
+   "area": 267668,
+   "borders": [
+    "CMR",
+    "COG",
+    "GNQ"
+   ],
+   "lat": -1,
+   "lng": 11.75,
+   "currencies": [
+    {
+     "code": "XAF",
+     "name": "Central African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 2469296,
+   "landlocked": false,
+   "demonym": "Gabonese",
+   "blurb": "Gabon is a republic on the Atlantic coast of Central Africa, on the equator and heavily forested."
+  },
+  {
+   "code": "GMB",
+   "code2": "GM",
+   "name": "Gambia",
+   "official": "Republic of the Gambia",
+   "capital": "Banjul",
+   "emoji": "🇬🇲",
+   "colors": [
+    "#367a2c",
+    "#d31114",
+    "#081e8f"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 10689,
+   "borders": [
+    "SEN"
+   ],
+   "lat": 13.46666666,
+   "lng": -16.56666666,
+   "currencies": [
+    {
+     "code": "GMD",
+     "name": "Gambian dalasi",
+     "symbol": "D"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 2422712,
+   "landlocked": false,
+   "demonym": "Gambian",
+   "blurb": "The Gambia is a West African republic on a narrow strip of river land enclosed by Senegal."
+  },
+  {
+   "code": "GEO",
+   "code2": "GE",
+   "name": "Georgia",
+   "official": "Georgia",
+   "capital": "Tbilisi",
+   "emoji": "🇬🇪",
+   "colors": [
+    "#fcfbf7",
+    "#ff181b",
+    "#fff1f1"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 69700,
+   "borders": [
+    "ARM",
+    "AZE",
+    "RUS",
+    "TUR"
+   ],
+   "lat": 42,
+   "lng": 43.5,
+   "currencies": [
+    {
+     "code": "GEL",
+     "name": "Georgian lari",
+     "symbol": "₾"
+    }
+   ],
+   "languages": [
+    "Georgian"
+   ],
+   "population": 3657000,
+   "landlocked": false,
+   "demonym": "Georgian",
+   "blurb": "Georgia is a South Caucasus republic on the eastern Black Sea coast, south of the Russian border."
+  },
+  {
+   "code": "DEU",
+   "code2": "DE",
+   "name": "Germany",
+   "official": "Federal Republic of Germany",
+   "capital": "Berlin",
+   "emoji": "🇩🇪",
+   "colors": [
+    "#000000",
+    "#e21014",
+    "#f6d000"
+   ],
+   "region": "Europe",
+   "subregion": "Western Europe",
+   "area": 357114,
+   "borders": [
+    "AUT",
+    "BEL",
+    "CZE",
+    "DNK",
+    "FRA",
+    "LUX",
+    "NLD",
+    "POL",
+    "CHE"
+   ],
+   "lat": 51,
+   "lng": 9,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "German"
+   ],
+   "population": 83298787,
+   "landlocked": false,
+   "demonym": "German",
+   "blurb": "Germany is a federal parliamentary republic in Central Europe and the most populous EU state."
+  },
+  {
+   "code": "GHA",
+   "code2": "GH",
+   "name": "Ghana",
+   "official": "Republic of Ghana",
+   "capital": "Accra",
+   "emoji": "🇬🇭",
+   "colors": [
+    "#1c6736",
+    "#d31114",
+    "#f8ce00"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 238533,
+   "borders": [
+    "BFA",
+    "CIV",
+    "TGO"
+   ],
+   "lat": 8,
+   "lng": -2,
+   "currencies": [
+    {
+     "code": "GHS",
+     "name": "Ghanaian cedi",
+     "symbol": "₵"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 34378768,
+   "landlocked": false,
+   "demonym": "Ghanaian",
+   "blurb": "Ghana is a West African republic on the Gulf of Guinea, bordering Ivory Coast, Burkina Faso and Togo."
+  },
+  {
+   "code": "GIB",
+   "code2": "GI",
+   "name": "Gibraltar",
+   "official": "Gibraltar",
+   "capital": "Gibraltar",
+   "emoji": "🇬🇮",
+   "colors": [
+    "#fbfaf5",
+    "#d70003",
+    "#480906"
+   ],
+   "region": "Europe",
+   "subregion": "Southern Europe",
+   "area": 6,
+   "borders": [
+    "ESP"
+   ],
+   "lat": 36.13333333,
+   "lng": -5.35,
+   "currencies": [
+    {
+     "code": "GIP",
+     "name": "Gibraltar pound",
+     "symbol": "£"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 38196,
+   "landlocked": false,
+   "demonym": "Gibraltar",
+   "blurb": "Gibraltar is a British overseas territory at the southern tip of Iberia, on the Strait of Gibraltar."
+  },
+  {
+   "code": "GRC",
+   "code2": "GR",
+   "name": "Greece",
+   "official": "Hellenic Republic",
+   "capital": "Athens",
+   "emoji": "🇬🇷",
+   "colors": [
+    "#fcfbf7",
+    "#135fae",
+    "#f0f5fb"
+   ],
+   "region": "Europe",
+   "subregion": "Southern Europe",
+   "area": 131990,
+   "borders": [
+    "ALB",
+    "BGR",
+    "TUR",
+    "MKD"
+   ],
+   "lat": 39,
+   "lng": 22,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Greek"
+   ],
+   "population": 10372335,
+   "landlocked": false,
+   "demonym": "Greek",
+   "blurb": "Greece is a republic at the southern end of the Balkans, with a mainland and many islands."
+  },
+  {
+   "code": "GRL",
+   "code2": "GL",
+   "name": "Greenland",
+   "official": "Greenland",
+   "capital": "Nuuk",
+   "emoji": "🇬🇱",
+   "colors": [
+    "#fcfbf7",
+    "#c30c10",
+    "#d85767"
+   ],
+   "region": "Americas",
+   "subregion": "North America",
+   "area": 2166086,
+   "borders": [],
+   "lat": 72,
+   "lng": -40,
+   "currencies": [
+    {
+     "code": "DKK",
+     "name": "Danish krone",
+     "symbol": "kr"
+    }
+   ],
+   "languages": [
+    "Greenlandic"
+   ],
+   "population": 56945,
+   "landlocked": false,
+   "demonym": "Greenlandic",
+   "blurb": "Greenland is a self-governing part of the Danish realm and the largest island in the world."
+  },
+  {
+   "code": "GRD",
+   "code2": "GD",
+   "name": "Grenada",
+   "official": "Grenada",
+   "capital": "St. George's",
+   "emoji": "🇬🇩",
+   "colors": [
+    "#f5d000",
+    "#d21415",
+    "#007b63"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 344,
+   "borders": [],
+   "lat": 12.11666666,
+   "lng": -61.66666666,
+   "currencies": [
+    {
+     "code": "XCD",
+     "name": "Eastern Caribbean dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 109021,
+   "landlocked": false,
+   "demonym": "Grenadian",
+   "blurb": "Grenada is an island state in the southeastern Caribbean, with several Grenadine islands."
+  },
+  {
+   "code": "GLP",
+   "code2": "GP",
+   "name": "Guadeloupe",
+   "official": "Guadeloupe",
+   "capital": "Basse-Terre",
+   "emoji": "🇬🇵",
+   "colors": [
+    "#000000",
+    "#148500",
+    "#002b87"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 1628,
+   "borders": [],
+   "lat": 16.25,
+   "lng": -61.583333,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 400132,
+   "landlocked": false,
+   "demonym": "Guadeloupian",
+   "blurb": "Guadeloupe is an overseas department of France in the Leeward Islands of the eastern Caribbean."
+  },
+  {
+   "code": "GUM",
+   "code2": "GU",
+   "name": "Guam",
+   "official": "Guam",
+   "capital": "Hagåtña",
+   "emoji": "🇬🇺",
+   "colors": [
+    "#102a7e",
+    "#0087fd",
+    "#c92f3e"
+   ],
+   "region": "Oceania",
+   "subregion": "Micronesia",
+   "area": 549,
+   "borders": [],
+   "lat": 13.46666666,
+   "lng": 144.78333333,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Chamorro",
+    "English",
+    "Spanish"
+   ],
+   "population": 153836,
+   "landlocked": false,
+   "demonym": "Guamanian",
+   "blurb": "Guam is an unincorporated territory of the United States in the western Pacific Marianas."
+  },
+  {
+   "code": "GTM",
+   "code2": "GT",
+   "name": "Guatemala",
+   "official": "Republic of Guatemala",
+   "capital": "Guatemala City",
+   "emoji": "🇬🇹",
+   "colors": [
+    "#4294cf",
+    "#76955f",
+    "#faf9f3"
+   ],
+   "region": "Americas",
+   "subregion": "Central America",
+   "area": 108889,
+   "borders": [
+    "BLZ",
+    "SLV",
+    "HND",
+    "MEX"
+   ],
+   "lat": 15.5,
+   "lng": -90.25,
+   "currencies": [
+    {
+     "code": "GTQ",
+     "name": "Guatemalan quetzal",
+     "symbol": "Q"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 18406359,
+   "landlocked": false,
+   "demonym": "Guatemalan",
+   "blurb": "Guatemala is a Central American republic between Mexico and Honduras, with two coastlines."
+  },
+  {
+   "code": "GGY",
+   "code2": "GG",
+   "name": "Guernsey",
+   "official": "Bailiwick of Guernsey",
+   "capital": "St. Peter Port",
+   "emoji": "🇬🇬",
+   "colors": [
+    "#fcfbf7",
+    "#e41919",
+    "#ffd915"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 78,
+   "borders": [],
+   "lat": 49.46666666,
+   "lng": -2.58333333,
+   "currencies": [
+    {
+     "code": "GBP",
+     "name": "British pound",
+     "symbol": "£"
+    },
+    {
+     "code": "GGP",
+     "name": "Guernsey pound",
+     "symbol": "£"
+    }
+   ],
+   "languages": [
+    "English",
+    "French",
+    "Norman"
+   ],
+   "population": 64781,
+   "landlocked": false,
+   "demonym": "Channel Islander",
+   "blurb": "Guernsey is a British Crown dependency in the English Channel, off the northwest French coast."
+  },
+  {
+   "code": "GIN",
+   "code2": "GN",
+   "name": "Guinea",
+   "official": "Republic of Guinea",
+   "capital": "Conakry",
+   "emoji": "🇬🇳",
+   "colors": [
+    "#049460",
+    "#ce1023",
+    "#fcd014"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 245857,
+   "borders": [
+    "CIV",
+    "GNB",
+    "LBR",
+    "MLI",
+    "SEN",
+    "SLE"
+   ],
+   "lat": 11,
+   "lng": -10,
+   "currencies": [
+    {
+     "code": "GNF",
+     "name": "Guinean franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 17521167,
+   "landlocked": false,
+   "demonym": "Guinean",
+   "blurb": "Guinea is a West African republic on the Atlantic coast, where the Niger and Senegal rivers rise."
+  },
+  {
+   "code": "GNB",
+   "code2": "GW",
+   "name": "Guinea-Bissau",
+   "official": "Republic of Guinea-Bissau",
+   "capital": "Bissau",
+   "emoji": "🇬🇼",
+   "colors": [
+    "#f6d000",
+    "#009f4e",
+    "#d31114"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 36125,
+   "borders": [
+    "GIN",
+    "SEN"
+   ],
+   "lat": 12,
+   "lng": -15,
+   "currencies": [
+    {
+     "code": "XOF",
+     "name": "West African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "Portuguese",
+    "Upper Guinea Crioulo"
+   ],
+   "population": 1890252,
+   "landlocked": false,
+   "demonym": "Guinea-Bissauan",
+   "blurb": "Guinea-Bissau is a West African republic on the Atlantic, with the Bijagós island archipelago."
+  },
+  {
+   "code": "GUY",
+   "code2": "GY",
+   "name": "Guyana",
+   "official": "Co-operative Republic of Guyana",
+   "capital": "Georgetown",
+   "emoji": "🇬🇾",
+   "colors": [
+    "#1e9065",
+    "#bd1e1a",
+    "#fad466"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 214969,
+   "borders": [
+    "BRA",
+    "SUR",
+    "VEN"
+   ],
+   "lat": 5,
+   "lng": -59,
+   "currencies": [
+    {
+     "code": "GYD",
+     "name": "Guyanese dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 956044,
+   "landlocked": false,
+   "demonym": "Guyanese",
+   "blurb": "Guyana is a republic on the north coast of South America, bordering Venezuela, Brazil and Suriname."
+  },
+  {
+   "code": "HTI",
+   "code2": "HT",
+   "name": "Haiti",
+   "official": "Republic of Haiti",
+   "capital": "Port-au-Prince",
+   "emoji": "🇭🇹",
+   "colors": [
+    "#0a21a5",
+    "#d10e3d",
+    "#f7f5ed"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 27750,
+   "borders": [
+    "DOM"
+   ],
+   "lat": 19,
+   "lng": -72.41666666,
+   "currencies": [
+    {
+     "code": "HTG",
+     "name": "Haitian gourde",
+     "symbol": "G"
+    }
+   ],
+   "languages": [
+    "French",
+    "Haitian Creole"
+   ],
+   "population": 11867032,
+   "landlocked": false,
+   "demonym": "Haitian",
+   "blurb": "Haiti is a republic covering the western third of the island of Hispaniola in the Caribbean."
+  },
+  {
+   "code": "HMD",
+   "code2": "HM",
+   "name": "Heard Island and McDonald Islands",
+   "official": "Heard Island and McDonald Islands",
+   "capital": null,
+   "emoji": "🇭🇲",
+   "colors": [
+    "#05088a",
+    "#ff3535",
+    "#fbf7f0"
+   ],
+   "region": "Antarctic",
+   "subregion": "",
+   "area": 412,
+   "borders": [],
+   "lat": -53.0818,
+   "lng": 73.5042,
+   "currencies": [],
+   "languages": [
+    "English"
+   ],
+   "population": 0,
+   "landlocked": false,
+   "demonym": "Heard and McDonald Islander",
+   "blurb": "Heard Island and McDonald Islands are an uninhabited Australian external territory near Antarctica."
+  },
+  {
+   "code": "HND",
+   "code2": "HN",
+   "name": "Honduras",
+   "official": "Republic of Honduras",
+   "capital": "Tegucigalpa",
+   "emoji": "🇭🇳",
+   "colors": [
+    "#fcfbf7",
+    "#1cbce3",
+    "#f2fafd"
+   ],
+   "region": "Americas",
+   "subregion": "Central America",
+   "area": 112492,
+   "borders": [
+    "GTM",
+    "SLV",
+    "NIC"
+   ],
+   "lat": 15,
+   "lng": -86.5,
+   "currencies": [
+    {
+     "code": "HNL",
+     "name": "Honduran lempira",
+     "symbol": "L"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 10186738,
+   "landlocked": false,
+   "demonym": "Honduran",
+   "blurb": "Honduras is a Central American republic with a long Caribbean coast and a short Pacific outlet."
+  },
+  {
+   "code": "HKG",
+   "code2": "HK",
+   "name": "Hong Kong",
+   "official": "Hong Kong Special Administrative Region of the People's Republic of China",
+   "capital": "City of Victoria",
+   "emoji": "🇭🇰",
+   "colors": [
+    "#fcfbf7",
+    "#ef2824",
+    "#fee4e5"
+   ],
+   "region": "Asia",
+   "subregion": "Eastern Asia",
+   "area": 1104,
+   "borders": [
+    "CHN"
+   ],
+   "lat": 22.267,
+   "lng": 114.188,
+   "currencies": [
+    {
+     "code": "HKD",
+     "name": "Hong Kong dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Chinese"
+   ],
+   "population": 7498100,
+   "landlocked": false,
+   "demonym": "Hong Konger",
+   "blurb": "Hong Kong is a special administrative region of China at the mouth of the Pearl river delta."
+  },
+  {
+   "code": "HUN",
+   "code2": "HU",
+   "name": "Hungary",
+   "official": "Hungary",
+   "capital": "Budapest",
+   "emoji": "🇭🇺",
+   "colors": [
+    "#fcfbf7",
+    "#ca2c2b",
+    "#477354"
+   ],
+   "region": "Europe",
+   "subregion": "Central Europe",
+   "area": 93028,
+   "borders": [
+    "AUT",
+    "HRV",
+    "ROU",
+    "SRB",
+    "SVK",
+    "SVN",
+    "UKR"
+   ],
+   "lat": 47,
+   "lng": 20,
+   "currencies": [
+    {
+     "code": "HUF",
+     "name": "Hungarian forint",
+     "symbol": "Ft"
+    }
+   ],
+   "languages": [
+    "Hungarian"
+   ],
+   "population": 9488428,
+   "landlocked": true,
+   "demonym": "Hungarian",
+   "blurb": "Hungary is a landlocked republic in Central Europe, on the Carpathian basin and the Danube."
+  },
+  {
+   "code": "ISL",
+   "code2": "IS",
+   "name": "Iceland",
+   "official": "Iceland",
+   "capital": "Reykjavik",
+   "emoji": "🇮🇸",
+   "colors": [
+    "#0255a4",
+    "#df2420",
+    "#faf4ea"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 103000,
+   "borders": [],
+   "lat": 65,
+   "lng": -18,
+   "currencies": [
+    {
+     "code": "ISK",
+     "name": "Icelandic króna",
+     "symbol": "kr"
+    }
+   ],
+   "languages": [
+    "Icelandic"
+   ],
+   "population": 396500,
+   "landlocked": false,
+   "demonym": "Icelander",
+   "blurb": "Iceland is a Nordic island republic in the North Atlantic, just south of the Arctic Circle."
+  },
+  {
+   "code": "IND",
+   "code2": "IN",
+   "name": "India",
+   "official": "Republic of India",
+   "capital": "New Delhi",
+   "emoji": "🇮🇳",
+   "colors": [
+    "#006934",
+    "#ff6b33",
+    "#fbfaf5"
+   ],
+   "region": "Asia",
+   "subregion": "Southern Asia",
+   "area": 3287590,
+   "borders": [
+    "BGD",
+    "BTN",
+    "MMR",
+    "CHN",
+    "NPL",
+    "PAK"
+   ],
+   "lat": 20,
+   "lng": 77,
+   "currencies": [
+    {
+     "code": "INR",
+     "name": "Indian rupee",
+     "symbol": "₹"
+    }
+   ],
+   "languages": [
+    "English",
+    "Hindi",
+    "Tamil"
+   ],
+   "population": 1429404000,
+   "landlocked": false,
+   "demonym": "Indian",
+   "blurb": "India is a South Asian federal republic and one of the two most populous countries on Earth."
+  },
+  {
+   "code": "IDN",
+   "code2": "ID",
+   "name": "Indonesia",
+   "official": "Republic of Indonesia",
+   "capital": "Jakarta",
+   "emoji": "🇮🇩",
+   "colors": [
+    "#ffffff",
+    "#ff0200",
+    "#ff7e7f"
+   ],
+   "region": "Asia",
+   "subregion": "South-Eastern Asia",
+   "area": 1904569,
+   "borders": [
+    "TLS",
+    "MYS",
+    "PNG"
+   ],
+   "lat": -5,
+   "lng": 120,
+   "currencies": [
+    {
+     "code": "IDR",
+     "name": "Indonesian rupiah",
+     "symbol": "Rp"
+    }
+   ],
+   "languages": [
+    "Indonesian"
+   ],
+   "population": 288315089,
+   "landlocked": false,
+   "demonym": "Indonesian",
+   "blurb": "Indonesia is a Southeast Asian archipelago republic of more than 17,000 islands on the equator."
+  },
+  {
+   "code": "IRN",
+   "code2": "IR",
+   "name": "Iran",
+   "official": "Islamic Republic of Iran",
+   "capital": "Tehran",
+   "emoji": "🇮🇷",
+   "colors": [
+    "#d90319",
+    "#08a14e",
+    "#fcfbf7"
+   ],
+   "region": "Asia",
+   "subregion": "Southern Asia",
+   "area": 1648195,
+   "borders": [
+    "AFG",
+    "ARM",
+    "AZE",
+    "IRQ",
+    "PAK",
+    "TUR",
+    "TKM"
+   ],
+   "lat": 32,
+   "lng": 53,
+   "currencies": [
+    {
+     "code": "IRR",
+     "name": "Iranian rial",
+     "symbol": "﷼"
+    }
+   ],
+   "languages": [
+    "Persian"
+   ],
+   "population": 87134000,
+   "landlocked": false,
+   "demonym": "Iranian",
+   "blurb": "Iran is an Islamic republic in Western Asia, between the Caspian Sea and the Persian Gulf."
+  },
+  {
+   "code": "IRQ",
+   "code2": "IQ",
+   "name": "Iraq",
+   "official": "Republic of Iraq",
+   "capital": "Baghdad",
+   "emoji": "🇮🇶",
+   "colors": [
+    "#000000",
+    "#cb2703",
+    "#fbfaf5"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 438317,
+   "borders": [
+    "IRN",
+    "JOR",
+    "KWT",
+    "SAU",
+    "SYR",
+    "TUR"
+   ],
+   "lat": 33,
+   "lng": 44,
+   "currencies": [
+    {
+     "code": "IQD",
+     "name": "Iraqi dinar",
+     "symbol": "ع.د"
+    }
+   ],
+   "languages": [
+    "Arabic",
+    "Aramaic",
+    "Central Kurdish"
+   ],
+   "population": 46118793,
+   "landlocked": false,
+   "demonym": "Iraqi",
+   "blurb": "Iraq is a federal republic in Western Asia, set along the Tigris and Euphrates river valleys."
+  },
+  {
+   "code": "IRL",
+   "code2": "IE",
+   "name": "Ireland",
+   "official": "Republic of Ireland",
+   "capital": "Dublin",
+   "emoji": "🇮🇪",
+   "colors": [
+    "#119b62",
+    "#fe873d",
+    "#ffffff"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 70273,
+   "borders": [
+    "GBR"
+   ],
+   "lat": 53,
+   "lng": -8,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "English",
+    "Irish"
+   ],
+   "population": 5525600,
+   "landlocked": false,
+   "demonym": "Irish",
+   "blurb": "Ireland is a republic covering most of the island of Ireland, west of Great Britain in the Atlantic."
+  },
+  {
+   "code": "IMN",
+   "code2": "IM",
+   "name": "Isle of Man",
+   "official": "Isle of Man",
+   "capital": "Douglas",
+   "emoji": "🇮🇲",
+   "colors": [
+    "#f5f1e4",
+    "#cd211d",
+    "#7b6b5b"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 572,
+   "borders": [],
+   "lat": 54.25,
+   "lng": -4.5,
+   "currencies": [
+    {
+     "code": "GBP",
+     "name": "British pound",
+     "symbol": "£"
+    },
+    {
+     "code": "IMP",
+     "name": "Manx pound",
+     "symbol": "£"
+    }
+   ],
+   "languages": [
+    "English",
+    "Manx"
+   ],
+   "population": 84523,
+   "landlocked": false,
+   "demonym": "Manx",
+   "blurb": "The Isle of Man is a British Crown dependency in the Irish Sea, between Britain and Ireland."
+  },
+  {
+   "code": "ISR",
+   "code2": "IL",
+   "name": "Israel",
+   "official": "State of Israel",
+   "capital": "Jerusalem",
+   "emoji": "🇮🇱",
+   "colors": [
+    "#fcfbf7",
+    "#6586d0",
+    "#173abc"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 20770,
+   "borders": [
+    "EGY",
+    "JOR",
+    "LBN",
+    "PSE",
+    "SYR"
+   ],
+   "lat": 31.47,
+   "lng": 35.13,
+   "currencies": [
+    {
+     "code": "ILS",
+     "name": "Israeli new shekel",
+     "symbol": "₪"
+    }
+   ],
+   "languages": [
+    "Arabic",
+    "Hebrew"
+   ],
+   "population": 10305000,
+   "landlocked": false,
+   "demonym": "Israeli",
+   "blurb": "Israel is a parliamentary republic on the eastern Mediterranean, bordering Egypt, Jordan and Lebanon."
+  },
+  {
+   "code": "ITA",
+   "code2": "IT",
+   "name": "Italy",
+   "official": "Italian Republic",
+   "capital": "Rome",
+   "emoji": "🇮🇹",
+   "colors": [
+    "#009246",
+    "#ce2b39",
+    "#ffffff"
+   ],
+   "region": "Europe",
+   "subregion": "Southern Europe",
+   "area": 301336,
+   "borders": [
+    "AUT",
+    "FRA",
+    "SMR",
+    "SVN",
+    "CHE",
+    "VAT"
+   ],
+   "lat": 42.83333333,
+   "lng": 12.83333333,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Italian",
+    "Catalan"
+   ],
+   "population": 58943673,
+   "landlocked": false,
+   "demonym": "Italian",
+   "blurb": "Italy is a republic on a southern European peninsula, with Sicily, Sardinia and many smaller islands."
+  },
+  {
+   "code": "CIV",
+   "code2": "CI",
+   "name": "Ivory Coast",
+   "official": "Republic of Côte d'Ivoire",
+   "capital": "Yamoussoukro",
+   "emoji": "🇨🇮",
+   "colors": [
+    "#ffffff",
+    "#f67f00",
+    "#079e5f"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 322463,
+   "borders": [
+    "BFA",
+    "GHA",
+    "GIN",
+    "LBR",
+    "MLI"
+   ],
+   "lat": 8,
+   "lng": -5,
+   "currencies": [
+    {
+     "code": "XOF",
+     "name": "West African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 33293101,
+   "landlocked": false,
+   "demonym": "Ivorian",
+   "blurb": "Ivory Coast is a West African republic on the Gulf of Guinea, bordering Ghana, Guinea and Mali."
+  },
+  {
+   "code": "JAM",
+   "code2": "JM",
+   "name": "Jamaica",
+   "official": "Jamaica",
+   "capital": "Kingston",
+   "emoji": "🇯🇲",
+   "colors": [
+    "#fabd08",
+    "#007e52",
+    "#000000"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 10991,
+   "borders": [],
+   "lat": 18.25,
+   "lng": -77.5,
+   "currencies": [
+    {
+     "code": "JMD",
+     "name": "Jamaican dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Jamaican Patois"
+   ],
+   "population": 2774538,
+   "landlocked": false,
+   "demonym": "Jamaican",
+   "blurb": "Jamaica is an island country in the Caribbean Sea, lying south of Cuba and west of Haiti."
+  },
+  {
+   "code": "JPN",
+   "code2": "JP",
+   "name": "Japan",
+   "official": "Japan",
+   "capital": "Tokyo",
+   "emoji": "🇯🇵",
+   "colors": [
+    "#fcfbf7",
+    "#c2043b",
+    "#f6dddf"
+   ],
+   "region": "Asia",
+   "subregion": "Eastern Asia",
+   "area": 377930,
+   "borders": [],
+   "lat": 36,
+   "lng": 138,
+   "currencies": [
+    {
+     "code": "JPY",
+     "name": "Japanese yen",
+     "symbol": "¥"
+    }
+   ],
+   "languages": [
+    "Japanese"
+   ],
+   "population": 122650000,
+   "landlocked": false,
+   "demonym": "Japanese",
+   "blurb": "Japan is an East Asian island country of four main islands and thousands of smaller ones."
+  },
+  {
+   "code": "JEY",
+   "code2": "JE",
+   "name": "Jersey",
+   "official": "Bailiwick of Jersey",
+   "capital": "Saint Helier",
+   "emoji": "🇯🇪",
+   "colors": [
+    "#fbfaf5",
+    "#cf2621",
+    "#fae4e5"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 116,
+   "borders": [],
+   "lat": 49.25,
+   "lng": -2.16666666,
+   "currencies": [
+    {
+     "code": "GBP",
+     "name": "British pound",
+     "symbol": "£"
+    },
+    {
+     "code": "JEP",
+     "name": "Jersey pound",
+     "symbol": "£"
+    }
+   ],
+   "languages": [
+    "English",
+    "French",
+    "Norman"
+   ],
+   "population": 104540,
+   "landlocked": false,
+   "demonym": "Channel Islander",
+   "blurb": "Jersey is a British Crown dependency in the English Channel, close to the coast of France."
+  },
+  {
+   "code": "JOR",
+   "code2": "JO",
+   "name": "Jordan",
+   "official": "Hashemite Kingdom of Jordan",
+   "capital": "Amman",
+   "emoji": "🇯🇴",
+   "colors": [
+    "#067c3f",
+    "#d10f1c",
+    "#000000"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 89342,
+   "borders": [
+    "IRQ",
+    "ISR",
+    "PSE",
+    "SAU",
+    "SYR"
+   ],
+   "lat": 31,
+   "lng": 36,
+   "currencies": [
+    {
+     "code": "JOD",
+     "name": "Jordanian dinar",
+     "symbol": "د.ا"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 11937000,
+   "landlocked": false,
+   "demonym": "Jordanian",
+   "blurb": "Jordan is a constitutional monarchy in Western Asia, with a short outlet onto the Red Sea."
+  },
+  {
+   "code": "KAZ",
+   "code2": "KZ",
+   "name": "Kazakhstan",
+   "official": "Republic of Kazakhstan",
+   "capital": "Astana",
+   "emoji": "🇰🇿",
+   "colors": [
+    "#00aabe",
+    "#00a4df",
+    "#dce643"
+   ],
+   "region": "Asia",
+   "subregion": "Central Asia",
+   "area": 2724900,
+   "borders": [
+    "CHN",
+    "KGZ",
+    "RUS",
+    "TKM",
+    "UZB"
+   ],
+   "lat": 48.0196,
+   "lng": 66.9237,
+   "currencies": [
+    {
+     "code": "KZT",
+     "name": "Kazakhstani tenge",
+     "symbol": "₸"
+    }
+   ],
+   "languages": [
+    "Kazakh",
+    "Russian"
+   ],
+   "population": 20618796,
+   "landlocked": true,
+   "demonym": "Kazakhstani",
+   "blurb": "Kazakhstan is a landlocked Central Asian republic and the ninth-largest country by land area."
+  },
+  {
+   "code": "KEN",
+   "code2": "KE",
+   "name": "Kenya",
+   "official": "Republic of Kenya",
+   "capital": "Nairobi",
+   "emoji": "🇰🇪",
+   "colors": [
+    "#000000",
+    "#b80000",
+    "#096900"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 580367,
+   "borders": [
+    "ETH",
+    "SOM",
+    "SSD",
+    "TZA",
+    "UGA"
+   ],
+   "lat": 1,
+   "lng": 38,
+   "currencies": [
+    {
+     "code": "KES",
+     "name": "Kenyan shilling",
+     "symbol": "Sh"
+    }
+   ],
+   "languages": [
+    "English",
+    "Swahili"
+   ],
+   "population": 54227015,
+   "landlocked": false,
+   "demonym": "Kenyan",
+   "blurb": "Kenya is an East African republic on the Indian Ocean, crossed by the equator and Rift Valley."
+  },
+  {
+   "code": "KIR",
+   "code2": "KI",
+   "name": "Kiribati",
+   "official": "Independent and Sovereign Republic of Kiribati",
+   "capital": "South Tarawa",
+   "emoji": "🇰🇮",
+   "colors": [
+    "#193172",
+    "#c4160b",
+    "#fbfaf5"
+   ],
+   "region": "Oceania",
+   "subregion": "Micronesia",
+   "area": 811,
+   "borders": [],
+   "lat": 1.41666666,
+   "lng": 173,
+   "currencies": [
+    {
+     "code": "AUD",
+     "name": "Australian dollar",
+     "symbol": "$"
+    },
+    {
+     "code": "KID",
+     "name": "Kiribati dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Gilbertese"
+   ],
+   "population": 120740,
+   "landlocked": false,
+   "demonym": "I-Kiribati",
+   "blurb": "Kiribati is a Pacific republic of 32 atolls and one raised island, straddling the equator."
+  },
+  {
+   "code": "UNK",
+   "code2": "XK",
+   "name": "Kosovo",
+   "official": "Republic of Kosovo",
+   "capital": "Pristina",
+   "emoji": "🇽🇰",
+   "colors": [
+    "#cfa959",
+    "#2b4daa",
+    "#e4e9f4"
+   ],
+   "region": "Europe",
+   "subregion": "Southeast Europe",
+   "area": 10908,
+   "borders": [
+    "ALB",
+    "MKD",
+    "MNE",
+    "SRB"
+   ],
+   "lat": 42.666667,
+   "lng": 21.166667,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Albanian",
+    "Serbian"
+   ],
+   "population": 1582322,
+   "landlocked": true,
+   "demonym": "Kosovar",
+   "blurb": "Kosovo is a landlocked, partially recognized republic in the western Balkans, south of Serbia."
+  },
+  {
+   "code": "KWT",
+   "code2": "KW",
+   "name": "Kuwait",
+   "official": "State of Kuwait",
+   "capital": "Kuwait City",
+   "emoji": "🇰🇼",
+   "colors": [
+    "#0b7c40",
+    "#d2121d",
+    "#fbfaf5"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 17818,
+   "borders": [
+    "IRQ",
+    "SAU"
+   ],
+   "lat": 29.5,
+   "lng": 45.75,
+   "currencies": [
+    {
+     "code": "KWD",
+     "name": "Kuwaiti dinar",
+     "symbol": "د.ك"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 4881254,
+   "landlocked": false,
+   "demonym": "Kuwaiti",
+   "blurb": "Kuwait is a constitutional emirate at the head of the Persian Gulf, north of Saudi Arabia."
+  },
+  {
+   "code": "KGZ",
+   "code2": "KG",
+   "name": "Kyrgyzstan",
+   "official": "Kyrgyz Republic",
+   "capital": "Bishkek",
+   "emoji": "🇰🇬",
+   "colors": [
+    "#fff900",
+    "#ff181b",
+    "#ffd403"
+   ],
+   "region": "Asia",
+   "subregion": "Central Asia",
+   "area": 199951,
+   "borders": [
+    "CHN",
+    "KAZ",
+    "TJK",
+    "UZB"
+   ],
+   "lat": 41,
+   "lng": 75,
+   "currencies": [
+    {
+     "code": "KGS",
+     "name": "Kyrgyzstani som",
+     "symbol": "с"
+    }
+   ],
+   "languages": [
+    "Kyrgyz",
+    "Russian"
+   ],
+   "population": 7404300,
+   "landlocked": true,
+   "demonym": "Kirghiz",
+   "blurb": "Kyrgyzstan is a landlocked Central Asian republic covered largely by the Tian Shan mountains."
+  },
+  {
+   "code": "LAO",
+   "code2": "LA",
+   "name": "Laos",
+   "official": "Lao People's Democratic Republic",
+   "capital": "Vientiane",
+   "emoji": "🇱🇦",
+   "colors": [
+    "#102667",
+    "#d31114",
+    "#fcfbf7"
+   ],
+   "region": "Asia",
+   "subregion": "South-Eastern Asia",
+   "area": 236800,
+   "borders": [
+    "MMR",
+    "KHM",
+    "CHN",
+    "THA",
+    "VNM"
+   ],
+   "lat": 18,
+   "lng": 105,
+   "currencies": [
+    {
+     "code": "LAK",
+     "name": "Lao kip",
+     "symbol": "₭"
+    }
+   ],
+   "languages": [
+    "Lao"
+   ],
+   "population": 7745000,
+   "landlocked": true,
+   "demonym": "Laotian",
+   "blurb": "Laos is a landlocked Southeast Asian state along the Mekong, bordered by five other countries."
+  },
+  {
+   "code": "LVA",
+   "code2": "LV",
+   "name": "Latvia",
+   "official": "Republic of Latvia",
+   "capital": "Riga",
+   "emoji": "🇱🇻",
+   "colors": [
+    "#ffffff",
+    "#9d2134",
+    "#eacfd3"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 64559,
+   "borders": [
+    "BLR",
+    "EST",
+    "LTU",
+    "RUS"
+   ],
+   "lat": 57,
+   "lng": 25,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Latvian"
+   ],
+   "population": 1832100,
+   "landlocked": false,
+   "demonym": "Latvian",
+   "blurb": "Latvia is a Baltic republic between Estonia and Lithuania, on the eastern Baltic Sea coast."
+  },
+  {
+   "code": "LBN",
+   "code2": "LB",
+   "name": "Lebanon",
+   "official": "Lebanese Republic",
+   "capital": "Beirut",
+   "emoji": "🇱🇧",
+   "colors": [
+    "#fcfbf7",
+    "#d30e12",
+    "#008e47"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 10452,
+   "borders": [
+    "ISR",
+    "SYR"
+   ],
+   "lat": 33.83333333,
+   "lng": 35.83333333,
+   "currencies": [
+    {
+     "code": "LBP",
+     "name": "Lebanese pound",
+     "symbol": "ل.ل"
+    }
+   ],
+   "languages": [
+    "Arabic",
+    "French"
+   ],
+   "population": 5895466,
+   "landlocked": false,
+   "demonym": "Lebanese",
+   "blurb": "Lebanon is a republic on the eastern Mediterranean between Syria and Israel, with two mountain ranges."
+  },
+  {
+   "code": "LSO",
+   "code2": "LS",
+   "name": "Lesotho",
+   "official": "Kingdom of Lesotho",
+   "capital": "Maseru",
+   "emoji": "🇱🇸",
+   "colors": [
+    "#fbfaf5",
+    "#009e4c",
+    "#051286"
+   ],
+   "region": "Africa",
+   "subregion": "Southern Africa",
+   "area": 30355,
+   "borders": [
+    "ZAF"
+   ],
+   "lat": -29.5,
+   "lng": 28.5,
+   "currencies": [
+    {
+     "code": "LSL",
+     "name": "Lesotho loti",
+     "symbol": "L"
+    },
+    {
+     "code": "ZAR",
+     "name": "South African rand",
+     "symbol": "R"
+    }
+   ],
+   "languages": [
+    "English",
+    "Sotho"
+   ],
+   "population": 2116427,
+   "landlocked": true,
+   "demonym": "Mosotho",
+   "blurb": "Lesotho is a landlocked kingdom in Southern Africa, entirely enclosed by South African land."
+  },
+  {
+   "code": "LBR",
+   "code2": "LR",
+   "name": "Liberia",
+   "official": "Republic of Liberia",
+   "capital": "Monrovia",
+   "emoji": "🇱🇷",
+   "colors": [
+    "#f8f4ed",
+    "#c3003b",
+    "#102667"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 111369,
+   "borders": [
+    "GIN",
+    "CIV",
+    "SLE"
+   ],
+   "lat": 6.5,
+   "lng": -9.5,
+   "currencies": [
+    {
+     "code": "LRD",
+     "name": "Liberian dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 5248621,
+   "landlocked": false,
+   "demonym": "Liberian",
+   "blurb": "Liberia is a West African republic on the Atlantic coast, bordering Sierra Leone and Guinea."
+  },
+  {
+   "code": "LBY",
+   "code2": "LY",
+   "name": "Libya",
+   "official": "State of Libya",
+   "capital": "Tripoli",
+   "emoji": "🇱🇾",
+   "colors": [
+    "#000000",
+    "#009f4e",
+    "#e80004"
+   ],
+   "region": "Africa",
+   "subregion": "Northern Africa",
+   "area": 1759540,
+   "borders": [
+    "DZA",
+    "TCD",
+    "EGY",
+    "NER",
+    "SDN",
+    "TUN"
+   ],
+   "lat": 25,
+   "lng": 17,
+   "currencies": [
+    {
+     "code": "LYD",
+     "name": "Libyan dinar",
+     "symbol": "ل.د"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 7539852,
+   "landlocked": false,
+   "demonym": "Libyan",
+   "blurb": "Libya is a North African state on the Mediterranean coast, mostly covered by Saharan desert."
+  },
+  {
+   "code": "LIE",
+   "code2": "LI",
+   "name": "Liechtenstein",
+   "official": "Principality of Liechtenstein",
+   "capital": "Vaduz",
+   "emoji": "🇱🇮",
+   "colors": [
+    "#10297c",
+    "#d31114",
+    "#a29228"
+   ],
+   "region": "Europe",
+   "subregion": "Western Europe",
+   "area": 160,
+   "borders": [
+    "AUT",
+    "CHE"
+   ],
+   "lat": 47.26666666,
+   "lng": 9.53333333,
+   "currencies": [
+    {
+     "code": "CHF",
+     "name": "Swiss franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "German"
+   ],
+   "population": 41237,
+   "landlocked": true,
+   "demonym": "Liechtensteiner",
+   "blurb": "Liechtenstein is a landlocked Alpine principality on the Rhine between Switzerland and Austria."
+  },
+  {
+   "code": "LTU",
+   "code2": "LT",
+   "name": "Lithuania",
+   "official": "Republic of Lithuania",
+   "capital": "Vilnius",
+   "emoji": "🇱🇹",
+   "colors": [
+    "#fabd08",
+    "#bf1e1b",
+    "#006846"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 65300,
+   "borders": [
+    "BLR",
+    "LVA",
+    "POL",
+    "RUS"
+   ],
+   "lat": 56,
+   "lng": 24,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Lithuanian"
+   ],
+   "population": 2887761,
+   "landlocked": false,
+   "demonym": "Lithuanian",
+   "blurb": "Lithuania is a Baltic republic on the eastern shore of the Baltic Sea, just north of Poland."
+  },
+  {
+   "code": "LUX",
+   "code2": "LU",
+   "name": "Luxembourg",
+   "official": "Grand Duchy of Luxembourg",
+   "capital": "Luxembourg",
+   "emoji": "🇱🇺",
+   "colors": [
+    "#00a4df",
+    "#ef2824",
+    "#fcfbf7"
+   ],
+   "region": "Europe",
+   "subregion": "Western Europe",
+   "area": 2586,
+   "borders": [
+    "BEL",
+    "FRA",
+    "DEU"
+   ],
+   "lat": 49.75,
+   "lng": 6.16666666,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "German",
+    "French",
+    "Luxembourgish"
+   ],
+   "population": 690959,
+   "landlocked": true,
+   "demonym": "Luxembourger",
+   "blurb": "Luxembourg is a landlocked grand duchy between Belgium, France and Germany in Western Europe."
+  },
+  {
+   "code": "MAC",
+   "code2": "MO",
+   "name": "Macau",
+   "official": "Macao Special Administrative Region of the People's Republic of China",
+   "capital": null,
+   "emoji": "🇲🇴",
+   "colors": [
+    "#117864",
+    "#9cb139",
+    "#f2f5e5"
+   ],
+   "region": "Asia",
+   "subregion": "Eastern Asia",
+   "area": 30,
+   "borders": [
+    "CHN"
+   ],
+   "lat": 22.16666666,
+   "lng": 113.55,
+   "currencies": [
+    {
+     "code": "MOP",
+     "name": "Macanese pataca",
+     "symbol": "P"
+    }
+   ],
+   "languages": [
+    "Portuguese",
+    "Chinese"
+   ],
+   "population": 686500,
+   "landlocked": false,
+   "demonym": "Macanese",
+   "blurb": "Macau is a special administrative region of China on the west side of the Pearl river delta."
+  },
+  {
+   "code": "MDG",
+   "code2": "MG",
+   "name": "Madagascar",
+   "official": "Republic of Madagascar",
+   "capital": "Antananarivo",
+   "emoji": "🇲🇬",
+   "colors": [
+    "#fcfbf7",
+    "#fb362e",
+    "#007d39"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 587041,
+   "borders": [],
+   "lat": -20,
+   "lng": 47,
+   "currencies": [
+    {
+     "code": "MGA",
+     "name": "Malagasy ariary",
+     "symbol": "Ar"
+    }
+   ],
+   "languages": [
+    "French",
+    "Malagasy"
+   ],
+   "population": 32658977,
+   "landlocked": false,
+   "demonym": "Malagasy",
+   "blurb": "Madagascar is an island republic in the Indian Ocean, off the southeastern coast of Africa."
+  },
+  {
+   "code": "MWI",
+   "code2": "MW",
+   "name": "Malawi",
+   "official": "Republic of Malawi",
+   "capital": "Lilongwe",
+   "emoji": "🇲🇼",
+   "colors": [
+    "#d11113",
+    "#3e9b2f",
+    "#000000"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 118484,
+   "borders": [
+    "MOZ",
+    "TZA",
+    "ZMB"
+   ],
+   "lat": -13.5,
+   "lng": 34,
+   "currencies": [
+    {
+     "code": "MWK",
+     "name": "Malawian kwacha",
+     "symbol": "MK"
+    }
+   ],
+   "languages": [
+    "English",
+    "Chichewa"
+   ],
+   "population": 21201635,
+   "landlocked": true,
+   "demonym": "Malawian",
+   "blurb": "Malawi is a landlocked republic in southeastern Africa, along the west shore of Lake Malawi."
+  },
+  {
+   "code": "MYS",
+   "code2": "MY",
+   "name": "Malaysia",
+   "official": "Malaysia",
+   "capital": "Kuala Lumpur",
+   "emoji": "🇲🇾",
+   "colors": [
+    "#faf9f4",
+    "#cb0e1b",
+    "#030465"
+   ],
+   "region": "Asia",
+   "subregion": "South-Eastern Asia",
+   "area": 330803,
+   "borders": [
+    "BRN",
+    "IDN",
+    "THA"
+   ],
+   "lat": 2.5,
+   "lng": 112.5,
+   "currencies": [
+    {
+     "code": "MYR",
+     "name": "Malaysian ringgit",
+     "symbol": "RM"
+    }
+   ],
+   "languages": [
+    "English",
+    "Malay"
+   ],
+   "population": 34389400,
+   "landlocked": false,
+   "demonym": "Malaysian",
+   "blurb": "Malaysia is a Southeast Asian federation split between the Malay Peninsula and northern Borneo."
+  },
+  {
+   "code": "MDV",
+   "code2": "MV",
+   "name": "Maldives",
+   "official": "Republic of Maldives",
+   "capital": "Malé",
+   "emoji": "🇲🇻",
+   "colors": [
+    "#007e3d",
+    "#d0003f",
+    "#f4f7f0"
+   ],
+   "region": "Asia",
+   "subregion": "Southern Asia",
+   "area": 300,
+   "borders": [],
+   "lat": 3.25,
+   "lng": 73,
+   "currencies": [
+    {
+     "code": "MVR",
+     "name": "Maldivian rufiyaa",
+     "symbol": ".ރ"
+    }
+   ],
+   "languages": [
+    "Divehi"
+   ],
+   "population": 515132,
+   "landlocked": false,
+   "demonym": "Maldivan",
+   "blurb": "The Maldives is an archipelago republic of coral atolls in the Indian Ocean, southwest of India."
+  },
+  {
+   "code": "MLI",
+   "code2": "ML",
+   "name": "Mali",
+   "official": "Republic of Mali",
+   "capital": "Bamako",
+   "emoji": "🇲🇱",
+   "colors": [
+    "#ce1023",
+    "#15b53a",
+    "#fcd014"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 1240192,
+   "borders": [
+    "DZA",
+    "BFA",
+    "GIN",
+    "CIV",
+    "MRT",
+    "NER",
+    "SEN"
+   ],
+   "lat": 17,
+   "lng": -4,
+   "currencies": [
+    {
+     "code": "XOF",
+     "name": "West African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 23929000,
+   "landlocked": true,
+   "demonym": "Malian",
+   "blurb": "Mali is a landlocked West African republic, with the Sahara covering its northern territory."
+  },
+  {
+   "code": "MLT",
+   "code2": "MT",
+   "name": "Malta",
+   "official": "Republic of Malta",
+   "capital": "Valletta",
+   "emoji": "🇲🇹",
+   "colors": [
+    "#fbfaf5",
+    "#cf211d",
+    "#c82f49"
+   ],
+   "region": "Europe",
+   "subregion": "Southern Europe",
+   "area": 316,
+   "borders": [],
+   "lat": 35.9375,
+   "lng": 14.3754,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "English",
+    "Maltese"
+   ],
+   "population": 588254,
+   "landlocked": false,
+   "demonym": "Maltese",
+   "blurb": "Malta is an island republic in the central Mediterranean, south of Sicily and north of Libya."
+  },
+  {
+   "code": "MHL",
+   "code2": "MH",
+   "name": "Marshall Islands",
+   "official": "Republic of the Marshall Islands",
+   "capital": "Majuro",
+   "emoji": "🇲🇭",
+   "colors": [
+    "#1b3a97",
+    "#6a84bc",
+    "#e7c38c"
+   ],
+   "region": "Oceania",
+   "subregion": "Micronesia",
+   "area": 181,
+   "borders": [],
+   "lat": 9,
+   "lng": 168,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Marshallese"
+   ],
+   "population": 37548,
+   "landlocked": false,
+   "demonym": "Marshallese",
+   "blurb": "The Marshall Islands are a Pacific republic made up of 29 atolls and five islands above the equator."
+  },
+  {
+   "code": "MTQ",
+   "code2": "MQ",
+   "name": "Martinique",
+   "official": "Martinique",
+   "capital": "Fort-de-France",
+   "emoji": "🇲🇶",
+   "colors": [
+    "#201c1b",
+    "#00a957",
+    "#ed2622"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 1128,
+   "borders": [],
+   "lat": 14.666667,
+   "lng": -61,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 378243,
+   "landlocked": false,
+   "demonym": "Martinican",
+   "blurb": "Martinique is an overseas department of France in the Windward Islands of the Caribbean Sea."
+  },
+  {
+   "code": "MRT",
+   "code2": "MR",
+   "name": "Mauritania",
+   "official": "Islamic Republic of Mauritania",
+   "capital": "Nouakchott",
+   "emoji": "🇲🇷",
+   "colors": [
+    "#cf211d",
+    "#00a957",
+    "#fed703"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 1030700,
+   "borders": [
+    "DZA",
+    "MLI",
+    "SEN",
+    "ESH"
+   ],
+   "lat": 20,
+   "lng": -12,
+   "currencies": [
+    {
+     "code": "MRU",
+     "name": "Mauritanian ouguiya",
+     "symbol": "UM"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 4927532,
+   "landlocked": false,
+   "demonym": "Mauritanian",
+   "blurb": "Mauritania is a West African republic on the Atlantic, mostly covered by the Sahara desert."
+  },
+  {
+   "code": "MUS",
+   "code2": "MU",
+   "name": "Mauritius",
+   "official": "Republic of Mauritius",
+   "capital": "Port Louis",
+   "emoji": "🇲🇺",
+   "colors": [
+    "#ffda11",
+    "#ea3526",
+    "#00a856"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 2040,
+   "borders": [],
+   "lat": -20.28333333,
+   "lng": 57.55,
+   "currencies": [
+    {
+     "code": "MUR",
+     "name": "Mauritian rupee",
+     "symbol": "₨"
+    }
+   ],
+   "languages": [
+    "English",
+    "French",
+    "Mauritian Creole"
+   ],
+   "population": 1240316,
+   "landlocked": false,
+   "demonym": "Mauritian",
+   "blurb": "Mauritius is an island republic in the Indian Ocean, east of Madagascar off southern Africa."
+  },
+  {
+   "code": "MYT",
+   "code2": "YT",
+   "name": "Mayotte",
+   "official": "Department of Mayotte",
+   "capital": "Mamoudzou",
+   "emoji": "🇾🇹",
+   "colors": [
+    "#f8f7f3",
+    "#dc3f23",
+    "#004839"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 374,
+   "borders": [],
+   "lat": -12.83333333,
+   "lng": 45.16666666,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 226915,
+   "landlocked": false,
+   "demonym": "Mahoran",
+   "blurb": "Mayotte is an overseas department of France in the Indian Ocean, at the edge of the Comoros."
+  },
+  {
+   "code": "MEX",
+   "code2": "MX",
+   "name": "Mexico",
+   "official": "United Mexican States",
+   "capital": "Mexico City",
+   "emoji": "🇲🇽",
+   "colors": [
+    "#176746",
+    "#d31114",
+    "#faf7f0"
+   ],
+   "region": "Americas",
+   "subregion": "North America",
+   "area": 1964375,
+   "borders": [
+    "BLZ",
+    "GTM",
+    "USA"
+   ],
+   "lat": 23,
+   "lng": -102,
+   "currencies": [
+    {
+     "code": "MXN",
+     "name": "Mexican peso",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 131231919,
+   "landlocked": false,
+   "demonym": "Mexican",
+   "blurb": "Mexico is a federal republic in southern North America, between the United States and Guatemala."
+  },
+  {
+   "code": "FSM",
+   "code2": "FM",
+   "name": "Micronesia",
+   "official": "Federated States of Micronesia",
+   "capital": "Palikir",
+   "emoji": "🇫🇲",
+   "colors": [
+    "#73b0df",
+    "#a5b6ee",
+    "#fcfbf7"
+   ],
+   "region": "Oceania",
+   "subregion": "Micronesia",
+   "area": 702,
+   "borders": [],
+   "lat": 6.91666666,
+   "lng": 158.25,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 75817,
+   "landlocked": false,
+   "demonym": "Micronesian",
+   "blurb": "Micronesia is a federation of four island states spread across the western Pacific Ocean."
+  },
+  {
+   "code": "MDA",
+   "code2": "MD",
+   "name": "Moldova",
+   "official": "Republic of Moldova",
+   "capital": "Chișinău",
+   "emoji": "🇲🇩",
+   "colors": [
+    "#1640ad",
+    "#d31b0f",
+    "#fdd710"
+   ],
+   "region": "Europe",
+   "subregion": "Eastern Europe",
+   "area": 33846,
+   "borders": [
+    "ROU",
+    "UKR"
+   ],
+   "lat": 47,
+   "lng": 29,
+   "currencies": [
+    {
+     "code": "MDL",
+     "name": "Moldovan leu",
+     "symbol": "L"
+    }
+   ],
+   "languages": [
+    "Romanian"
+   ],
+   "population": 2365600,
+   "landlocked": true,
+   "demonym": "Moldovan",
+   "blurb": "Moldova is a landlocked republic between Romania and Ukraine, on the Prut and Dniester rivers."
+  },
+  {
+   "code": "MCO",
+   "code2": "MC",
+   "name": "Monaco",
+   "official": "Principality of Monaco",
+   "capital": "Monaco",
+   "emoji": "🇲🇨",
+   "colors": [
+    "#ffffff",
+    "#ce1023",
+    "#cd152a"
+   ],
+   "region": "Europe",
+   "subregion": "Western Europe",
+   "area": 2.02,
+   "borders": [
+    "FRA"
+   ],
+   "lat": 43.73333333,
+   "lng": 7.4,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 38857,
+   "landlocked": false,
+   "demonym": "Monegasque",
+   "blurb": "Monaco is a sovereign city-state on the Mediterranean coast, surrounded by French territory."
+  },
+  {
+   "code": "MNG",
+   "code2": "MN",
+   "name": "Mongolia",
+   "official": "Mongolia",
+   "capital": "Ulan Bator",
+   "emoji": "🇲🇳",
+   "colors": [
+    "#1f68b8",
+    "#dd2226",
+    "#ffd500"
+   ],
+   "region": "Asia",
+   "subregion": "Eastern Asia",
+   "area": 1564110,
+   "borders": [
+    "CHN",
+    "RUS"
+   ],
+   "lat": 46,
+   "lng": 105,
+   "currencies": [
+    {
+     "code": "MNT",
+     "name": "Mongolian tögrög",
+     "symbol": "₮"
+    }
+   ],
+   "languages": [
+    "Mongolian"
+   ],
+   "population": 3591120,
+   "landlocked": true,
+   "demonym": "Mongolian",
+   "blurb": "Mongolia is a landlocked East Asian republic between Russia and China, covered by steppe and desert."
+  },
+  {
+   "code": "MNE",
+   "code2": "ME",
+   "name": "Montenegro",
+   "official": "Montenegro",
+   "capital": "Podgorica",
+   "emoji": "🇲🇪",
+   "colors": [
+    "#f9bc02",
+    "#e31316",
+    "#db8f00"
+   ],
+   "region": "Europe",
+   "subregion": "Southeast Europe",
+   "area": 13812,
+   "borders": [
+    "ALB",
+    "BIH",
+    "HRV",
+    "UNK",
+    "SRB"
+   ],
+   "lat": 42.5,
+   "lng": 19.3,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Montenegrin"
+   ],
+   "population": 622902,
+   "landlocked": false,
+   "demonym": "Montenegrin",
+   "blurb": "Montenegro is a mountainous republic in the western Balkans, on the Adriatic south of Croatia."
+  },
+  {
+   "code": "MSR",
+   "code2": "MS",
+   "name": "Montserrat",
+   "official": "Montserrat",
+   "capital": "Plymouth",
+   "emoji": "🇲🇸",
+   "colors": [
+    "#08236c",
+    "#bd342b",
+    "#95b6ed"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 102,
+   "borders": [],
+   "lat": 16.75,
+   "lng": -62.2,
+   "currencies": [
+    {
+     "code": "XCD",
+     "name": "Eastern Caribbean dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 4386,
+   "landlocked": false,
+   "demonym": "Montserratian",
+   "blurb": "Montserrat is a British overseas territory in the Leeward Islands, with an active volcano."
+  },
+  {
+   "code": "MAR",
+   "code2": "MA",
+   "name": "Morocco",
+   "official": "Kingdom of Morocco",
+   "capital": "Rabat",
+   "emoji": "🇲🇦",
+   "colors": [
+    "#3f571c",
+    "#be201c",
+    "#006934"
+   ],
+   "region": "Africa",
+   "subregion": "Northern Africa",
+   "area": 446550,
+   "borders": [
+    "DZA",
+    "ESH",
+    "ESP"
+   ],
+   "lat": 32,
+   "lng": -5,
+   "currencies": [
+    {
+     "code": "MAD",
+     "name": "Moroccan dirham",
+     "symbol": "د.م."
+    }
+   ],
+   "languages": [
+    "Arabic",
+    "Standard Moroccan Tamazight"
+   ],
+   "population": 37254695,
+   "landlocked": false,
+   "demonym": "Moroccan",
+   "blurb": "Morocco is a North African kingdom with Atlantic and Mediterranean coasts and the Atlas range."
+  },
+  {
+   "code": "MOZ",
+   "code2": "MZ",
+   "name": "Mozambique",
+   "official": "Republic of Mozambique",
+   "capital": "Maputo",
+   "emoji": "🇲🇿",
+   "colors": [
+    "#ffda00",
+    "#d20541",
+    "#166f66"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 801590,
+   "borders": [
+    "MWI",
+    "ZAF",
+    "SWZ",
+    "TZA",
+    "ZMB",
+    "ZWE"
+   ],
+   "lat": -18.25,
+   "lng": 35,
+   "currencies": [
+    {
+     "code": "MZN",
+     "name": "Mozambican metical",
+     "symbol": "MT"
+    }
+   ],
+   "languages": [
+    "Portuguese"
+   ],
+   "population": 34958973,
+   "landlocked": false,
+   "demonym": "Mozambican",
+   "blurb": "Mozambique is a republic on the Indian Ocean coast of southeast Africa, facing Madagascar."
+  },
+  {
+   "code": "MMR",
+   "code2": "MM",
+   "name": "Myanmar",
+   "official": "Republic of the Union of Myanmar",
+   "capital": "Naypyidaw",
+   "emoji": "🇲🇲",
+   "colors": [
+    "#f5d000",
+    "#42b130",
+    "#e93030"
+   ],
+   "region": "Asia",
+   "subregion": "South-Eastern Asia",
+   "area": 676578,
+   "borders": [
+    "BGD",
+    "CHN",
+    "IND",
+    "LAO",
+    "THA"
+   ],
+   "lat": 22,
+   "lng": 98,
+   "currencies": [
+    {
+     "code": "MMK",
+     "name": "Burmese kyat",
+     "symbol": "Ks"
+    }
+   ],
+   "languages": [
+    "Burmese"
+   ],
+   "population": 51375327,
+   "landlocked": false,
+   "demonym": "Burmese",
+   "blurb": "Myanmar is a Southeast Asian state on the Bay of Bengal, bordering China, India and Thailand."
+  },
+  {
+   "code": "NAM",
+   "code2": "NA",
+   "name": "Namibia",
+   "official": "Republic of Namibia",
+   "capital": "Windhoek",
+   "emoji": "🇳🇦",
+   "colors": [
+    "#039347",
+    "#d10941",
+    "#1a3580"
+   ],
+   "region": "Africa",
+   "subregion": "Southern Africa",
+   "area": 825615,
+   "borders": [
+    "AGO",
+    "BWA",
+    "ZAF",
+    "ZMB"
+   ],
+   "lat": -22,
+   "lng": 17,
+   "currencies": [
+    {
+     "code": "NAD",
+     "name": "Namibian dollar",
+     "symbol": "$"
+    },
+    {
+     "code": "ZAR",
+     "name": "South African rand",
+     "symbol": "R"
+    }
+   ],
+   "languages": [
+    "Afrikaans",
+    "German",
+    "English",
+    "Herero",
+    "Hai‖om",
+    "Kwangali",
+    "Lozi",
+    "Ndonga",
+    "Tswana"
+   ],
+   "population": 3022401,
+   "landlocked": false,
+   "demonym": "Namibian",
+   "blurb": "Namibia is a republic on the Atlantic coast of Southern Africa, holding two large deserts."
+  },
+  {
+   "code": "NRU",
+   "code2": "NR",
+   "name": "Nauru",
+   "official": "Republic of Nauru",
+   "capital": "Yaren",
+   "emoji": "🇳🇷",
+   "colors": [
+    "#0c226d",
+    "#edda69",
+    "#545855"
+   ],
+   "region": "Oceania",
+   "subregion": "Micronesia",
+   "area": 21,
+   "borders": [],
+   "lat": -0.53333333,
+   "lng": 166.91666666,
+   "currencies": [
+    {
+     "code": "AUD",
+     "name": "Australian dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Nauruan"
+   ],
+   "population": 11680,
+   "landlocked": false,
+   "demonym": "Nauruan",
+   "blurb": "Nauru is a single-island republic in the central Pacific and the third-smallest state on Earth."
+  },
+  {
+   "code": "NPL",
+   "code2": "NP",
+   "name": "Nepal",
+   "official": "Federal Democratic Republic of Nepal",
+   "capital": "Kathmandu",
+   "emoji": "🇳🇵",
+   "colors": [
+    "#000000",
+    "#dd1f49",
+    "#1e3895"
+   ],
+   "region": "Asia",
+   "subregion": "Southern Asia",
+   "area": 147181,
+   "borders": [
+    "CHN",
+    "IND"
+   ],
+   "lat": 28,
+   "lng": 84,
+   "currencies": [
+    {
+     "code": "NPR",
+     "name": "Nepalese rupee",
+     "symbol": "₨"
+    }
+   ],
+   "languages": [
+    "Nepali"
+   ],
+   "population": 30034040,
+   "landlocked": true,
+   "demonym": "Nepalese",
+   "blurb": "Nepal is a landlocked republic in the Himalayas between China and India, home to Mount Everest."
+  },
+  {
+   "code": "NLD",
+   "code2": "NL",
+   "name": "Netherlands",
+   "official": "Kingdom of the Netherlands",
+   "capital": "Amsterdam",
+   "emoji": "🇳🇱",
+   "colors": [
+    "#2d488d",
+    "#af1c18",
+    "#fcfbf7"
+   ],
+   "region": "Europe",
+   "subregion": "Western Europe",
+   "area": 41850,
+   "borders": [
+    "BEL",
+    "DEU"
+   ],
+   "lat": 52.5,
+   "lng": 5.75,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Dutch"
+   ],
+   "population": 18171612,
+   "landlocked": false,
+   "demonym": "Dutch",
+   "blurb": "The Netherlands is a Western European monarchy on the North Sea, much of it below sea level."
+  },
+  {
+   "code": "NCL",
+   "code2": "NC",
+   "name": "New Caledonia",
+   "official": "New Caledonia",
+   "capital": "Nouméa",
+   "emoji": "🇳🇨",
+   "colors": [
+    "#1333aa",
+    "#ed4d29",
+    "#009449"
+   ],
+   "region": "Oceania",
+   "subregion": "Melanesia",
+   "area": 18575,
+   "borders": [],
+   "lat": -21.5,
+   "lng": 165.5,
+   "currencies": [
+    {
+     "code": "XPF",
+     "name": "CFP franc",
+     "symbol": "₣"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 264596,
+   "landlocked": false,
+   "demonym": "New Caledonian",
+   "blurb": "New Caledonia is a French overseas collectivity in the South Pacific, east of the Australian coast."
+  },
+  {
+   "code": "NZL",
+   "code2": "NZ",
+   "name": "New Zealand",
+   "official": "New Zealand",
+   "capital": "Wellington",
+   "emoji": "🇳🇿",
+   "colors": [
+    "#0c226c",
+    "#e17f5e",
+    "#dedbe8"
+   ],
+   "region": "Oceania",
+   "subregion": "Australia and New Zealand",
+   "area": 270467,
+   "borders": [],
+   "lat": -41,
+   "lng": 174,
+   "currencies": [
+    {
+     "code": "NZD",
+     "name": "New Zealand dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Maori",
+    "New Zealand Sign Language"
+   ],
+   "population": 4993923,
+   "landlocked": false,
+   "demonym": "New Zealander",
+   "blurb": "New Zealand is a South Pacific country of two main islands and many smaller ones, east of Australia."
+  },
+  {
+   "code": "NIC",
+   "code2": "NI",
+   "name": "Nicaragua",
+   "official": "Republic of Nicaragua",
+   "capital": "Managua",
+   "emoji": "🇳🇮",
+   "colors": [
+    "#fbfaf4",
+    "#0065c4",
+    "#c3e1f4"
+   ],
+   "region": "Americas",
+   "subregion": "Central America",
+   "area": 130373,
+   "borders": [
+    "CRI",
+    "HND"
+   ],
+   "lat": 13,
+   "lng": -85,
+   "currencies": [
+    {
+     "code": "NIO",
+     "name": "Nicaraguan córdoba",
+     "symbol": "C$"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 6874748,
+   "landlocked": false,
+   "demonym": "Nicaraguan",
+   "blurb": "Nicaragua is the largest Central American republic by area, with Pacific and Caribbean coasts."
+  },
+  {
+   "code": "NER",
+   "code2": "NE",
+   "name": "Niger",
+   "official": "Republic of Niger",
+   "capital": "Niamey",
+   "emoji": "🇳🇪",
+   "colors": [
+    "#36b221",
+    "#de4c02",
+    "#fbfaf5"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 1267000,
+   "borders": [
+    "DZA",
+    "BEN",
+    "BFA",
+    "TCD",
+    "LBY",
+    "MLI",
+    "NGA"
+   ],
+   "lat": 16,
+   "lng": 8,
+   "currencies": [
+    {
+     "code": "XOF",
+     "name": "West African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 27522750,
+   "landlocked": true,
+   "demonym": "Nigerien",
+   "blurb": "Niger is a landlocked West African republic, with the Sahara covering most of its territory."
+  },
+  {
+   "code": "NGA",
+   "code2": "NG",
+   "name": "Nigeria",
+   "official": "Federal Republic of Nigeria",
+   "capital": "Abuja",
+   "emoji": "🇳🇬",
+   "colors": [
+    "#ffffff",
+    "#058751",
+    "#a8d3bf"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 923768,
+   "borders": [
+    "BEN",
+    "CMR",
+    "TCD",
+    "NER"
+   ],
+   "lat": 10,
+   "lng": 8,
+   "currencies": [
+    {
+     "code": "NGN",
+     "name": "Nigerian naira",
+     "symbol": "₦"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 223800000,
+   "landlocked": false,
+   "demonym": "Nigerian",
+   "blurb": "Nigeria is a West African federal republic on the Gulf of Guinea, the most populous in Africa."
+  },
+  {
+   "code": "NIU",
+   "code2": "NU",
+   "name": "Niue",
+   "official": "Niue",
+   "capital": "Alofi",
+   "emoji": "🇳🇺",
+   "colors": [
+    "#ffd806",
+    "#cf273c",
+    "#434e8a"
+   ],
+   "region": "Oceania",
+   "subregion": "Polynesia",
+   "area": 260,
+   "borders": [],
+   "lat": -19.03333333,
+   "lng": -169.86666666,
+   "currencies": [
+    {
+     "code": "NZD",
+     "name": "New Zealand dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Niuean"
+   ],
+   "population": 1681,
+   "landlocked": false,
+   "demonym": "Niuean",
+   "blurb": "Niue is a self-governing island state in the South Pacific, in free association with New Zealand."
+  },
+  {
+   "code": "NFK",
+   "code2": "NF",
+   "name": "Norfolk Island",
+   "official": "Territory of Norfolk Island",
+   "capital": "Kingston",
+   "emoji": "🇳🇫",
+   "colors": [
+    "#f8f8f2",
+    "#007d3b",
+    "#63a777"
+   ],
+   "region": "Oceania",
+   "subregion": "Australia and New Zealand",
+   "area": 36,
+   "borders": [],
+   "lat": -29.03333333,
+   "lng": 167.95,
+   "currencies": [
+    {
+     "code": "AUD",
+     "name": "Australian dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Norfuk"
+   ],
+   "population": 2188,
+   "landlocked": false,
+   "demonym": "Norfolk Islander",
+   "blurb": "Norfolk Island is an Australian external territory in the Pacific, east of the Australian coast."
+  },
+  {
+   "code": "PRK",
+   "code2": "KP",
+   "name": "North Korea",
+   "official": "Democratic People's Republic of Korea",
+   "capital": "Pyongyang",
+   "emoji": "🇰🇵",
+   "colors": [
+    "#004ba0",
+    "#ee2421",
+    "#fbf3ec"
+   ],
+   "region": "Asia",
+   "subregion": "Eastern Asia",
+   "area": 120538,
+   "borders": [
+    "CHN",
+    "KOR",
+    "RUS"
+   ],
+   "lat": 40,
+   "lng": 127,
+   "currencies": [
+    {
+     "code": "KPW",
+     "name": "North Korean won",
+     "symbol": "₩"
+    }
+   ],
+   "languages": [
+    "Korean"
+   ],
+   "population": 25950000,
+   "landlocked": false,
+   "demonym": "North Korean",
+   "blurb": "North Korea is a single-party state on the northern half of the Korean Peninsula in East Asia."
+  },
+  {
+   "code": "MKD",
+   "code2": "MK",
+   "name": "North Macedonia",
+   "official": "Republic of North Macedonia",
+   "capital": "Skopje",
+   "emoji": "🇲🇰",
+   "colors": [
+    "#f7ed3c",
+    "#dd231f",
+    "#ec9220"
+   ],
+   "region": "Europe",
+   "subregion": "Southeast Europe",
+   "area": 25713,
+   "borders": [
+    "ALB",
+    "BGR",
+    "GRC",
+    "UNK",
+    "SRB"
+   ],
+   "lat": 41.83333333,
+   "lng": 22,
+   "currencies": [
+    {
+     "code": "MKD",
+     "name": "Macedonian denar",
+     "symbol": "den"
+    }
+   ],
+   "languages": [
+    "Macedonian"
+   ],
+   "population": 1836713,
+   "landlocked": true,
+   "demonym": "Macedonian",
+   "blurb": "North Macedonia is a landlocked republic in the southern Balkans, directly north of Greece."
+  },
+  {
+   "code": "MNP",
+   "code2": "MP",
+   "name": "Northern Mariana Islands",
+   "official": "Commonwealth of the Northern Mariana Islands",
+   "capital": "Saipan",
+   "emoji": "🇲🇵",
+   "colors": [
+    "#1535a3",
+    "#428c3e",
+    "#b5c8da"
+   ],
+   "region": "Oceania",
+   "subregion": "Micronesia",
+   "area": 464,
+   "borders": [],
+   "lat": 15.2,
+   "lng": 145.75,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Carolinian",
+    "Chamorro",
+    "English"
+   ],
+   "population": 46078,
+   "landlocked": false,
+   "demonym": "American",
+   "blurb": "The Northern Mariana Islands are a commonwealth of the United States in the western Pacific."
+  },
+  {
+   "code": "NOR",
+   "code2": "NO",
+   "name": "Norway",
+   "official": "Kingdom of Norway",
+   "capital": "Oslo",
+   "emoji": "🇳🇴",
+   "colors": [
+    "#081c5c",
+    "#bd1b3e",
+    "#fdfbf6"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 323802,
+   "borders": [
+    "FIN",
+    "SWE",
+    "RUS"
+   ],
+   "lat": 62,
+   "lng": 10,
+   "currencies": [
+    {
+     "code": "NOK",
+     "name": "Norwegian krone",
+     "symbol": "kr"
+    }
+   ],
+   "languages": [
+    "Norwegian Nynorsk",
+    "Norwegian Bokmål",
+    "Northern Sami",
+    "Lule Sami",
+    "Southern Sami"
+   ],
+   "population": 5636904,
+   "landlocked": false,
+   "demonym": "Norwegian",
+   "blurb": "Norway is a Nordic constitutional monarchy on the west side of the Scandinavian Peninsula."
+  },
+  {
+   "code": "OMN",
+   "code2": "OM",
+   "name": "Oman",
+   "official": "Sultanate of Oman",
+   "capital": "Muscat",
+   "emoji": "🇴🇲",
+   "colors": [
+    "#007e3d",
+    "#df2227",
+    "#fcfbf7"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 309500,
+   "borders": [
+    "SAU",
+    "ARE",
+    "YEM"
+   ],
+   "lat": 21,
+   "lng": 57,
+   "currencies": [
+    {
+     "code": "OMR",
+     "name": "Omani rial",
+     "symbol": "ر.ع."
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 5398645,
+   "landlocked": false,
+   "demonym": "Omani",
+   "blurb": "Oman is a sultanate on the southeastern corner of the Arabian Peninsula, on the Arabian Sea."
+  },
+  {
+   "code": "PAK",
+   "code2": "PK",
+   "name": "Pakistan",
+   "official": "Islamic Republic of Pakistan",
+   "capital": "Islamabad",
+   "emoji": "🇵🇰",
+   "colors": [
+    "#00421b",
+    "#fcfbf7",
+    "#05411f"
+   ],
+   "region": "Asia",
+   "subregion": "Southern Asia",
+   "area": 881912,
+   "borders": [
+    "AFG",
+    "CHN",
+    "IND",
+    "IRN"
+   ],
+   "lat": 30,
+   "lng": 70,
+   "currencies": [
+    {
+     "code": "PKR",
+     "name": "Pakistani rupee",
+     "symbol": "₨"
+    }
+   ],
+   "languages": [
+    "English",
+    "Urdu"
+   ],
+   "population": 241499431,
+   "landlocked": false,
+   "demonym": "Pakistani",
+   "blurb": "Pakistan is a South Asian federal republic on the Arabian Sea, bordering India, Iran and China."
+  },
+  {
+   "code": "PLW",
+   "code2": "PW",
+   "name": "Palau",
+   "official": "Republic of Palau",
+   "capital": "Ngerulmud",
+   "emoji": "🇵🇼",
+   "colors": [
+    "#fff700",
+    "#3797ff",
+    "#1b8cff"
+   ],
+   "region": "Oceania",
+   "subregion": "Micronesia",
+   "area": 459,
+   "borders": [],
+   "lat": 7.5,
+   "lng": 134.5,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Palauan"
+   ],
+   "population": 16733,
+   "landlocked": false,
+   "demonym": "Palauan",
+   "blurb": "Palau is an island republic in the western Pacific, at the eastern edge of the Philippine Sea."
+  },
+  {
+   "code": "PSE",
+   "code2": "PS",
+   "name": "Palestine",
+   "official": "State of Palestine",
+   "capital": "Ramallah",
+   "emoji": "🇵🇸",
+   "colors": [
+    "#000000",
+    "#009541",
+    "#fbfaf5"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 6220,
+   "borders": [
+    "ISR",
+    "EGY",
+    "JOR"
+   ],
+   "lat": 31.9,
+   "lng": 35.2,
+   "currencies": [
+    {
+     "code": "EGP",
+     "name": "Egyptian pound",
+     "symbol": "ج.م"
+    },
+    {
+     "code": "ILS",
+     "name": "Israeli new shekel",
+     "symbol": "₪"
+    },
+    {
+     "code": "JOD",
+     "name": "Jordanian dinar",
+     "symbol": "د.ا"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 5557096,
+   "landlocked": false,
+   "demonym": "Palestinian",
+   "blurb": "Palestine is a partially recognized state made up of the West Bank and the Gaza Strip in Western Asia."
+  },
+  {
+   "code": "PAN",
+   "code2": "PA",
+   "name": "Panama",
+   "official": "Republic of Panama",
+   "capital": "Panama City",
+   "emoji": "🇵🇦",
+   "colors": [
+    "#fbfaf5",
+    "#de2428",
+    "#0b1e57"
+   ],
+   "region": "Americas",
+   "subregion": "Central America",
+   "area": 75417,
+   "borders": [
+    "COL",
+    "CRI"
+   ],
+   "lat": 9,
+   "lng": -80,
+   "currencies": [
+    {
+     "code": "PAB",
+     "name": "Panamanian balboa",
+     "symbol": "B/."
+    },
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 4064780,
+   "landlocked": false,
+   "demonym": "Panamanian",
+   "blurb": "Panama is a Central American republic on the isthmus linking two continents, cut by a shipping canal."
+  },
+  {
+   "code": "PNG",
+   "code2": "PG",
+   "name": "Papua New Guinea",
+   "official": "Independent State of Papua New Guinea",
+   "capital": "Port Moresby",
+   "emoji": "🇵🇬",
+   "colors": [
+    "#000000",
+    "#d31114",
+    "#f9d761"
+   ],
+   "region": "Oceania",
+   "subregion": "Melanesia",
+   "area": 462840,
+   "borders": [
+    "IDN"
+   ],
+   "lat": -6,
+   "lng": 147,
+   "currencies": [
+    {
+     "code": "PGK",
+     "name": "Papua New Guinean kina",
+     "symbol": "K"
+    }
+   ],
+   "languages": [
+    "English",
+    "Hiri Motu",
+    "Tok Pisin"
+   ],
+   "population": 11781559,
+   "landlocked": false,
+   "demonym": "Papua New Guinean",
+   "blurb": "Papua New Guinea is a state covering the eastern half of New Guinea and many nearby islands."
+  },
+  {
+   "code": "PRY",
+   "code2": "PY",
+   "name": "Paraguay",
+   "official": "Republic of Paraguay",
+   "capital": "Asunción",
+   "emoji": "🇵🇾",
+   "colors": [
+    "#1535a5",
+    "#d93129",
+    "#fbfaf5"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 406752,
+   "borders": [
+    "ARG",
+    "BOL",
+    "BRA"
+   ],
+   "lat": -23,
+   "lng": -58,
+   "currencies": [
+    {
+     "code": "PYG",
+     "name": "Paraguayan guaraní",
+     "symbol": "₲"
+    }
+   ],
+   "languages": [
+    "Guarani",
+    "Spanish"
+   ],
+   "population": 6109644,
+   "landlocked": true,
+   "demonym": "Paraguayan",
+   "blurb": "Paraguay is a landlocked republic in central South America, bordering Brazil, Argentina and Bolivia."
+  },
+  {
+   "code": "PER",
+   "code2": "PE",
+   "name": "Peru",
+   "official": "Republic of Peru",
+   "capital": "Lima",
+   "emoji": "🇵🇪",
+   "colors": [
+    "#ffffff",
+    "#d90e24",
+    "#f2aab0"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 1285216,
+   "borders": [
+    "BOL",
+    "BRA",
+    "CHL",
+    "COL",
+    "ECU"
+   ],
+   "lat": -10,
+   "lng": -76,
+   "currencies": [
+    {
+     "code": "PEN",
+     "name": "Peruvian sol",
+     "symbol": "S/"
+    }
+   ],
+   "languages": [
+    "Aymara",
+    "Quechua",
+    "Spanish"
+   ],
+   "population": 34157732,
+   "landlocked": false,
+   "demonym": "Peruvian",
+   "blurb": "Peru is a republic on the Pacific coast of South America, spanning desert, Andes and Amazon."
+  },
+  {
+   "code": "PHL",
+   "code2": "PH",
+   "name": "Philippines",
+   "official": "Republic of the Philippines",
+   "capital": "Manila",
+   "emoji": "🇵🇭",
+   "colors": [
+    "#1535a5",
+    "#d10e12",
+    "#fbf4d9"
+   ],
+   "region": "Asia",
+   "subregion": "South-Eastern Asia",
+   "area": 342353,
+   "borders": [],
+   "lat": 13,
+   "lng": 122,
+   "currencies": [
+    {
+     "code": "PHP",
+     "name": "Philippine peso",
+     "symbol": "₱"
+    }
+   ],
+   "languages": [
+    "English",
+    "Filipino"
+   ],
+   "population": 114849400,
+   "landlocked": false,
+   "demonym": "Filipino",
+   "blurb": "The Philippines is a Southeast Asian archipelago republic made up of more than 7,000 islands."
+  },
+  {
+   "code": "PCN",
+   "code2": "PN",
+   "name": "Pitcairn Islands",
+   "official": "Pitcairn Group of Islands",
+   "capital": "Adamstown",
+   "emoji": "🇵🇳",
+   "colors": [
+    "#0c226d",
+    "#bd3616",
+    "#d8e9bb"
+   ],
+   "region": "Oceania",
+   "subregion": "Polynesia",
+   "area": 47,
+   "borders": [],
+   "lat": -25.06666666,
+   "lng": -130.1,
+   "currencies": [
+    {
+     "code": "NZD",
+     "name": "New Zealand dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 35,
+   "landlocked": false,
+   "demonym": "Pitcairn Islander",
+   "blurb": "The Pitcairn Islands are a British overseas territory made up of four islands in the South Pacific."
+  },
+  {
+   "code": "POL",
+   "code2": "PL",
+   "name": "Poland",
+   "official": "Republic of Poland",
+   "capital": "Warsaw",
+   "emoji": "🇵🇱",
+   "colors": [
+    "#ffffff",
+    "#dc163e",
+    "#de2347"
+   ],
+   "region": "Europe",
+   "subregion": "Central Europe",
+   "area": 312679,
+   "borders": [
+    "BLR",
+    "CZE",
+    "DEU",
+    "LTU",
+    "RUS",
+    "SVK",
+    "UKR"
+   ],
+   "lat": 52,
+   "lng": 20,
+   "currencies": [
+    {
+     "code": "PLN",
+     "name": "Polish złoty",
+     "symbol": "zł"
+    }
+   ],
+   "languages": [
+    "Polish"
+   ],
+   "population": 37232000,
+   "landlocked": false,
+   "demonym": "Polish",
+   "blurb": "Poland is a republic in Central Europe on the Baltic Sea, bordering Germany, Czechia and Ukraine."
+  },
+  {
+   "code": "PRT",
+   "code2": "PT",
+   "name": "Portugal",
+   "official": "Portuguese Republic",
+   "capital": "Lisbon",
+   "emoji": "🇵🇹",
+   "colors": [
+    "#166b00",
+    "#ff1419",
+    "#ffeb83"
+   ],
+   "region": "Europe",
+   "subregion": "Southern Europe",
+   "area": 92090,
+   "borders": [
+    "ESP"
+   ],
+   "lat": 39.5,
+   "lng": -8,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Portuguese"
+   ],
+   "population": 11424031,
+   "landlocked": false,
+   "demonym": "Portuguese",
+   "blurb": "Portugal is a republic on the western edge of Iberia, with two archipelagos in the Atlantic."
+  },
+  {
+   "code": "PRI",
+   "code2": "PR",
+   "name": "Puerto Rico",
+   "official": "Commonwealth of Puerto Rico",
+   "capital": "San Juan",
+   "emoji": "🇵🇷",
+   "colors": [
+    "#1a43ff",
+    "#f30e15",
+    "#fdfbf6"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 8870,
+   "borders": [],
+   "lat": 18.25,
+   "lng": -66.5,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Spanish"
+   ],
+   "population": 3184195,
+   "landlocked": false,
+   "demonym": "Puerto Rican",
+   "blurb": "Puerto Rico is an unincorporated commonwealth of the United States in the northeast Caribbean."
+  },
+  {
+   "code": "QAT",
+   "code2": "QA",
+   "name": "Qatar",
+   "official": "State of Qatar",
+   "capital": "Doha",
+   "emoji": "🇶🇦",
+   "colors": [
+    "#8d1441",
+    "#b76c7d",
+    "#fcfbf7"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 11586,
+   "borders": [
+    "SAU"
+   ],
+   "lat": 25.5,
+   "lng": 51.25,
+   "currencies": [
+    {
+     "code": "QAR",
+     "name": "Qatari riyal",
+     "symbol": "ر.ق"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 3370611,
+   "landlocked": false,
+   "demonym": "Qatari",
+   "blurb": "Qatar is a peninsular emirate on the western coast of the Persian Gulf, bordering Saudi Arabia."
+  },
+  {
+   "code": "ROU",
+   "code2": "RO",
+   "name": "Romania",
+   "official": "Romania",
+   "capital": "Bucharest",
+   "emoji": "🇷🇴",
+   "colors": [
+    "#002c80",
+    "#ce1023",
+    "#fcd014"
+   ],
+   "region": "Europe",
+   "subregion": "Southeast Europe",
+   "area": 238391,
+   "borders": [
+    "BGR",
+    "HUN",
+    "MDA",
+    "SRB",
+    "UKR"
+   ],
+   "lat": 46,
+   "lng": 25,
+   "currencies": [
+    {
+     "code": "RON",
+     "name": "Romanian leu",
+     "symbol": "lei"
+    }
+   ],
+   "languages": [
+    "Romanian"
+   ],
+   "population": 19041322,
+   "landlocked": false,
+   "demonym": "Romanian",
+   "blurb": "Romania is a republic in southeastern Europe on the Black Sea, crossed by the Carpathian range."
+  },
+  {
+   "code": "RUS",
+   "code2": "RU",
+   "name": "Russia",
+   "official": "Russian Federation",
+   "capital": "Moscow",
+   "emoji": "🇷🇺",
+   "colors": [
+    "#fcfbf7",
+    "#da3028",
+    "#1535a5"
+   ],
+   "region": "Europe",
+   "subregion": "Eastern Europe",
+   "area": 17098242,
+   "borders": [
+    "AZE",
+    "BLR",
+    "CHN",
+    "EST",
+    "FIN",
+    "GEO",
+    "KAZ",
+    "PRK",
+    "LVA",
+    "LTU",
+    "MNG",
+    "NOR",
+    "POL",
+    "UKR"
+   ],
+   "lat": 60,
+   "lng": 100,
+   "currencies": [
+    {
+     "code": "RUB",
+     "name": "Russian ruble",
+     "symbol": "₽"
+    }
+   ],
+   "languages": [
+    "Russian"
+   ],
+   "population": 146028325,
+   "landlocked": false,
+   "demonym": "Russian",
+   "blurb": "Russia is a federal state spanning northern Eurasia and the largest country in the world by area."
+  },
+  {
+   "code": "RWA",
+   "code2": "RW",
+   "name": "Rwanda",
+   "official": "Republic of Rwanda",
+   "capital": "Kigali",
+   "emoji": "🇷🇼",
+   "colors": [
+    "#f2cd00",
+    "#00a4de",
+    "#27653b"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 26338,
+   "borders": [
+    "BDI",
+    "COD",
+    "TZA",
+    "UGA"
+   ],
+   "lat": -2,
+   "lng": 30,
+   "currencies": [
+    {
+     "code": "RWF",
+     "name": "Rwandan franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "English",
+    "French",
+    "Kinyarwanda"
+   ],
+   "population": 14418145,
+   "landlocked": true,
+   "demonym": "Rwandan",
+   "blurb": "Rwanda is a landlocked republic in the African Great Lakes region, bordering Uganda and the Congo."
+  },
+  {
+   "code": "REU",
+   "code2": "RE",
+   "name": "Réunion",
+   "official": "Réunion Island",
+   "capital": "Saint-Denis",
+   "emoji": "🇷🇪",
+   "colors": [
+    "#ff181b",
+    "#3568ff",
+    "#fef600"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 2511,
+   "borders": [],
+   "lat": -21.15,
+   "lng": 55.5,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 840974,
+   "landlocked": false,
+   "demonym": "Réunionese",
+   "blurb": "Réunion is an overseas department of France in the Indian Ocean, lying east of Madagascar."
+  },
+  {
+   "code": "BLM",
+   "code2": "BL",
+   "name": "Saint Barthélemy",
+   "official": "Collectivity of Saint Barthélemy",
+   "capital": "Gustavia",
+   "emoji": "🇧🇱",
+   "colors": [
+    "#f7f6f0",
+    "#e68900",
+    "#00579c"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 21,
+   "borders": [],
+   "lat": 18.5,
+   "lng": -63.41666666,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 4255,
+   "landlocked": false,
+   "demonym": "Saint Barthélemy Islander",
+   "blurb": "Saint Barthélemy is an overseas collectivity of France in the northeastern Caribbean Sea."
+  },
+  {
+   "code": "SHN",
+   "code2": "SH",
+   "name": "Saint Helena, Ascension and Tristan da Cunha",
+   "official": "Saint Helena, Ascension and Tristan da Cunha",
+   "capital": "Jamestown",
+   "emoji": "🇸🇭",
+   "colors": [
+    "#0c226c",
+    "#e08859",
+    "#dcdee8"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 394,
+   "borders": [],
+   "lat": -15.95,
+   "lng": -5.72,
+   "currencies": [
+    {
+     "code": "GBP",
+     "name": "British pound",
+     "symbol": "£"
+    },
+    {
+     "code": "SHP",
+     "name": "Saint Helena pound",
+     "symbol": "£"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 53192,
+   "landlocked": false,
+   "demonym": "Saint Helenian",
+   "blurb": "Saint Helena, Ascension and Tristan da Cunha is a British territory in the South Atlantic."
+  },
+  {
+   "code": "KNA",
+   "code2": "KN",
+   "name": "Saint Kitts and Nevis",
+   "official": "Federation of Saint Christopher and Nevis",
+   "capital": "Basseterre",
+   "emoji": "🇰🇳",
+   "colors": [
+    "#000000",
+    "#c4160b",
+    "#009544"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 261,
+   "borders": [],
+   "lat": 17.33333333,
+   "lng": -62.75,
+   "currencies": [
+    {
+     "code": "XCD",
+     "name": "Eastern Caribbean dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 54338,
+   "landlocked": false,
+   "demonym": "Kittitian or Nevisian",
+   "blurb": "Saint Kitts and Nevis is a two-island state in the Leeward Islands of the eastern Caribbean."
+  },
+  {
+   "code": "LCA",
+   "code2": "LC",
+   "name": "Saint Lucia",
+   "official": "Saint Lucia",
+   "capital": "Castries",
+   "emoji": "🇱🇨",
+   "colors": [
+    "#63cbfd",
+    "#f2d664",
+    "#010000"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 616,
+   "borders": [],
+   "lat": 13.88333333,
+   "lng": -60.96666666,
+   "currencies": [
+    {
+     "code": "XCD",
+     "name": "Eastern Caribbean dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 184100,
+   "landlocked": false,
+   "demonym": "Saint Lucian",
+   "blurb": "Saint Lucia is a volcanic island state in the Windward Islands of the eastern Caribbean Sea."
+  },
+  {
+   "code": "MAF",
+   "code2": "MF",
+   "name": "Saint Martin",
+   "official": "Saint Martin",
+   "capital": "Marigot",
+   "emoji": "🇲🇫",
+   "colors": [
+    "#002654",
+    "#ce1023",
+    "#ffffff"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 53,
+   "borders": [
+    "SXM"
+   ],
+   "lat": 18.0708,
+   "lng": -63.0501,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 38659,
+   "landlocked": false,
+   "demonym": "Saint Martin Islander",
+   "blurb": "Saint Martin is a French overseas collectivity on the northern half of a shared Caribbean island."
+  },
+  {
+   "code": "SPM",
+   "code2": "PM",
+   "name": "Saint Pierre and Miquelon",
+   "official": "Saint Pierre and Miquelon",
+   "capital": "Saint-Pierre",
+   "emoji": "🇵🇲",
+   "colors": [
+    "#f2d682",
+    "#0090c3",
+    "#b22800"
+   ],
+   "region": "Americas",
+   "subregion": "North America",
+   "area": 242,
+   "borders": [],
+   "lat": 46.83333333,
+   "lng": -56.33333333,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 5819,
+   "landlocked": false,
+   "demonym": "Saint-Pierrais, Miquelonnais",
+   "blurb": "Saint Pierre and Miquelon is a French overseas collectivity off the coast of Newfoundland."
+  },
+  {
+   "code": "VCT",
+   "code2": "VC",
+   "name": "Saint Vincent and the Grenadines",
+   "official": "Saint Vincent and the Grenadines",
+   "capital": "Kingstown",
+   "emoji": "🇻🇨",
+   "colors": [
+    "#f2cf25",
+    "#5f9924",
+    "#007f3c"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 389,
+   "borders": [],
+   "lat": 13.25,
+   "lng": -61.2,
+   "currencies": [
+    {
+     "code": "XCD",
+     "name": "Eastern Caribbean dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 109296,
+   "landlocked": false,
+   "demonym": "Saint Vincentian",
+   "blurb": "Saint Vincent and the Grenadines is made up of one main island and a chain of smaller ones."
+  },
+  {
+   "code": "WSM",
+   "code2": "WS",
+   "name": "Samoa",
+   "official": "Independent State of Samoa",
+   "capital": "Apia",
+   "emoji": "🇼🇸",
+   "colors": [
+    "#102a7e",
+    "#d30e12",
+    "#c91817"
+   ],
+   "region": "Oceania",
+   "subregion": "Polynesia",
+   "area": 2842,
+   "borders": [],
+   "lat": -13.58333333,
+   "lng": -172.33333333,
+   "currencies": [
+    {
+     "code": "WST",
+     "name": "Samoan tālā",
+     "symbol": "T"
+    }
+   ],
+   "languages": [
+    "English",
+    "Samoan"
+   ],
+   "population": 205557,
+   "landlocked": false,
+   "demonym": "Samoan",
+   "blurb": "Samoa is a Polynesian republic of two large islands and several smaller ones in the South Pacific."
+  },
+  {
+   "code": "SMR",
+   "code2": "SM",
+   "name": "San Marino",
+   "official": "Republic of San Marino",
+   "capital": "City of San Marino",
+   "emoji": "🇸🇲",
+   "colors": [
+    "#60b7df",
+    "#8c9155",
+    "#fbfaf5"
+   ],
+   "region": "Europe",
+   "subregion": "Southern Europe",
+   "area": 61,
+   "borders": [
+    "ITA"
+   ],
+   "lat": 43.76666666,
+   "lng": 12.41666666,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Italian"
+   ],
+   "population": 34172,
+   "landlocked": true,
+   "demonym": "Sammarinese",
+   "blurb": "San Marino is a landlocked republic on Monte Titano, entirely surrounded by Italian territory."
+  },
+  {
+   "code": "SAU",
+   "code2": "SA",
+   "name": "Saudi Arabia",
+   "official": "Kingdom of Saudi Arabia",
+   "capital": "Riyadh",
+   "emoji": "🇸🇦",
+   "colors": [
+    "#0c522a",
+    "#386d48",
+    "#edf1eb"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 2149690,
+   "borders": [
+    "IRQ",
+    "JOR",
+    "KWT",
+    "OMN",
+    "QAT",
+    "ARE",
+    "YEM"
+   ],
+   "lat": 25,
+   "lng": 45,
+   "currencies": [
+    {
+     "code": "SAR",
+     "name": "Saudi riyal",
+     "symbol": "ر.س"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 35325004,
+   "landlocked": false,
+   "demonym": "Saudi Arabian",
+   "blurb": "Saudi Arabia is an absolute monarchy covering most of the Arabian Peninsula in Western Asia."
+  },
+  {
+   "code": "SEN",
+   "code2": "SN",
+   "name": "Senegal",
+   "official": "Republic of Senegal",
+   "capital": "Dakar",
+   "emoji": "🇸🇳",
+   "colors": [
+    "#008744",
+    "#e41014",
+    "#f4ee42"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 196722,
+   "borders": [
+    "GMB",
+    "GIN",
+    "GNB",
+    "MLI",
+    "MRT"
+   ],
+   "lat": 14,
+   "lng": -14,
+   "currencies": [
+    {
+     "code": "XOF",
+     "name": "West African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 19575061,
+   "landlocked": false,
+   "demonym": "Senegalese",
+   "blurb": "Senegal is a West African republic on the Atlantic, at the westernmost point of the continent."
+  },
+  {
+   "code": "SRB",
+   "code2": "RS",
+   "name": "Serbia",
+   "official": "Republic of Serbia",
+   "capital": "Belgrade",
+   "emoji": "🇷🇸",
+   "colors": [
+    "#faf9f4",
+    "#c53d2a",
+    "#0b3d73"
+   ],
+   "region": "Europe",
+   "subregion": "Southeast Europe",
+   "area": 88361,
+   "borders": [
+    "BIH",
+    "BGR",
+    "HRV",
+    "HUN",
+    "UNK",
+    "MKD",
+    "MNE",
+    "ROU"
+   ],
+   "lat": 44,
+   "lng": 21,
+   "currencies": [
+    {
+     "code": "RSD",
+     "name": "Serbian dinar",
+     "symbol": "дин."
+    }
+   ],
+   "languages": [
+    "Serbian"
+   ],
+   "population": 6532019,
+   "landlocked": true,
+   "demonym": "Serbian",
+   "blurb": "Serbia is a landlocked republic in the central Balkans, on the Danube and Morava river valleys."
+  },
+  {
+   "code": "SYC",
+   "code2": "SC",
+   "name": "Seychelles",
+   "official": "Republic of Seychelles",
+   "capital": "Victoria",
+   "emoji": "🇸🇨",
+   "colors": [
+    "#f7e5a7",
+    "#cf211d",
+    "#00336f"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 452,
+   "borders": [],
+   "lat": -4.58333333,
+   "lng": 55.66666666,
+   "currencies": [
+    {
+     "code": "SCR",
+     "name": "Seychellois rupee",
+     "symbol": "₨"
+    }
+   ],
+   "languages": [
+    "Seychellois Creole",
+    "English",
+    "French"
+   ],
+   "population": 123565,
+   "landlocked": false,
+   "demonym": "Seychellois",
+   "blurb": "Seychelles is an archipelago republic of 115 islands in the Indian Ocean, northeast of Madagascar."
+  },
+  {
+   "code": "SLE",
+   "code2": "SL",
+   "name": "Sierra Leone",
+   "official": "Republic of Sierra Leone",
+   "capital": "Freetown",
+   "emoji": "🇸🇱",
+   "colors": [
+    "#2071c9",
+    "#39b325",
+    "#fcfbf7"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 71740,
+   "borders": [
+    "GIN",
+    "LBR"
+   ],
+   "lat": 8.5,
+   "lng": -11.5,
+   "currencies": [
+    {
+     "code": "SLE",
+     "name": "Sierra Leonean leone",
+     "symbol": "Le"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 8460512,
+   "landlocked": false,
+   "demonym": "Sierra Leonean",
+   "blurb": "Sierra Leone is a West African republic on the Atlantic coast, between Guinea and Liberia."
+  },
+  {
+   "code": "SGP",
+   "code2": "SG",
+   "name": "Singapore",
+   "official": "Republic of Singapore",
+   "capital": "Singapore",
+   "emoji": "🇸🇬",
+   "colors": [
+    "#fcfbf7",
+    "#ef272b",
+    "#ffedee"
+   ],
+   "region": "Asia",
+   "subregion": "South-Eastern Asia",
+   "area": 710,
+   "borders": [],
+   "lat": 1.36666666,
+   "lng": 103.8,
+   "currencies": [
+    {
+     "code": "SGD",
+     "name": "Singapore dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Chinese",
+    "Malay",
+    "Tamil"
+   ],
+   "population": 6208500,
+   "landlocked": false,
+   "demonym": "Singaporean",
+   "blurb": "Singapore is an island city-state at the southern tip of the Malay Peninsula in Southeast Asia."
+  },
+  {
+   "code": "SXM",
+   "code2": "SX",
+   "name": "Sint Maarten",
+   "official": "Sint Maarten",
+   "capital": "Philipsburg",
+   "emoji": "🇸🇽",
+   "colors": [
+    "#223e89",
+    "#b41011",
+    "#f9f5e7"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 34,
+   "borders": [
+    "MAF"
+   ],
+   "lat": 18.033333,
+   "lng": -63.05,
+   "currencies": [
+    {
+     "code": "XCG",
+     "name": "Caribbean guilder",
+     "symbol": "Cg"
+    }
+   ],
+   "languages": [
+    "English",
+    "French",
+    "Dutch"
+   ],
+   "population": 58477,
+   "landlocked": false,
+   "demonym": "St. Maartener",
+   "blurb": "Sint Maarten is a constituent country of the Kingdom of the Netherlands on a shared island."
+  },
+  {
+   "code": "SVK",
+   "code2": "SK",
+   "name": "Slovakia",
+   "official": "Slovak Republic",
+   "capital": "Bratislava",
+   "emoji": "🇸🇰",
+   "colors": [
+    "#fbfaf5",
+    "#ee2421",
+    "#0054a3"
+   ],
+   "region": "Europe",
+   "subregion": "Central Europe",
+   "area": 49037,
+   "borders": [
+    "AUT",
+    "CZE",
+    "HUN",
+    "POL",
+    "UKR"
+   ],
+   "lat": 48.66666666,
+   "lng": 19.5,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Slovak"
+   ],
+   "population": 5403009,
+   "landlocked": true,
+   "demonym": "Slovak",
+   "blurb": "Slovakia is a landlocked republic in Central Europe, bordering Poland, Hungary, Austria and Czechia."
+  },
+  {
+   "code": "SVN",
+   "code2": "SI",
+   "name": "Slovenia",
+   "official": "Republic of Slovenia",
+   "capital": "Ljubljana",
+   "emoji": "🇸🇮",
+   "colors": [
+    "#1400ff",
+    "#ff1419",
+    "#fbfaf5"
+   ],
+   "region": "Europe",
+   "subregion": "Central Europe",
+   "area": 20273,
+   "borders": [
+    "AUT",
+    "HRV",
+    "ITA",
+    "HUN"
+   ],
+   "lat": 46.11666666,
+   "lng": 14.81666666,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Slovenian"
+   ],
+   "population": 2136385,
+   "landlocked": false,
+   "demonym": "Slovene",
+   "blurb": "Slovenia is a republic between the Alps and the Adriatic, bordering Italy, Austria and Croatia."
+  },
+  {
+   "code": "SLB",
+   "code2": "SB",
+   "name": "Solomon Islands",
+   "official": "Solomon Islands",
+   "capital": "Honiara",
+   "emoji": "🇸🇧",
+   "colors": [
+    "#1a5c34",
+    "#0052b7",
+    "#f3d751"
+   ],
+   "region": "Oceania",
+   "subregion": "Melanesia",
+   "area": 28896,
+   "borders": [],
+   "lat": -8,
+   "lng": 159,
+   "currencies": [
+    {
+     "code": "SBD",
+     "name": "Solomon Islands dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 828857,
+   "landlocked": false,
+   "demonym": "Solomon Islander",
+   "blurb": "Solomon Islands is a South Pacific state of six major islands and many hundreds of smaller ones."
+  },
+  {
+   "code": "SOM",
+   "code2": "SO",
+   "name": "Somalia",
+   "official": "Federal Republic of Somalia",
+   "capital": "Mogadishu",
+   "emoji": "🇸🇴",
+   "colors": [
+    "#fcfbf7",
+    "#498fe1",
+    "#ecf5fd"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 637657,
+   "borders": [
+    "DJI",
+    "ETH",
+    "KEN"
+   ],
+   "lat": 10,
+   "lng": 49,
+   "currencies": [
+    {
+     "code": "SOS",
+     "name": "Somali shilling",
+     "symbol": "Sh"
+    }
+   ],
+   "languages": [
+    "Arabic",
+    "Somali"
+   ],
+   "population": 20305907,
+   "landlocked": false,
+   "demonym": "Somali",
+   "blurb": "Somalia is a federal republic on the Horn of Africa, with the longest coastline in mainland Africa."
+  },
+  {
+   "code": "ZAF",
+   "code2": "ZA",
+   "name": "South Africa",
+   "official": "Republic of South Africa",
+   "capital": "Pretoria",
+   "emoji": "🇿🇦",
+   "colors": [
+    "#007d55",
+    "#e33c32",
+    "#071c88"
+   ],
+   "region": "Africa",
+   "subregion": "Southern Africa",
+   "area": 1221037,
+   "borders": [
+    "BWA",
+    "LSO",
+    "MOZ",
+    "NAM",
+    "SWZ",
+    "ZWE"
+   ],
+   "lat": -29,
+   "lng": 24,
+   "currencies": [
+    {
+     "code": "ZAR",
+     "name": "South African rand",
+     "symbol": "R"
+    }
+   ],
+   "languages": [
+    "Afrikaans",
+    "English",
+    "Southern Ndebele",
+    "Northern Sotho",
+    "Sotho",
+    "Swazi",
+    "Tswana",
+    "Tsonga",
+    "Venda",
+    "Xhosa",
+    "Zulu"
+   ],
+   "population": 63015904,
+   "landlocked": false,
+   "demonym": "South African",
+   "blurb": "South Africa is a republic at the southern tip of Africa, with three separate national capitals."
+  },
+  {
+   "code": "SGS",
+   "code2": "GS",
+   "name": "South Georgia",
+   "official": "South Georgia and the South Sandwich Islands",
+   "capital": "King Edward Point",
+   "emoji": "🇬🇸",
+   "colors": [
+    "#08236c",
+    "#a32a0d",
+    "#d7e4cc"
+   ],
+   "region": "Antarctic",
+   "subregion": "",
+   "area": 3903,
+   "borders": [],
+   "lat": -54.5,
+   "lng": -37,
+   "currencies": [
+    {
+     "code": "GBP",
+     "name": "British pound",
+     "symbol": "£"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 32,
+   "landlocked": false,
+   "demonym": "South Georgian South Sandwich Islander",
+   "blurb": "South Georgia is a British overseas territory of remote, glaciated southern Atlantic islands."
+  },
+  {
+   "code": "KOR",
+   "code2": "KR",
+   "name": "South Korea",
+   "official": "Republic of Korea",
+   "capital": "Seoul",
+   "emoji": "🇰🇷",
+   "colors": [
+    "#fbfaf5",
+    "#c83628",
+    "#010101"
+   ],
+   "region": "Asia",
+   "subregion": "Eastern Asia",
+   "area": 100210,
+   "borders": [
+    "PRK"
+   ],
+   "lat": 37,
+   "lng": 127.5,
+   "currencies": [
+    {
+     "code": "KRW",
+     "name": "South Korean won",
+     "symbol": "₩"
+    }
+   ],
+   "languages": [
+    "Korean"
+   ],
+   "population": 51106229,
+   "landlocked": false,
+   "demonym": "South Korean",
+   "blurb": "South Korea is a republic on the southern half of the Korean Peninsula, facing Japan and China."
+  },
+  {
+   "code": "SSD",
+   "code2": "SS",
+   "name": "South Sudan",
+   "official": "Republic of South Sudan",
+   "capital": "Juba",
+   "emoji": "🇸🇸",
+   "colors": [
+    "#1a924e",
+    "#df2420",
+    "#000000"
+   ],
+   "region": "Africa",
+   "subregion": "Middle Africa",
+   "area": 619745,
+   "borders": [
+    "CAF",
+    "COD",
+    "ETH",
+    "KEN",
+    "SDN",
+    "UGA"
+   ],
+   "lat": 7,
+   "lng": 30,
+   "currencies": [
+    {
+     "code": "SSP",
+     "name": "South Sudanese pound",
+     "symbol": "£"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 12703714,
+   "landlocked": true,
+   "demonym": "South Sudanese",
+   "blurb": "South Sudan is a landlocked republic in East Africa and the youngest sovereign state on Earth."
+  },
+  {
+   "code": "ESP",
+   "code2": "ES",
+   "name": "Spain",
+   "official": "Kingdom of Spain",
+   "capital": "Madrid",
+   "emoji": "🇪🇸",
+   "colors": [
+    "#f8bc0e",
+    "#ae2015",
+    "#857fa6"
+   ],
+   "region": "Europe",
+   "subregion": "Southern Europe",
+   "area": 505992,
+   "borders": [
+    "AND",
+    "FRA",
+    "GIB",
+    "PRT",
+    "MAR"
+   ],
+   "lat": 40,
+   "lng": -4,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Spanish",
+    "Catalan",
+    "Basque",
+    "Galician",
+    "Aranese"
+   ],
+   "population": 49801559,
+   "landlocked": false,
+   "demonym": "Spanish",
+   "blurb": "Spain is a parliamentary monarchy covering most of the Iberian Peninsula in southwest Europe."
+  },
+  {
+   "code": "LKA",
+   "code2": "LK",
+   "name": "Sri Lanka",
+   "official": "Democratic Socialist Republic of Sri Lanka",
+   "capital": "Sri Jayawardenepura Kotte",
+   "emoji": "🇱🇰",
+   "colors": [
+    "#fabb18",
+    "#e76e00",
+    "#8d163d"
+   ],
+   "region": "Asia",
+   "subregion": "Southern Asia",
+   "area": 65610,
+   "borders": [],
+   "lat": 7,
+   "lng": 81,
+   "currencies": [
+    {
+     "code": "LKR",
+     "name": "Sri Lankan rupee",
+     "symbol": "Rs"
+    }
+   ],
+   "languages": [
+    "Sinhala",
+    "Tamil"
+   ],
+   "population": 21756000,
+   "landlocked": false,
+   "demonym": "Sri Lankan",
+   "blurb": "Sri Lanka is an island republic in the Indian Ocean, just off the southeastern coast of India."
+  },
+  {
+   "code": "SDN",
+   "code2": "SD",
+   "name": "Sudan",
+   "official": "Republic of the Sudan",
+   "capital": "Khartoum",
+   "emoji": "🇸🇩",
+   "colors": [
+    "#000000",
+    "#d20541",
+    "#fbfaf5"
+   ],
+   "region": "Africa",
+   "subregion": "Northern Africa",
+   "area": 1886068,
+   "borders": [
+    "CAF",
+    "TCD",
+    "EGY",
+    "ERI",
+    "ETH",
+    "LBY",
+    "SSD"
+   ],
+   "lat": 15,
+   "lng": 30,
+   "currencies": [
+    {
+     "code": "SDG",
+     "name": "Sudanese pound",
+     "symbol": "ج.س"
+    }
+   ],
+   "languages": [
+    "Arabic",
+    "English"
+   ],
+   "population": 53282719,
+   "landlocked": false,
+   "demonym": "Sudanese",
+   "blurb": "Sudan is a republic in northeastern Africa on the Red Sea, crossed by the Nile river valley."
+  },
+  {
+   "code": "SUR",
+   "code2": "SR",
+   "name": "Suriname",
+   "official": "Republic of Suriname",
+   "capital": "Paramaribo",
+   "emoji": "🇸🇷",
+   "colors": [
+    "#45813c",
+    "#b30b37",
+    "#f9f4df"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 163820,
+   "borders": [
+    "BRA",
+    "GUF",
+    "GUY"
+   ],
+   "lat": 4,
+   "lng": -56,
+   "currencies": [
+    {
+     "code": "SRD",
+     "name": "Surinamese dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Dutch"
+   ],
+   "population": 616500,
+   "landlocked": false,
+   "demonym": "Surinamer",
+   "blurb": "Suriname is the smallest sovereign state in South America, on its northern Atlantic coast."
+  },
+  {
+   "code": "SJM",
+   "code2": "SJ",
+   "name": "Svalbard and Jan Mayen",
+   "official": "Svalbard og Jan Mayen",
+   "capital": "Longyearbyen",
+   "emoji": "🇸🇯",
+   "colors": [
+    "#081c5c",
+    "#bd1b3e",
+    "#fdfbf6"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 61399,
+   "borders": [],
+   "lat": 78,
+   "lng": 20,
+   "currencies": [
+    {
+     "code": "NOK",
+     "name": "Norwegian krone",
+     "symbol": "kr"
+    }
+   ],
+   "languages": [
+    "Norwegian"
+   ],
+   "population": 2562,
+   "landlocked": false,
+   "demonym": "Norwegian",
+   "blurb": "Svalbard and Jan Mayen are Arctic territories of Norway, well north of the mainland coastline."
+  },
+  {
+   "code": "SWE",
+   "code2": "SE",
+   "name": "Sweden",
+   "official": "Kingdom of Sweden",
+   "capital": "Stockholm",
+   "emoji": "🇸🇪",
+   "colors": [
+    "#054d93",
+    "#e9c60d",
+    "#f6d000"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 450295,
+   "borders": [
+    "FIN",
+    "NOR"
+   ],
+   "lat": 62,
+   "lng": 15,
+   "currencies": [
+    {
+     "code": "SEK",
+     "name": "Swedish krona",
+     "symbol": "kr"
+    }
+   ],
+   "languages": [
+    "Swedish"
+   ],
+   "population": 10621103,
+   "landlocked": false,
+   "demonym": "Swedish",
+   "blurb": "Sweden is a Nordic constitutional monarchy on the east side of the Scandinavian Peninsula."
+  },
+  {
+   "code": "CHE",
+   "code2": "CH",
+   "name": "Switzerland",
+   "official": "Swiss Confederation",
+   "capital": "Bern",
+   "emoji": "🇨🇭",
+   "colors": [
+    "#fdfbf6",
+    "#ff1419",
+    "#fdecec"
+   ],
+   "region": "Europe",
+   "subregion": "Western Europe",
+   "area": 41284,
+   "borders": [
+    "AUT",
+    "FRA",
+    "ITA",
+    "LIE",
+    "DEU"
+   ],
+   "lat": 47,
+   "lng": 8,
+   "currencies": [
+    {
+     "code": "CHF",
+     "name": "Swiss franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French",
+    "Swiss German",
+    "Italian",
+    "Romansh"
+   ],
+   "population": 9154896,
+   "landlocked": true,
+   "demonym": "Swiss",
+   "blurb": "Switzerland is a landlocked federal republic in Central Europe, across the Alps and the Jura."
+  },
+  {
+   "code": "SYR",
+   "code2": "SY",
+   "name": "Syria",
+   "official": "Syrian Arab Republic",
+   "capital": "Damascus",
+   "emoji": "🇸🇾",
+   "colors": [
+    "#0a7d41",
+    "#d22728",
+    "#000000"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 185180,
+   "borders": [
+    "IRQ",
+    "ISR",
+    "JOR",
+    "LBN",
+    "TUR"
+   ],
+   "lat": 35,
+   "lng": 38,
+   "currencies": [
+    {
+     "code": "SYP",
+     "name": "Syrian pound",
+     "symbol": "£"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 26472497,
+   "landlocked": false,
+   "demonym": "Syrian",
+   "blurb": "Syria is a republic in Western Asia on the eastern Mediterranean, bordering Turkey and Iraq."
+  },
+  {
+   "code": "STP",
+   "code2": "ST",
+   "name": "São Tomé and Príncipe",
+   "official": "Democratic Republic of São Tomé and Príncipe",
+   "capital": "São Tomé",
+   "emoji": "🇸🇹",
+   "colors": [
+    "#f6d000",
+    "#009541",
+    "#ea342c"
+   ],
+   "region": "Africa",
+   "subregion": "Middle Africa",
+   "area": 964,
+   "borders": [],
+   "lat": 1,
+   "lng": 7,
+   "currencies": [
+    {
+     "code": "STN",
+     "name": "São Tomé and Príncipe dobra",
+     "symbol": "Db"
+    }
+   ],
+   "languages": [
+    "Portuguese"
+   ],
+   "population": 220372,
+   "landlocked": false,
+   "demonym": "Sao Tomean",
+   "blurb": "São Tomé and Príncipe is a two-island republic in the Gulf of Guinea, off the coast of Gabon."
+  },
+  {
+   "code": "TWN",
+   "code2": "TW",
+   "name": "Taiwan",
+   "official": "Republic of China (Taiwan)",
+   "capital": "Taipei",
+   "emoji": "🇹🇼",
+   "colors": [
+    "#0c0092",
+    "#ff1419",
+    "#fcfbf7"
+   ],
+   "region": "Asia",
+   "subregion": "Eastern Asia",
+   "area": 36193,
+   "borders": [],
+   "lat": 23.5,
+   "lng": 121,
+   "currencies": [
+    {
+     "code": "TWD",
+     "name": "New Taiwan dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Chinese"
+   ],
+   "population": 23224721,
+   "landlocked": false,
+   "demonym": "Taiwanese",
+   "blurb": "Taiwan is a self-governing island state off the southeastern coast of the Chinese mainland."
+  },
+  {
+   "code": "TJK",
+   "code2": "TJ",
+   "name": "Tajikistan",
+   "official": "Republic of Tajikistan",
+   "capital": "Dushanbe",
+   "emoji": "🇹🇯",
+   "colors": [
+    "#fbfaf5",
+    "#c80000",
+    "#096900"
+   ],
+   "region": "Asia",
+   "subregion": "Central Asia",
+   "area": 143100,
+   "borders": [
+    "AFG",
+    "CHN",
+    "KGZ",
+    "UZB"
+   ],
+   "lat": 39,
+   "lng": 71,
+   "currencies": [
+    {
+     "code": "TJS",
+     "name": "Tajikistani somoni",
+     "symbol": "ЅМ"
+    }
+   ],
+   "languages": [
+    "Russian",
+    "Tajik"
+   ],
+   "population": 10721000,
+   "landlocked": true,
+   "demonym": "Tadzhik",
+   "blurb": "Tajikistan is a landlocked Central Asian republic, more than nine-tenths of it mountainous."
+  },
+  {
+   "code": "TZA",
+   "code2": "TZ",
+   "name": "Tanzania",
+   "official": "United Republic of Tanzania",
+   "capital": "Dodoma",
+   "emoji": "🇹🇿",
+   "colors": [
+    "#000000",
+    "#39b325",
+    "#00a4de"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 945087,
+   "borders": [
+    "BDI",
+    "COD",
+    "KEN",
+    "MWI",
+    "MOZ",
+    "RWA",
+    "UGA",
+    "ZMB"
+   ],
+   "lat": -6,
+   "lng": 35,
+   "currencies": [
+    {
+     "code": "TZS",
+     "name": "Tanzanian shilling",
+     "symbol": "Sh"
+    }
+   ],
+   "languages": [
+    "English",
+    "Swahili"
+   ],
+   "population": 70038850,
+   "landlocked": false,
+   "demonym": "Tanzanian",
+   "blurb": "Tanzania is an East African republic on the Indian Ocean, taking in the Zanzibar archipelago."
+  },
+  {
+   "code": "THA",
+   "code2": "TH",
+   "name": "Thailand",
+   "official": "Kingdom of Thailand",
+   "capital": "Bangkok",
+   "emoji": "🇹🇭",
+   "colors": [
+    "#2c2848",
+    "#9f1533",
+    "#eff0f5"
+   ],
+   "region": "Asia",
+   "subregion": "South-Eastern Asia",
+   "area": 513120,
+   "borders": [
+    "MMR",
+    "KHM",
+    "LAO",
+    "MYS"
+   ],
+   "lat": 15,
+   "lng": 100,
+   "currencies": [
+    {
+     "code": "THB",
+     "name": "Thai baht",
+     "symbol": "฿"
+    }
+   ],
+   "languages": [
+    "Thai"
+   ],
+   "population": 70250751,
+   "landlocked": false,
+   "demonym": "Thai",
+   "blurb": "Thailand is a Southeast Asian kingdom on the Indochinese and Malay peninsulas, facing two seas."
+  },
+  {
+   "code": "TLS",
+   "code2": "TL",
+   "name": "Timor-Leste",
+   "official": "Democratic Republic of Timor-Leste",
+   "capital": "Dili",
+   "emoji": "🇹🇱",
+   "colors": [
+    "#000000",
+    "#de2521",
+    "#ffd159"
+   ],
+   "region": "Asia",
+   "subregion": "South-Eastern Asia",
+   "area": 14874,
+   "borders": [
+    "IDN"
+   ],
+   "lat": -8.83333333,
+   "lng": 125.91666666,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Portuguese",
+    "Tetum"
+   ],
+   "population": 1409452,
+   "landlocked": false,
+   "demonym": "East Timorese",
+   "blurb": "Timor-Leste is a republic on the eastern half of Timor, at the southern end of Southeast Asia."
+  },
+  {
+   "code": "TGO",
+   "code2": "TG",
+   "name": "Togo",
+   "official": "Togolese Republic",
+   "capital": "Lomé",
+   "emoji": "🇹🇬",
+   "colors": [
+    "#096748",
+    "#cf1034",
+    "#f3cd00"
+   ],
+   "region": "Africa",
+   "subregion": "Western Africa",
+   "area": 56785,
+   "borders": [
+    "BEN",
+    "BFA",
+    "GHA"
+   ],
+   "lat": 8,
+   "lng": 1.16666666,
+   "currencies": [
+    {
+     "code": "XOF",
+     "name": "West African CFA franc",
+     "symbol": "Fr"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 8095498,
+   "landlocked": false,
+   "demonym": "Togolese",
+   "blurb": "Togo is a narrow West African republic running north from a short Gulf of Guinea coastline."
+  },
+  {
+   "code": "TKL",
+   "code2": "TK",
+   "name": "Tokelau",
+   "official": "Tokelau",
+   "capital": "Fakaofo",
+   "emoji": "🇹🇰",
+   "colors": [
+    "#0c226d",
+    "#536699",
+    "#f3cf00"
+   ],
+   "region": "Oceania",
+   "subregion": "Polynesia",
+   "area": 12,
+   "borders": [],
+   "lat": -9,
+   "lng": -172,
+   "currencies": [
+    {
+     "code": "NZD",
+     "name": "New Zealand dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Samoan",
+    "Tokelauan"
+   ],
+   "population": 1411,
+   "landlocked": false,
+   "demonym": "Tokelauan",
+   "blurb": "Tokelau is a dependent territory of New Zealand made up of three atolls in the South Pacific."
+  },
+  {
+   "code": "TON",
+   "code2": "TO",
+   "name": "Tonga",
+   "official": "Kingdom of Tonga",
+   "capital": "Nuku'alofa",
+   "emoji": "🇹🇴",
+   "colors": [
+    "#fbf8f3",
+    "#c2080e",
+    "#dc5200"
+   ],
+   "region": "Oceania",
+   "subregion": "Polynesia",
+   "area": 747,
+   "borders": [],
+   "lat": -20,
+   "lng": -175,
+   "currencies": [
+    {
+     "code": "TOP",
+     "name": "Tongan paʻanga",
+     "symbol": "T$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Tongan"
+   ],
+   "population": 100179,
+   "landlocked": false,
+   "demonym": "Tongan",
+   "blurb": "Tonga is a Polynesian kingdom of roughly 170 islands in the South Pacific, south of Samoa."
+  },
+  {
+   "code": "TTO",
+   "code2": "TT",
+   "name": "Trinidad and Tobago",
+   "official": "Republic of Trinidad and Tobago",
+   "capital": "Port of Spain",
+   "emoji": "🇹🇹",
+   "colors": [
+    "#000000",
+    "#df2420",
+    "#f9f7f3"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 5130,
+   "borders": [],
+   "lat": 10.6918,
+   "lng": -61.2225,
+   "currencies": [
+    {
+     "code": "TTD",
+     "name": "Trinidad and Tobago dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 1512779,
+   "landlocked": false,
+   "demonym": "Trinidadian",
+   "blurb": "Trinidad and Tobago is a two-island republic in the Caribbean, off the northeast Venezuelan coast."
+  },
+  {
+   "code": "TUN",
+   "code2": "TN",
+   "name": "Tunisia",
+   "official": "Republic of Tunisia",
+   "capital": "Tunis",
+   "emoji": "🇹🇳",
+   "colors": [
+    "#fbf6f0",
+    "#e80004",
+    "#f06c78"
+   ],
+   "region": "Africa",
+   "subregion": "Northern Africa",
+   "area": 163610,
+   "borders": [
+    "DZA",
+    "LBY"
+   ],
+   "lat": 34,
+   "lng": 9,
+   "currencies": [
+    {
+     "code": "TND",
+     "name": "Tunisian dinar",
+     "symbol": "د.ت"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 11992843,
+   "landlocked": false,
+   "demonym": "Tunisian",
+   "blurb": "Tunisia is the northernmost African republic, on the Mediterranean between Algeria and Libya."
+  },
+  {
+   "code": "TUR",
+   "code2": "TR",
+   "name": "Turkey",
+   "official": "Republic of Türkiye",
+   "capital": "Ankara",
+   "emoji": "🇹🇷",
+   "colors": [
+    "#fcfbf7",
+    "#e31316",
+    "#fce4e4"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 783562,
+   "borders": [
+    "ARM",
+    "AZE",
+    "BGR",
+    "GEO",
+    "GRC",
+    "IRN",
+    "IRQ",
+    "SYR"
+   ],
+   "lat": 39,
+   "lng": 35,
+   "currencies": [
+    {
+     "code": "TRY",
+     "name": "Turkish lira",
+     "symbol": "₺"
+    }
+   ],
+   "languages": [
+    "Turkish"
+   ],
+   "population": 86092168,
+   "landlocked": false,
+   "demonym": "Turkish",
+   "blurb": "Turkey is a republic across Southeast Europe and Western Asia, between the Black and Aegean seas."
+  },
+  {
+   "code": "TKM",
+   "code2": "TM",
+   "name": "Turkmenistan",
+   "official": "Turkmenistan",
+   "capital": "Ashgabat",
+   "emoji": "🇹🇲",
+   "colors": [
+    "#c93f2c",
+    "#0d8642",
+    "#e1dd8e"
+   ],
+   "region": "Asia",
+   "subregion": "Central Asia",
+   "area": 488100,
+   "borders": [
+    "AFG",
+    "IRN",
+    "KAZ",
+    "UZB"
+   ],
+   "lat": 40,
+   "lng": 60,
+   "currencies": [
+    {
+     "code": "TMT",
+     "name": "Turkmenistan manat",
+     "symbol": "m"
+    }
+   ],
+   "languages": [
+    "Russian",
+    "Turkmen"
+   ],
+   "population": 7057841,
+   "landlocked": true,
+   "demonym": "Turkmen",
+   "blurb": "Turkmenistan is a Central Asian republic on the Caspian Sea, mostly covered by the Karakum desert."
+  },
+  {
+   "code": "TCA",
+   "code2": "TC",
+   "name": "Turks and Caicos Islands",
+   "official": "Turks and Caicos Islands",
+   "capital": "Cockburn Town",
+   "emoji": "🇹🇨",
+   "colors": [
+    "#0f2567",
+    "#2a9d43",
+    "#ec904f"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 948,
+   "borders": [],
+   "lat": 21.75,
+   "lng": -71.58333333,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 50828,
+   "landlocked": false,
+   "demonym": "Turks and Caicos Islander",
+   "blurb": "The Turks and Caicos Islands are a British overseas territory of two groups below the Bahamas."
+  },
+  {
+   "code": "TUV",
+   "code2": "TV",
+   "name": "Tuvalu",
+   "official": "Tuvalu",
+   "capital": "Funafuti",
+   "emoji": "🇹🇻",
+   "colors": [
+    "#ec8d53",
+    "#2b9ee4",
+    "#0a206a"
+   ],
+   "region": "Oceania",
+   "subregion": "Polynesia",
+   "area": 26,
+   "borders": [],
+   "lat": -8,
+   "lng": 178,
+   "currencies": [
+    {
+     "code": "AUD",
+     "name": "Australian dollar",
+     "symbol": "$"
+    },
+    {
+     "code": "TVD",
+     "name": "Tuvaluan dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English",
+    "Tuvaluan"
+   ],
+   "population": 10643,
+   "landlocked": false,
+   "demonym": "Tuvaluan",
+   "blurb": "Tuvalu is a Polynesian state made up of nine low-lying atolls and reef islands in the Pacific."
+  },
+  {
+   "code": "UGA",
+   "code2": "UG",
+   "name": "Uganda",
+   "official": "Republic of Uganda",
+   "capital": "Kampala",
+   "emoji": "🇺🇬",
+   "colors": [
+    "#ffd000",
+    "#d50003",
+    "#000000"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 241550,
+   "borders": [
+    "COD",
+    "KEN",
+    "RWA",
+    "SSD",
+    "TZA"
+   ],
+   "lat": 1,
+   "lng": 32,
+   "currencies": [
+    {
+     "code": "UGX",
+     "name": "Ugandan shilling",
+     "symbol": "Sh"
+    }
+   ],
+   "languages": [
+    "English",
+    "Swahili"
+   ],
+   "population": 45905417,
+   "landlocked": true,
+   "demonym": "Ugandan",
+   "blurb": "Uganda is a landlocked East African republic on the northern shore of Lake Victoria and the Nile."
+  },
+  {
+   "code": "UKR",
+   "code2": "UA",
+   "name": "Ukraine",
+   "official": "Ukraine",
+   "capital": "Kyiv",
+   "emoji": "🇺🇦",
+   "colors": [
+    "#fed506",
+    "#075bbb",
+    "#035db8"
+   ],
+   "region": "Europe",
+   "subregion": "Eastern Europe",
+   "area": 603500,
+   "borders": [
+    "BLR",
+    "HUN",
+    "MDA",
+    "POL",
+    "ROU",
+    "RUS",
+    "SVK"
+   ],
+   "lat": 49,
+   "lng": 32,
+   "currencies": [
+    {
+     "code": "UAH",
+     "name": "Ukrainian hryvnia",
+     "symbol": "₴"
+    }
+   ],
+   "languages": [
+    "Ukrainian"
+   ],
+   "population": 28700000,
+   "landlocked": false,
+   "demonym": "Ukrainian",
+   "blurb": "Ukraine is a republic in Eastern Europe on the Black Sea and the second-largest state in Europe."
+  },
+  {
+   "code": "ARE",
+   "code2": "AE",
+   "name": "United Arab Emirates",
+   "official": "United Arab Emirates",
+   "capital": "Abu Dhabi",
+   "emoji": "🇦🇪",
+   "colors": [
+    "#018845",
+    "#c01308",
+    "#fbfaf5"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 83600,
+   "borders": [
+    "OMN",
+    "SAU"
+   ],
+   "lat": 24,
+   "lng": 54,
+   "currencies": [
+    {
+     "code": "AED",
+     "name": "United Arab Emirates dirham",
+     "symbol": "د.إ"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 11027129,
+   "landlocked": false,
+   "demonym": "Emirati",
+   "blurb": "The United Arab Emirates is a federation of seven emirates on the Arabian Peninsula, bordering Oman."
+  },
+  {
+   "code": "GBR",
+   "code2": "GB",
+   "name": "United Kingdom",
+   "official": "United Kingdom of Great Britain and Northern Ireland",
+   "capital": "London",
+   "emoji": "🇬🇧",
+   "colors": [
+    "#0e256d",
+    "#c30c10",
+    "#fbf8f3"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 242900,
+   "borders": [
+    "IRL"
+   ],
+   "lat": 54,
+   "lng": -2,
+   "currencies": [
+    {
+     "code": "GBP",
+     "name": "British pound",
+     "symbol": "£"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 66912637,
+   "landlocked": false,
+   "demonym": "British",
+   "blurb": "The United Kingdom is an island state made up of England, Scotland, Wales and Northern Ireland."
+  },
+  {
+   "code": "USA",
+   "code2": "US",
+   "name": "United States",
+   "official": "United States of America",
+   "capital": "Washington, D.C.",
+   "emoji": "🇺🇸",
+   "colors": [
+    "#faf7f1",
+    "#ae1738",
+    "#133866"
+   ],
+   "region": "Americas",
+   "subregion": "North America",
+   "area": 9372610,
+   "borders": [
+    "CAN",
+    "MEX"
+   ],
+   "lat": 38,
+   "lng": -97,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 341784857,
+   "landlocked": false,
+   "demonym": "American",
+   "blurb": "The United States is a federal republic of fifty states spanning the middle of North America."
+  },
+  {
+   "code": "UMI",
+   "code2": "UM",
+   "name": "United States Minor Outlying Islands",
+   "official": "United States Minor Outlying Islands",
+   "capital": null,
+   "emoji": "🇺🇲",
+   "colors": [
+    "#faf7f1",
+    "#ae1738",
+    "#133866"
+   ],
+   "region": "Americas",
+   "subregion": "North America",
+   "area": 34.2,
+   "borders": [],
+   "lat": 19.3,
+   "lng": 166.633333,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 300,
+   "landlocked": false,
+   "demonym": "American Islander",
+   "blurb": "The United States Minor Outlying Islands are nine scattered island and reef territories."
+  },
+  {
+   "code": "VIR",
+   "code2": "VI",
+   "name": "United States Virgin Islands",
+   "official": "Virgin Islands of the United States",
+   "capital": "Charlotte Amalie",
+   "emoji": "🇻🇮",
+   "colors": [
+    "#fbfaf5",
+    "#e7bc35",
+    "#748cb8"
+   ],
+   "region": "Americas",
+   "subregion": "Caribbean",
+   "area": 347,
+   "borders": [],
+   "lat": 18.35,
+   "lng": -64.933333,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 87146,
+   "landlocked": false,
+   "demonym": "Virgin Islander",
+   "blurb": "The United States Virgin Islands are an unincorporated territory in the eastern Caribbean."
+  },
+  {
+   "code": "URY",
+   "code2": "UY",
+   "name": "Uruguay",
+   "official": "Oriental Republic of Uruguay",
+   "capital": "Montevideo",
+   "emoji": "🇺🇾",
+   "colors": [
+    "#fbfaf5",
+    "#2447ae",
+    "#1535a5"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 181034,
+   "borders": [
+    "ARG",
+    "BRA"
+   ],
+   "lat": -33,
+   "lng": -56,
+   "currencies": [
+    {
+     "code": "UYU",
+     "name": "Uruguayan peso",
+     "symbol": "$"
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 3480601,
+   "landlocked": false,
+   "demonym": "Uruguayan",
+   "blurb": "Uruguay is a republic on the Atlantic coast of South America, between Brazil and Argentina."
+  },
+  {
+   "code": "UZB",
+   "code2": "UZ",
+   "name": "Uzbekistan",
+   "official": "Republic of Uzbekistan",
+   "capital": "Tashkent",
+   "emoji": "🇺🇿",
+   "colors": [
+    "#39852d",
+    "#0782f3",
+    "#fcfbf7"
+   ],
+   "region": "Asia",
+   "subregion": "Central Asia",
+   "area": 447400,
+   "borders": [
+    "AFG",
+    "KAZ",
+    "KGZ",
+    "TJK",
+    "TKM"
+   ],
+   "lat": 41,
+   "lng": 64,
+   "currencies": [
+    {
+     "code": "UZS",
+     "name": "Uzbekistani soʻm",
+     "symbol": "so'm"
+    }
+   ],
+   "languages": [
+    "Russian",
+    "Uzbek"
+   ],
+   "population": 39047321,
+   "landlocked": true,
+   "demonym": "Uzbekistani",
+   "blurb": "Uzbekistan is a landlocked Central Asian republic bordered only by other landlocked countries."
+  },
+  {
+   "code": "VUT",
+   "code2": "VU",
+   "name": "Vanuatu",
+   "official": "Republic of Vanuatu",
+   "capital": "Port Vila",
+   "emoji": "🇻🇺",
+   "colors": [
+    "#009248",
+    "#d10e3d",
+    "#000000"
+   ],
+   "region": "Oceania",
+   "subregion": "Melanesia",
+   "area": 12189,
+   "borders": [],
+   "lat": -16,
+   "lng": 167,
+   "currencies": [
+    {
+     "code": "VUV",
+     "name": "Vanuatu vatu",
+     "symbol": "Vt"
+    }
+   ],
+   "languages": [
+    "Bislama",
+    "English",
+    "French"
+   ],
+   "population": 321409,
+   "landlocked": false,
+   "demonym": "Ni-Vanuatu",
+   "blurb": "Vanuatu is a South Pacific republic of some eighty islands of volcanic origin, east of Australia."
+  },
+  {
+   "code": "VAT",
+   "code2": "VA",
+   "name": "Vatican City",
+   "official": "Vatican City State",
+   "capital": "Vatican City",
+   "emoji": "🇻🇦",
+   "colors": [
+    "#fff400",
+    "#dea80e",
+    "#fbfaf5"
+   ],
+   "region": "Europe",
+   "subregion": "Southern Europe",
+   "area": 0.44,
+   "borders": [
+    "ITA"
+   ],
+   "lat": 41.9,
+   "lng": 12.45,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Italian",
+    "Latin"
+   ],
+   "population": 882,
+   "landlocked": true,
+   "demonym": "Vatican",
+   "blurb": "Vatican City is a walled enclave within Rome and the smallest sovereign state in the world."
+  },
+  {
+   "code": "VEN",
+   "code2": "VE",
+   "name": "Venezuela",
+   "official": "Bolivarian Republic of Venezuela",
+   "capital": "Caracas",
+   "emoji": "🇻🇪",
+   "colors": [
+    "#f4ce00",
+    "#cd1f1c",
+    "#0d2682"
+   ],
+   "region": "Americas",
+   "subregion": "South America",
+   "area": 916445,
+   "borders": [
+    "BRA",
+    "COL",
+    "GUY"
+   ],
+   "lat": 8,
+   "lng": -66,
+   "currencies": [
+    {
+     "code": "VES",
+     "name": "Venezuelan bolívar soberano",
+     "symbol": "Bs.S."
+    }
+   ],
+   "languages": [
+    "Spanish"
+   ],
+   "population": 28633711,
+   "landlocked": false,
+   "demonym": "Venezuelan",
+   "blurb": "Venezuela is a federal republic on the northern coast of South America, facing the Caribbean."
+  },
+  {
+   "code": "VNM",
+   "code2": "VN",
+   "name": "Vietnam",
+   "official": "Socialist Republic of Vietnam",
+   "capital": "Hanoi",
+   "emoji": "🇻🇳",
+   "colors": [
+    "#f7ec19",
+    "#fc0838",
+    "#fff900"
+   ],
+   "region": "Asia",
+   "subregion": "South-Eastern Asia",
+   "area": 331212,
+   "borders": [
+    "KHM",
+    "CHN",
+    "LAO"
+   ],
+   "lat": 16.16666666,
+   "lng": 107.83333333,
+   "currencies": [
+    {
+     "code": "VND",
+     "name": "Vietnamese đồng",
+     "symbol": "₫"
+    }
+   ],
+   "languages": [
+    "Vietnamese"
+   ],
+   "population": 102300000,
+   "landlocked": false,
+   "demonym": "Vietnamese",
+   "blurb": "Vietnam is a Southeast Asian state running along the eastern edge of the Indochinese Peninsula."
+  },
+  {
+   "code": "WLF",
+   "code2": "WF",
+   "name": "Wallis and Futuna",
+   "official": "Territory of the Wallis and Futuna Islands",
+   "capital": "Mata-Utu",
+   "emoji": "🇼🇫",
+   "colors": [
+    "#fcf9f5",
+    "#d31114",
+    "#002552"
+   ],
+   "region": "Oceania",
+   "subregion": "Polynesia",
+   "area": 142,
+   "borders": [],
+   "lat": -13.3,
+   "lng": -176.2,
+   "currencies": [
+    {
+     "code": "XPF",
+     "name": "CFP franc",
+     "symbol": "₣"
+    }
+   ],
+   "languages": [
+    "French"
+   ],
+   "population": 11151,
+   "landlocked": false,
+   "demonym": "Wallis and Futuna Islander",
+   "blurb": "Wallis and Futuna is a French overseas collectivity of three main islands in the South Pacific."
+  },
+  {
+   "code": "ESH",
+   "code2": "EH",
+   "name": "Western Sahara",
+   "official": "Sahrawi Arab Democratic Republic",
+   "capital": "El Aaiún",
+   "emoji": "🇪🇭",
+   "colors": [
+    "#0e7d41",
+    "#c30d19",
+    "#000000"
+   ],
+   "region": "Africa",
+   "subregion": "Northern Africa",
+   "area": 266000,
+   "borders": [
+    "DZA",
+    "MRT",
+    "MAR"
+   ],
+   "lat": 24.5,
+   "lng": -13,
+   "currencies": [
+    {
+     "code": "DZD",
+     "name": "Algerian dinar",
+     "symbol": "د.ج"
+    },
+    {
+     "code": "MAD",
+     "name": "Moroccan dirham",
+     "symbol": "د.م."
+    },
+    {
+     "code": "MRU",
+     "name": "Mauritanian ouguiya",
+     "symbol": "UM"
+    }
+   ],
+   "languages": [
+    "Hassaniya Arabic",
+    "Spanish"
+   ],
+   "population": 510713,
+   "landlocked": false,
+   "demonym": "Sahrawi",
+   "blurb": "Western Sahara is a disputed territory on the northwest African coast, mostly held by Morocco."
+  },
+  {
+   "code": "YEM",
+   "code2": "YE",
+   "name": "Yemen",
+   "official": "Republic of Yemen",
+   "capital": "Sana'a",
+   "emoji": "🇾🇪",
+   "colors": [
+    "#000000",
+    "#d30e12",
+    "#fbfaf5"
+   ],
+   "region": "Asia",
+   "subregion": "Western Asia",
+   "area": 527968,
+   "borders": [
+    "OMN",
+    "SAU"
+   ],
+   "lat": 15,
+   "lng": 48,
+   "currencies": [
+    {
+     "code": "YER",
+     "name": "Yemeni rial",
+     "symbol": "﷼"
+    }
+   ],
+   "languages": [
+    "Arabic"
+   ],
+   "population": 32684503,
+   "landlocked": false,
+   "demonym": "Yemeni",
+   "blurb": "Yemen is a republic at the southern end of the Arabian Peninsula, on the Red and Arabian seas."
+  },
+  {
+   "code": "ZMB",
+   "code2": "ZM",
+   "name": "Zambia",
+   "official": "Republic of Zambia",
+   "capital": "Lusaka",
+   "emoji": "🇿🇲",
+   "colors": [
+    "#e45713",
+    "#1a8800",
+    "#000000"
+   ],
+   "region": "Africa",
+   "subregion": "Eastern Africa",
+   "area": 752612,
+   "borders": [
+    "AGO",
+    "BWA",
+    "COD",
+    "MWI",
+    "MOZ",
+    "NAM",
+    "TZA",
+    "ZWE"
+   ],
+   "lat": -15,
+   "lng": 30,
+   "currencies": [
+    {
+     "code": "ZMW",
+     "name": "Zambian kwacha",
+     "symbol": "ZK"
+    }
+   ],
+   "languages": [
+    "English"
+   ],
+   "population": 23003214,
+   "landlocked": true,
+   "demonym": "Zambian",
+   "blurb": "Zambia is a landlocked republic in Southern Africa, on the upper Zambezi river and its plateau."
+  },
+  {
+   "code": "ZWE",
+   "code2": "ZW",
+   "name": "Zimbabwe",
+   "official": "Republic of Zimbabwe",
+   "capital": "Harare",
+   "emoji": "🇿🇼",
+   "colors": [
+    "#145f00",
+    "#d31b0f",
+    "#fed703"
+   ],
+   "region": "Africa",
+   "subregion": "Southern Africa",
+   "area": 390757,
+   "borders": [
+    "BWA",
+    "MOZ",
+    "ZAF",
+    "ZMB"
+   ],
+   "lat": -20,
+   "lng": 30,
+   "currencies": [
+    {
+     "code": "USD",
+     "name": "United States dollar",
+     "symbol": "$"
+    },
+    {
+     "code": "ZWG",
+     "name": "Zimbabwe Gold",
+     "symbol": "ZiG"
+    }
+   ],
+   "languages": [
+    "Barwe",
+    "English",
+    "Kalanga",
+    "Khoisan languages",
+    "Ndau",
+    "Northern Ndebele",
+    "Chichewa",
+    "Shona",
+    "Sotho",
+    "Tonga (Zambia)",
+    "Tswana",
+    "Tsonga",
+    "Venda",
+    "Xhosa",
+    "Zimbabwean Sign Language"
+   ],
+   "population": 16175966,
+   "landlocked": true,
+   "demonym": "Zimbabwean",
+   "blurb": "Zimbabwe is a landlocked republic in Southern Africa, between the Zambezi and Limpopo rivers."
+  },
+  {
+   "code": "ALA",
+   "code2": "AX",
+   "name": "Åland Islands",
+   "official": "Åland Islands",
+   "capital": "Mariehamn",
+   "emoji": "🇦🇽",
+   "colors": [
+    "#135fae",
+    "#d30e12",
+    "#ffd90b"
+   ],
+   "region": "Europe",
+   "subregion": "Northern Europe",
+   "area": 1580,
+   "borders": [],
+   "lat": 60.116667,
+   "lng": 19.9,
+   "currencies": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "symbol": "€"
+    }
+   ],
+   "languages": [
+    "Swedish"
+   ],
+   "population": 30654,
+   "landlocked": false,
+   "demonym": "Ålandish",
+   "blurb": "Åland is an autonomous, Swedish-speaking archipelago of Finland in the Baltic Sea near Sweden."
+  }
+ ]
+}

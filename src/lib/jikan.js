@@ -7,7 +7,7 @@
 
 import archive from '../data/animeSnapshot.json';
 
-const BASE = 'https://api.jikan.moe/v4';
+const BASE = '/api/jikan'; // our backend proxy to https://api.jikan.moe/v4 (rate limit, cache, offline copy)
 const TIMEOUT_MS = 6000;
 const SPACING_MS = 1100; // Jikan allows ~3 requests/second; stay well under
 const RETRY_AFTER_429_MS = 1500;
