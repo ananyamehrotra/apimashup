@@ -1,0 +1,106 @@
+{
+  "id": "lothric",
+  "name": "Lothric",
+  "game": "Dark Souls 3",
+  "tagline": "A dying kingdom, where the First Flame waits to be linked.",
+  "coords": { "lat": 0, "lng": 0 },
+  "story": [
+    "For ages the First Flame has kept the Age of Fire alive, and every time it began to fade a great soul offered itself as fuel to link the flame. Those who did so became Lords of Cinder.",
+    "Now the flame is fading again, and the bell has tolled to summon the Lords back to their thrones in Firelink Shrine. But they have refused. Most have abandoned their duty, and Prince Lothric, raised to link the flame, has turned his back on it. The land is crumbling into ash, and the undead curse spreads.",
+    "You are one of the Unkindled, an undead who failed to become a Lord in life, now risen from the grave when the bell tolled. Your task is to find the Lords of Cinder, return them to their thrones, and decide whether to link the fire or let it die."
+  ],
+  "characters": [
+    {
+      "id": "knight",
+      "name": "Knight",
+      "backstory": "A wandering knight in full armour, with a sturdy shield and a longsword. Well balanced and hard to put down.",
+      "stats": { "HP": 14, "ATK": 13, "DEF": 14, "SPD": 9, "MAG": 7 },
+      "trait": "Steadfast: cannot be staggered by the first heavy blow in a fight."
+    },
+    {
+      "id": "herald",
+      "name": "Herald",
+      "backstory": "A spear-carrying preacher who spreads a faith few still believe in. Carries a shield and knows healing miracles.",
+      "stats": { "HP": 12, "ATK": 12, "DEF": 12, "SPD": 10, "MAG": 13 },
+      "trait": "Heal Aid: once per fight, restore a small amount of HP."
+    },
+    {
+      "id": "sorcerer",
+      "name": "Sorcerer",
+      "backstory": "A sorcerer from the Grand Archives' tradition of soul sorceries, fragile but able to strike from afar with soul arrows.",
+      "stats": { "HP": 9, "ATK": 7, "DEF": 8, "SPD": 12, "MAG": 17 },
+      "trait": "Soul Arrow: MAG attacks hit before melee in a tied round."
+    },
+    {
+      "id": "pyromancer",
+      "name": "Pyromancer",
+      "backstory": "A pyromancer from the Great Swamp, carrying a hand axe and a pyromancy flame. Fights well both up close and with fire.",
+      "stats": { "HP": 11, "ATK": 12, "DEF": 10, "SPD": 10, "MAG": 14 },
+      "trait": "Fireball: once per fight, a MAG attack deals extra fire damage."
+    }
+  ],
+  "bosses": [
+    {
+      "id": "iudex-gundyr",
+      "name": "Iudex Gundyr",
+      "title": "Judge of the Unkindled",
+      "lore": "An armoured giant, pinned in place by a coiled sword in the Cemetery of Ash, who tests every Unkindled before they may reach Firelink Shrine. Mid-fight, a dark, writhing mass bursts from his body and he becomes something far less human.",
+      "stats": { "HP": 50, "ATK": 18, "DEF": 17, "SPD": 12, "MAG": 4 },
+      "move": "Halberd Sweep"
+    },
+    {
+      "id": "vordt",
+      "name": "Vordt of the Boreal Valley",
+      "title": "Outrider Knight of Irithyll",
+      "lore": "One of the Pontiff's Outrider Knights, guarding the gate of the High Wall of Lothric. He fights on all fours like a beast, swinging a great mace and breathing frost.",
+      "stats": { "HP": 60, "ATK": 21, "DEF": 16, "SPD": 13, "MAG": 9 },
+      "move": "Frostbreath Charge"
+    },
+    {
+      "id": "dancer",
+      "name": "Dancer of the Boreal Valley",
+      "title": "Outrider Knight of the royal blood",
+      "lore": "A tall, thin knight who rises from the floor of the High Wall's chapel and fights with two curved swords, one of them burning with dark fire. Her movements are slow and graceful until they suddenly are not.",
+      "stats": { "HP": 70, "ATK": 23, "DEF": 13, "SPD": 18, "MAG": 15 },
+      "move": "Spinning Flame Dance"
+    },
+    {
+      "id": "dragonslayer-armour",
+      "name": "Dragonslayer Armour",
+      "title": "Guardian of the Grand Archives Bridge",
+      "lore": "An empty suit of armour animated by the will of the Pilgrim Butterflies, guarding the bridge to Lothric Castle and the Grand Archives. It wields a lightning-charged greataxe and a great shield.",
+      "stats": { "HP": 85, "ATK": 24, "DEF": 20, "SPD": 12, "MAG": 13 },
+      "move": "Lightning Greataxe Slam"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "fire-keeper",
+      "name": "The Fire Keeper",
+      "role": "Keeper of the bonfire",
+      "where": "Firelink Shrine",
+      "quote": "A quiet, masked woman who tends the shrine's bonfire and turns souls into strength for the Unkindled."
+    },
+    {
+      "id": "andre",
+      "name": "Andre of Astora",
+      "role": "Blacksmith",
+      "where": "Firelink Shrine",
+      "quote": "A cheerful old blacksmith who reinforces weapons and reminds you to take care of them."
+    },
+    {
+      "id": "ludleth",
+      "name": "Ludleth of Courland",
+      "role": "Lord of Cinder",
+      "where": "His throne in Firelink Shrine",
+      "quote": "The smallest Lord of Cinder, and the only one who stayed. He can transpose boss souls into weapons and spells."
+    },
+    {
+      "id": "yuria",
+      "name": "Yuria of Londor",
+      "role": "Hollow emissary",
+      "where": "Firelink Shrine, after a certain quest begins",
+      "quote": "A masked woman from Londor, a land of Hollows. She hints that the Unkindled could choose a different fate than linking the fire."
+    }
+  ]
+}

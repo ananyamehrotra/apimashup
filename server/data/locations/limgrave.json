@@ -1,0 +1,113 @@
+{
+  "id": "limgrave",
+  "name": "Limgrave",
+  "game": "Elden Ring",
+  "tagline": "Where the Tarnished first see the Erdtree.",
+  "coords": { "lat": 0, "lng": 0 },
+  "story": [
+    "Long ago the Elden Ring was shattered, and its shards were seized by the demigod children of Queen Marika. Each Shardbearer grew drunk on the power, and their war, the Shattering, left the Lands Between broken and without a lord.",
+    "Limgrave is the first land the returning Tarnished set foot on: green fields under the golden Erdtree, ruins scorched by dragonfire, and roads patrolled by golden knights. Above it all looms Stormveil Castle, where Godrick the Grafted rules by cutting the limbs from the fallen and grafting them onto himself.",
+    "You are one of the Tarnished, exiled long ago and called back by the guidance of grace. To become Elden Lord you must claim the Great Runes from the Shardbearers, and the road to the first of them runs through Stormhill and the gates of Stormveil."
+  ],
+  "characters": [
+    {
+      "id": "vagabond",
+      "name": "Vagabond",
+      "backstory": "A knight who wandered the land after their homeland fell. All that remains is a sturdy shield, a longsword and the habit of standing in front of others.",
+      "stats": { "HP": 15, "ATK": 14, "DEF": 12, "SPD": 9, "MAG": 9 },
+      "trait": "Shield Wall: the first hit taken in each fight is halved."
+    },
+    {
+      "id": "samurai",
+      "name": "Samurai",
+      "backstory": "A capable fighter from the distant Land of Reeds, carrying a curved uchigatana and a longbow. Swift, precise and patient.",
+      "stats": { "HP": 12, "ATK": 13, "DEF": 10, "SPD": 15, "MAG": 9 },
+      "trait": "Unsheathe: strikes first when SPD is tied."
+    },
+    {
+      "id": "astrologer",
+      "name": "Astrologer",
+      "backstory": "A scholar who reads fate in the stars and studied glintstone sorcery at the Academy of Raya Lucaria. Fragile up close, devastating at range.",
+      "stats": { "HP": 9, "ATK": 8, "DEF": 9, "SPD": 12, "MAG": 16 },
+      "trait": "Glintstone Pebble: MAG attacks ignore 2 points of DEF."
+    },
+    {
+      "id": "prophet",
+      "name": "Prophet",
+      "backstory": "A seer cast out as a bearer of ill omens. Their incantations heal allies and call down flame on those who drove them away.",
+      "stats": { "HP": 10, "ATK": 11, "DEF": 10, "SPD": 8, "MAG": 16 },
+      "trait": "Heal: once per fight, restore a quarter of max HP."
+    }
+  ],
+  "bosses": [
+    {
+      "id": "tree-sentinel",
+      "name": "Tree Sentinel",
+      "title": "Golden Knight of the Erdtree",
+      "lore": "A mounted knight in golden armour who patrols the road near the Church of Elleh. Tree Sentinels guard the Erdtree from those deemed unworthy, and this one has turned back countless newly arrived Tarnished.",
+      "stats": { "HP": 45, "ATK": 18, "DEF": 20, "SPD": 14, "MAG": 6 },
+      "move": "Golden Halberd Sweep",
+      "apiRef": { "source": "eldenring", "name": "Tree Sentinel" }
+    },
+    {
+      "id": "margit",
+      "name": "Margit, the Fell Omen",
+      "title": "Gatekeeper of Stormveil",
+      "lore": "A hunched, horned figure who bars the road to Stormveil Castle and mocks every Tarnished who tries to pass. He fights with a cane, golden daggers and a hammer conjured from holy light.",
+      "stats": { "HP": 50, "ATK": 20, "DEF": 14, "SPD": 17, "MAG": 15 },
+      "move": "Golden Hammer Slam"
+    },
+    {
+      "id": "agheel",
+      "name": "Flying Dragon Agheel",
+      "title": "Terror of the Dragon-Burnt Ruins",
+      "lore": "An ancient flying dragon that nests above Agheel Lake in western Limgrave. The ruins nearby were burned black by its breath, and it still swoops down on anything that wanders too close.",
+      "stats": { "HP": 70, "ATK": 22, "DEF": 16, "SPD": 12, "MAG": 10 },
+      "move": "Dragonfire Breath",
+      "apiRef": { "source": "eldenring", "name": "Flying Dragon Agheel" }
+    },
+    {
+      "id": "godrick",
+      "name": "Godrick the Grafted",
+      "title": "Shardbearer of Stormveil",
+      "lore": "The lord of Stormveil and the weakest of the demigods, desperate to prove himself. He grafts the limbs of the fallen onto his body and, in his final stand, the head of a dragon onto his own arm.",
+      "stats": { "HP": 80, "ATK": 24, "DEF": 18, "SPD": 13, "MAG": 14 },
+      "move": "Grafted Dragon",
+      "apiRef": { "source": "eldenring", "name": "Godrick The Grafted" }
+    }
+  ],
+  "npcs": [
+    {
+      "id": "melina",
+      "name": "Melina",
+      "role": "Guide",
+      "where": "Sites of grace, starting at Gatefront Ruins",
+      "quote": "She offers to be your maiden: she turns runes into strength and gives you Torrent, the spectral steed.",
+      "apiRef": { "source": "eldenring", "name": "Melina" }
+    },
+    {
+      "id": "kale",
+      "name": "Merchant Kalé",
+      "role": "Merchant",
+      "where": "Church of Elleh",
+      "quote": "A nomadic merchant who sells crafting kits, torches and cookbooks to anyone setting out.",
+      "apiRef": { "source": "eldenring", "name": "Merchant Kalé" }
+    },
+    {
+      "id": "roderika",
+      "name": "Roderika",
+      "role": "Lost soul, later spirit tuner",
+      "where": "Stormhill Shack, later Roundtable Hold",
+      "quote": "Her companions were taken into Stormveil and grafted. She is frightened, but may find her purpose if you help her.",
+      "apiRef": { "source": "eldenring", "name": "Roderika" }
+    },
+    {
+      "id": "varre",
+      "name": "White-Faced Varré",
+      "role": "Mysterious guide",
+      "where": "The First Step",
+      "quote": "A smiling stranger who mocks the maidenless and points you toward Stormveil and the Roundtable Hold.",
+      "apiRef": { "source": "eldenring", "name": "White-faced Varré" }
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "yharnam",
+  "name": "Yharnam",
+  "game": "Bloodborne",
+  "tagline": "A city of healing blood, on the night of the hunt.",
+  "coords": { "lat": 0, "lng": 0 },
+  "story": [
+    "Yharnam is an ancient city in the mountains, famous for one thing: blood ministration. The Healing Church claims its blood can cure any illness, and sick travellers come from far away hoping to be saved.",
+    "But the blood carries a curse. The townsfolk are turning into beasts, and on the night of the hunt they lock their doors and burn incense while hunters roam the streets with saw and pistol. Tonight the plague is worse than ever, and even the Church's own clerics are changing.",
+    "You came to Yharnam seeking paleblood. You signed a contract, received a transfusion in a clinic, and woke with no memory of who you were. Now you are a hunter, bound to a strange dream, and the only way forward is to hunt until the night ends."
+  ],
+  "characters": [
+    {
+      "id": "lone-survivor",
+      "name": "Lone Survivor",
+      "backstory": "The only one who walked away from a massacre. They do not know why they lived, only that they are very hard to kill.",
+      "stats": { "HP": 16, "ATK": 11, "DEF": 13, "SPD": 10, "MAG": 7 },
+      "trait": "Rally: regain some HP by hitting back right after taking damage."
+    },
+    {
+      "id": "military-veteran",
+      "name": "Military Veteran",
+      "backstory": "A soldier who has seen too many battles. Strong, skilled and steady with a heavy weapon.",
+      "stats": { "HP": 13, "ATK": 15, "DEF": 12, "SPD": 11, "MAG": 6 },
+      "trait": "Drilled: the first stat round each fight gets +2."
+    },
+    {
+      "id": "noble-scion",
+      "name": "Noble Scion",
+      "backstory": "Born into a noble family with old, strange blood in their veins. Weak in body but gifted in the arts of blood.",
+      "stats": { "HP": 9, "ATK": 9, "DEF": 9, "SPD": 12, "MAG": 16 },
+      "trait": "Bloodtinge: blood-fuelled attacks use MAG instead of ATK."
+    },
+    {
+      "id": "cruel-fate",
+      "name": "Cruel Fate",
+      "backstory": "Someone who has always been unlucky in an unlucky world, and has learned to turn arcane mysteries to their advantage.",
+      "stats": { "HP": 10, "ATK": 10, "DEF": 10, "SPD": 11, "MAG": 15 },
+      "trait": "Arcane Insight: reveals one of the boss's stats before the fight."
+    }
+  ],
+  "bosses": [
+    {
+      "id": "cleric-beast",
+      "name": "Cleric Beast",
+      "title": "Beast of the Great Bridge",
+      "lore": "A towering beast with twisted antlers that waits on the Great Bridge of Central Yharnam. It was once a cleric of the Healing Church, proof that even the Church's own become the worst beasts of all.",
+      "stats": { "HP": 55, "ATK": 20, "DEF": 12, "SPD": 15, "MAG": 4 },
+      "move": "Antlered Lunge"
+    },
+    {
+      "id": "father-gascoigne",
+      "name": "Father Gascoigne",
+      "title": "Hunter of the Tomb of Oedon",
+      "lore": "A foreign hunter and priest who has hunted beasts for too long. Covered in blood among the graves, he can barely tell a beast from a hunter, and the scent of blood is pulling him into becoming one himself.",
+      "stats": { "HP": 60, "ATK": 21, "DEF": 14, "SPD": 16, "MAG": 6 },
+      "move": "Beast Transformation"
+    },
+    {
+      "id": "blood-starved-beast",
+      "name": "Blood-starved Beast",
+      "title": "Fiend of Old Yharnam",
+      "lore": "A gaunt, ravenous beast lurking in the Church of the Good Chalice in Old Yharnam, the district burned down to stop the ashen blood plague. Its attacks are poisonous and grow wilder as it is wounded.",
+      "stats": { "HP": 65, "ATK": 22, "DEF": 13, "SPD": 18, "MAG": 8 },
+      "move": "Toxic Frenzy"
+    },
+    {
+      "id": "vicar-amelia",
+      "name": "Vicar Amelia",
+      "title": "Vicar of the Healing Church",
+      "lore": "The leader of the Healing Church, found praying in the Grand Cathedral. When disturbed she turns into a great pale beast, and she can heal herself by clutching her golden pendant and praying.",
+      "stats": { "HP": 80, "ATK": 23, "DEF": 15, "SPD": 14, "MAG": 16 },
+      "move": "Prayer of Healing"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "gehrman",
+      "name": "Gehrman",
+      "role": "The First Hunter, adviser",
+      "where": "Hunter's Dream",
+      "quote": "An old man in a wheelchair who welcomes new hunters to the Dream and teaches them the basics of the hunt."
+    },
+    {
+      "id": "the-doll",
+      "name": "The Doll",
+      "role": "Caretaker of the Dream",
+      "where": "Hunter's Dream",
+      "quote": "A life-sized doll that moves and speaks. She channels blood echoes into strength and prays for the hunter's safe return."
+    },
+    {
+      "id": "eileen",
+      "name": "Eileen the Crow",
+      "role": "Hunter of hunters",
+      "where": "Central Yharnam, near the Great Bridge",
+      "quote": "A hunter in a feathered cloak who hunts other hunters who have lost themselves to blood. She warns you not to make the same mistake."
+    },
+    {
+      "id": "iosefka",
+      "name": "Iosefka",
+      "role": "Doctor",
+      "where": "Iosefka's Clinic, behind a locked door",
+      "quote": "A doctor who will not open her door on the night of the hunt, but can help a hunter who sends survivors her way."
+    }
+  ]
+}
