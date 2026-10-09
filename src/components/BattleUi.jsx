@@ -8,34 +8,145 @@ export const FX_LABELS = { slash: 'Slash', cross: 'Cross cut', flurry: 'Flurry',
 
 /* ---------- bars ---------- */
 
-// A health bar with a pale "ghost" that drains slowly behind the real value, so you can see how much a hit took.
-export function HealthBar({ value, max, tone = 'hero', label }) {
+// A fighting-game life bar: angled ends, the fill anchored to the outer edge, and a red chunk that
+// drains slowly behind it to show how much the last hit took. `side` is 'left' (you) or 'right' (the villain).
+export function FightBar({ value, max, side = 'left', label }) {
   const pct = Math.max(0, Math.min(100, (value / max) * 100));
-  const fill =
-    tone === 'foe' || pct <= 25
-      ? 'linear-gradient(90deg,#9f1239,#fb7185)'
-      : pct <= 50
-        ? 'linear-gradient(90deg,#b45309,#fbbf24)'
-        : 'linear-gradient(90deg,#15803d,#4ade80)';
+  const low = pct <= 25;
+  const right = side === 'right';
+  const anchor = right ? { right: 0 } : { left: 0 };
   return (
     <div
-      className="relative h-6 overflow-hidden rounded-md bg-black/70 ring-1 ring-white/35"
+      className="relative h-7 overflow-hidden border-2 border-white/90 bg-black/80 shadow-[0_0_14px_rgba(0,0,0,0.7)]"
+      style={{ transform: `skewX(${right ? 14 : -14}deg)` }}
       role="progressbar"
       aria-label={label}
       aria-valuemin={0}
       aria-valuemax={max}
       aria-valuenow={value}
     >
-      <motion.div className="absolute inset-y-0 left-0 bg-white/85" initial={false} animate={{ width: `${pct}%` }} transition={{ duration: 0.5, delay: 0.45 }} />
-      <motion.div className="absolute inset-y-0 left-0" style={{ background: fill }} initial={false} animate={{ width: `${pct}%` }} transition={{ duration: 0.25 }} />
-      <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'repeating-linear-gradient(90deg, transparent 0 9px, rgba(0,0,0,0.6) 9px 10px)' }} />
-      <span className="text-shadow absolute inset-0 flex items-center justify-between px-2 text-[11px] font-bold text-white tabular-nums">
-        <span className="tracking-widest opacity-80">{tone === 'foe' ? 'HP' : 'HP'}</span>
-        <span>
-          {value} / {max}
-        </span>
+      <motion.div className="absolute inset-y-0 bg-orange-500" style={anchor} initial={false} animate={{ width: `${pct}%` }} transition={{ duration: 0.6, delay: 0.5 }} />
+      <motion.div
+        className="absolute inset-y-0"
+        style={{ ...anchor, background: low ? 'linear-gradient(180deg,#fecaca,#ef4444)' : 'linear-gradient(180deg,#99f6e4 0%,#2dd4bf 45%,#0f9d94 100%)' }}
+        initial={false}
+        animate={{ width: `${pct}%`, opacity: low ? [1, 0.55, 1] : 1 }}
+        transition={{ width: { duration: 0.2 }, opacity: { duration: 0.5, repeat: low ? Infinity : 0 } }}
+      />
+      <div className="absolute inset-0 opacity-25" style={{ backgroundImage: 'repeating-linear-gradient(90deg, transparent 0 11px, rgba(0,0,0,0.7) 11px 12px)' }} />
+      <div className="absolute inset-x-0 top-0 h-1/3 bg-white/25" />
+      <span className={`absolute inset-y-0 flex items-center px-3 text-[11px] font-black text-white tabular-nums italic ${right ? 'left-0' : 'right-0'}`} style={{ transform: `skewX(${right ? -14 : 14}deg)`, textShadow: '0 1px 2px #000, 0 0 4px #000' }}>
+        {value}/{max}
       </span>
     </div>
+  );
+}
+
+// The hexagon between the bars. A real-time fighter counts down here; this one is untimed (a turn-based fight),
+// so it shows an infinity sign with the turn underneath.
+export function TurnBox({ turn }) {
+  return (
+    <div className="relative h-[4.25rem] w-[5.5rem]" aria-label={`Turn ${turn}`}>
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-slate-400" style={{ clipPath: 'polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0 50%)' }} />
+      <div className="absolute inset-[3px] flex flex-col items-center justify-center bg-gradient-to-b from-[#1b2230] to-black" style={{ clipPath: 'polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0 50%)' }}>
+        <span className="font-black text-4xl leading-none text-white">∞</span>
+        <motion.span key={turn} className="font-mono text-[10px] tracking-[0.25em] text-teal-300" initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}>
+          TURN {String(turn).padStart(2, '0')}
+        </motion.span>
+      </div>
+    </div>
+  );
+}
+
+// A character badge in the corner of the HUD, crackling with lightning.
+export function CornerPortrait({ src, side = 'left', color = '#5eead4', fallback = '👤' }) {
+  const flip = side === 'right' ? -1 : 1;
+  const bolts = [
+    'M2 30 L12 24 L9 18 L20 10 L16 4',
+    'M4 56 L14 50 L10 44 L22 38',
+    'M58 6 L50 14 L54 18 L44 26',
+  ];
+  return (
+    <div className="relative h-16 w-16 shrink-0 sm:h-20 sm:w-20">
+      <svg className="absolute -inset-3 z-10 h-[calc(100%+1.5rem)] w-[calc(100%+1.5rem)] overflow-visible" viewBox="0 0 64 64" style={{ transform: `scaleX(${flip})` }} aria-hidden>
+        {bolts.map((d, i) => (
+          <motion.path key={i} d={d} fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ filter: `drop-shadow(0 0 3px ${color})` }} animate={{ opacity: [0, 1, 0, 0, 1, 0] }} transition={{ duration: 1.6, repeat: Infinity, delay: i * 0.37, times: [0, 0.05, 0.12, 0.5, 0.55, 0.65] }} />
+        ))}
+      </svg>
+      <div className="h-full w-full overflow-hidden border-2 border-white/90 bg-black shadow-[0_0_16px_rgba(0,0,0,0.7)]" style={{ clipPath: 'polygon(14% 0, 100% 0, 86% 100%, 0 100%)' }}>
+        {src ? <img src={src} alt="" className="h-full w-full object-cover object-top" /> : <div className="flex h-full items-center justify-center text-2xl">{fallback}</div>}
+      </div>
+    </div>
+  );
+}
+
+// A round-win mark under a name plate; it lights when that side wins.
+export function WinMark({ lit, side }) {
+  return (
+    <motion.span className={`block h-3 w-3 rotate-45 border ${side === 'right' ? 'border-rose-200' : 'border-amber-200'}`} animate={{ background: lit ? (side === 'right' ? '#fb7185' : '#fbbf24') : 'rgba(0,0,0,0.5)', scale: lit ? [1, 1.8, 1] : 1 }} transition={{ duration: 0.5 }} />
+  );
+}
+
+// "3 HITS" with the damage underneath, in the corner like a fighting game's combo counter.
+export function ComboCounter({ combo }) {
+  if (combo.hits < 2) return null;
+  return (
+    <motion.div key={combo.hits} className="pointer-events-none absolute top-[27%] left-3 z-20 text-left" initial={{ scale: 1.9, x: -30, opacity: 0 }} animate={{ scale: 1, x: 0, opacity: 1 }} transition={{ type: 'spring', stiffness: 420, damping: 18 }}>
+      <p className="font-black text-5xl leading-none text-amber-300 italic sm:text-6xl" style={{ WebkitTextStroke: '2px #7c2d12', textShadow: '0 4px 0 #7c2d12, 0 0 22px rgba(251,191,36,0.8)' }}>
+        {combo.hits}
+        <span className="ml-1 text-2xl sm:text-3xl">HITS</span>
+      </p>
+      <p className="font-black text-sm text-white italic" style={{ textShadow: '0 2px 0 #000' }}>
+        {combo.damage} DAMAGE
+      </p>
+    </motion.div>
+  );
+}
+
+// A jagged hit spark at the point of contact.
+export function HitSpark({ x = 50, y = 45, color = '#fde047', big = false }) {
+  const size = big ? 150 : 100;
+  return (
+    <motion.svg
+      className="pointer-events-none absolute z-20"
+      style={{ left: `${x}%`, top: `${y}%`, width: size, height: size, marginLeft: -size / 2, marginTop: -size / 2 }}
+      viewBox="-50 -50 100 100"
+      initial={{ scale: 0.2, opacity: 1, rotate: 0 }}
+      animate={{ scale: [0.2, 1.15, 1.35], opacity: [1, 1, 0], rotate: 18 }}
+      transition={{ duration: 0.32, ease: 'easeOut' }}
+      aria-hidden
+    >
+      <polygon
+        points="0,-48 8,-16 40,-30 18,-6 48,6 16,14 28,44 0,22 -28,44 -16,14 -48,6 -18,-6 -40,-30 -8,-16"
+        fill="#fff"
+        stroke={color}
+        strokeWidth="5"
+        strokeLinejoin="round"
+        style={{ filter: `drop-shadow(0 0 8px ${color})` }}
+      />
+    </motion.svg>
+  );
+}
+
+// Big slam-in text: "ROUND 1", "FIGHT!", "K.O.".
+export function SlamBanner({ text, sub, color = '#fde047', size = 'text-6xl sm:text-8xl' }) {
+  return (
+    <motion.div className="pointer-events-none absolute inset-0 z-40 flex flex-col items-center justify-center" initial={{ opacity: 1 }} animate={{ opacity: [1, 1, 0] }} transition={{ duration: 1.4, times: [0, 0.85, 1] }}>
+      <motion.p
+        className={`font-black ${size} italic tracking-tight`}
+        style={{ color, WebkitTextStroke: '3px #000', textShadow: `0 6px 0 #000, 0 0 40px ${color}` }}
+        initial={{ scale: 3.2, opacity: 0, filter: 'blur(10px)' }}
+        animate={{ scale: [3.2, 0.92, 1, 1.04], opacity: 1, filter: 'blur(0px)' }}
+        transition={{ duration: 0.45, times: [0, 0.5, 0.75, 1], ease: 'easeOut' }}
+      >
+        {text}
+      </motion.p>
+      {sub && (
+        <motion.p className="mt-1 font-black text-xl text-white italic sm:text-3xl" style={{ WebkitTextStroke: '1px #000', textShadow: '0 3px 0 #000' }} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }}>
+          {sub}
+        </motion.p>
+      )}
+    </motion.div>
   );
 }
 

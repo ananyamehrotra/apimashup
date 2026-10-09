@@ -366,3 +366,238 @@ export function createStage(canvas, look, beep = () => {}) {
     destroy: () => cancelAnimationFrame(raf),
   };
 }
+
+/* ======================================================================
+ * Fighting-game arena: both fighters, full body, face to face on a tiled stage.
+ * Reuses drawSprite, so the villain is forged in the same pixel style as the hero.
+ * ====================================================================== */
+
+// A villain's pixel look, picked from its name so the same villain always looks the same.
+// "Rivals" (shadows of non-villains) are drawn in drained, monochrome colours.
+export function foeLook(name = '', rival = false) {
+  let h = 0;
+  for (const ch of String(name)) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  const pick = (list, shift) => list[(h >>> shift) % list.length];
+  const base = {
+    cls: pick(['Knight', 'Monk', 'Rogue', 'Mage'], 3),
+    style: h % 4,
+    skin: pick(['#d9b08c', '#c99a7a', '#e8cdb0', '#a98a9a'], 11),
+    hair: pick(['#1a1020', '#8a1f3a', '#d8d8e8', '#3a1f5a', '#c0392b'], 5),
+    eye: pick(['#ff3a4a', '#ffb020', '#b05cff', '#4aeaff'], 8),
+    pri: pick(['#5a1020', '#2a1a4a', '#1f2a3a', '#4a2a10'], 14),
+    trim: pick(['#c9a45a', '#a0a0b8', '#e04a5a'], 17),
+    accent: pick(['#ff3a4a', '#b05cff', '#ff9a2a', '#2fe0c8'], 20),
+  };
+  if (!rival) return base;
+  return { ...base, skin: '#8a8aa0', hair: '#14141c', eye: '#c9c9ff', pri: '#22222e', trim: '#6a6a8a', accent: '#7a5cff' };
+}
+
+const AW = 240, AH = 135; // arena size in logical pixels (16:9)
+const FLOOR_Y = 78; // where the tiled floor begins
+const FEET_Y = 118; // fighters stand on this line
+const SCALE = 2; // fighters are drawn at 2x so they fill the stage
+const POSES = {
+  idle: ANIMS.idle,
+  attack: ANIMS.attack,
+  victory: ANIMS.victory,
+  guard: [{ dy: 0, armL: 'up', armR: 'up' }],
+  hurt: [{ dy: 1, aL: -1, aR: -1, lL: 1 }],
+};
+
+// Returns { attack(who, reach), hit(who, strong), guard(who), stun(who, on), ko(who), victory(who), shake(strong), destroy }.
+// `who` is 'hero' or 'foe'. `accent` tints the stage (a hex colour); `beep` plays a tone.
+export function createArena(canvas, heroLook, foeLookData, { accent = '#7dd3fc', beep = () => {} } = {}) {
+  const cx = canvas.getContext('2d');
+  canvas.width = AW; canvas.height = AH;
+  cx.imageSmoothingEnabled = false; // keep the 2x pixel art crisp
+  const off = document.createElement('canvas'); off.width = W; off.height = H;
+  const cache = new Map();
+  const sprite = (look, key, pose, blink, flash) => {
+    const k = `${look.cls}|${look.hair}|${look.pri}|${key}|${blink ? 1 : 0}|${flash ? 1 : 0}`;
+    if (!cache.has(k)) {
+      const c = drawSprite(off, look, { ...pose, blink });
+      if (flash) {
+        const f = document.createElement('canvas'); f.width = W; f.height = H;
+        const g = f.getContext('2d'); g.drawImage(c, 0, 0);
+        g.globalCompositeOperation = 'source-atop'; g.fillStyle = 'rgba(255,255,255,0.85)'; g.fillRect(0, 0, W, H);
+        cache.set(k, f);
+      } else cache.set(k, c);
+    }
+    return cache.get(k);
+  };
+
+  const mk = (look, base, facing) => ({ look, base, x: base, facing, st: 'idle', t: 0, reach: 30, struck: false, kn: 0, flash: 0, stun: false, down: 0, vict: false });
+  const F = { hero: mk(heroLook, 74, 1), foe: mk(foeLookData, 166, -1) };
+  const parts = [];
+  let time = 0, raf = 0, last = performance.now(), shakeT = 0, shakeAmp = 0;
+
+  const addPart = (x, y, vx, vy, life, c, g = 140) => parts.push({ x, y, vx, vy, life, max: life, c, g });
+  const burst = (x, y, strong) => {
+    const n = strong ? 30 : 16;
+    for (let i = 0; i < n; i++) {
+      const a = Math.random() * Math.PI * 2, s = 30 + Math.random() * (strong ? 120 : 70);
+      addPart(x, y, Math.cos(a) * s, Math.sin(a) * s - 20, 0.35 + Math.random() * 0.3, ['#ffffff', '#2dd4bf', '#fb923c', '#fde047'][i % 4]);
+    }
+  };
+
+  /* ---------- the stage ---------- */
+  const wall = mix('#8d97a8', accent, 0.18), wallD = dark(wall, 0.28);
+  const bg = document.createElement('canvas'); bg.width = AW; bg.height = AH;
+  {
+    const g = bg.getContext('2d');
+    for (let y = 0; y < FLOOR_Y; y++) { g.fillStyle = mix(dark(wall, 0.5), light(wall, 0.15), y / FLOOR_Y); g.fillRect(0, y, AW, 1); }
+    // stacked cubes, pyramid-shaped on both sides
+    const cube = (x, y, s, tone) => {
+      const face = mix(wall, tone, 0.12);
+      g.fillStyle = face; g.fillRect(x, y, s, s);
+      g.fillStyle = light(face, 0.28); g.fillRect(x, y, s, 2);
+      g.fillStyle = dark(face, 0.25); g.fillRect(x + s - 3, y + 2, 3, s - 2);
+      g.fillStyle = dark(face, 0.45); g.fillRect(x, y + s - 1, s, 1); g.fillRect(x, y, 1, s);
+    };
+    [[0, [5, 4, 3, 2, 1]], [AW - 16 * 5, [1, 2, 3, 4, 5]]].forEach(([x0, hs]) => hs.forEach((h, i) => { for (let r = 0; r < h; r++) cube(x0 + i * 16, FLOOR_Y - 16 * (r + 1), 16, r % 2 ? '#ffffff' : '#000000'); }));
+    // glass panels in the middle
+    for (let i = 0; i < 4; i++) {
+      const x = 92 + i * 15;
+      g.fillStyle = `rgba(255,255,255,${0.1 + (i % 2) * 0.06})`; g.fillRect(x, 8, 13, FLOOR_Y - 12);
+      g.fillStyle = 'rgba(255,255,255,0.22)'; g.fillRect(x, 8, 13, 1); g.fillRect(x, 8, 1, FLOOR_Y - 12);
+    }
+    // the tiled floor, in perspective
+    const vx = AW / 2;
+    for (let y = FLOOR_Y; y < AH; y++) { g.fillStyle = mix(light(wall, 0.3), light(wall, 0.55), (y - FLOOR_Y) / (AH - FLOOR_Y)); g.fillRect(0, y, AW, 1); }
+    g.fillStyle = wallD; g.fillRect(0, FLOOR_Y, AW, 1);
+    g.fillStyle = dark(wall, 0.18);
+    for (let i = 0; i < 9; i++) { const t = i / 8; g.fillRect(0, Math.round(FLOOR_Y + 2 + (AH - FLOOR_Y) * t * t * 1.05), AW, 1); }
+    for (let k = -9; k <= 9; k++) {
+      const bx = vx + k * 34; // where this line meets the bottom edge
+      for (let y = FLOOR_Y; y < AH; y++) {
+        const t = (y - FLOOR_Y) / (AH - FLOOR_Y);
+        const x = Math.round(vx + (bx - vx) * (0.18 + 0.82 * t));
+        if (x >= 0 && x < AW) g.fillRect(x, y, 1, 1);
+      }
+    }
+  }
+  const DIAMONDS = Array.from({ length: 7 }, (_, i) => ({ x: hash(i * 7) * AW, y: 10 + hash(i * 7 + 1) * 60, s: 3 + Math.floor(hash(i * 7 + 2) * 4), p: hash(i * 7 + 3) * 6 }));
+
+  /* ---------- actions ---------- */
+  const other = (who) => (who === 'hero' ? 'foe' : 'hero');
+  function attack(who, reach = 30) {
+    const f = F[who];
+    if (f.st === 'ko') return;
+    f.st = 'attack'; f.t = 0; f.reach = reach; f.struck = false; f.vict = false;
+  }
+  function hit(who, strong = false) {
+    const f = F[who];
+    if (f.st === 'ko') return;
+    f.kn = f.facing * -(strong ? 14 : 8); f.flash = 0.13;
+    if (f.st === 'idle') { f.st = 'hurt'; f.t = 0; }
+    burst(f.base + f.kn + f.facing * -4, FEET_Y - 52, strong);
+    if (strong) shake(true);
+  }
+  function guard(who) { const f = F[who]; if (f.st === 'ko') return; f.st = 'guard'; f.t = 0; }
+  function stun(who, on) { F[who].stun = on; }
+  function ko(who) { const f = F[who]; f.st = 'ko'; f.t = 0; f.stun = false; beep(160, 40, 0.5, 'sawtooth', 0.12); burst(f.x, FEET_Y - 40, true); }
+  function victory(who) { const f = F[who]; if (f.st !== 'ko') { f.st = 'victory'; f.vict = true; f.t = 0; } }
+  function shake(strong = false) { shakeT = strong ? 0.3 : 0.18; shakeAmp = strong ? 3 : 1.5; }
+
+  /* ---------- frame loop ---------- */
+  const ease = (t) => 1 - (1 - t) * (1 - t);
+  function update(dt) {
+    for (const who of ['hero', 'foe']) {
+      const f = F[who];
+      f.t += dt;
+      f.flash = Math.max(0, f.flash - dt);
+      f.kn *= Math.pow(0.0006, dt); // knockback recovers quickly
+      let dx = 0;
+      if (f.st === 'attack') {
+        const t = f.t;
+        if (t < 0.12) dx = -f.facing * 5 * (t / 0.12);                       // wind up
+        else if (t < 0.27) dx = f.facing * (-5 + (f.reach + 5) * ease((t - 0.12) / 0.15)); // dash in
+        else if (t < 0.5) dx = f.facing * f.reach;                           // strike
+        else if (t < 0.7) dx = f.facing * f.reach * (1 - ease((t - 0.5) / 0.2)); // back
+        else { f.st = 'idle'; }
+        if (t >= 0.27 && !f.struck) { f.struck = true; beep(700, 160, 0.1, 'sawtooth', 0.05); for (let i = 0; i < 6; i++) addPart(f.x - f.facing * 8, FEET_Y - 1, -f.facing * (20 + Math.random() * 40), -Math.random() * 20, 0.3, '#e6e0f0', 80); }
+      } else if (f.st === 'hurt' && f.t > 0.3) f.st = 'idle';
+      else if (f.st === 'guard' && f.t > 0.55) f.st = 'idle';
+      f.x = f.base + dx + f.kn;
+      if (f.st === 'ko') f.down = Math.min(1, f.t / 0.7);
+    }
+    for (let i = parts.length - 1; i >= 0; i--) { const p = parts[i]; p.x += p.vx * dt; p.y += p.vy * dt; p.vy += p.g * dt; p.life -= dt; if (p.life <= 0) parts.splice(i, 1); }
+    shakeT = Math.max(0, shakeT - dt);
+  }
+
+  function poseFor(f) {
+    if (f.st === 'attack') return ['attack', Math.min(3, Math.floor(f.t * 7)), ANIMS.attack[Math.min(3, Math.floor(f.t * 7))]];
+    if (f.st === 'guard') return ['guard', 0, POSES.guard[0]];
+    if (f.st === 'hurt') return ['hurt', 0, POSES.hurt[0]];
+    if (f.st === 'victory') { const i = Math.floor(time * 4) % 2; return ['victory', i, POSES.victory[i]]; }
+    if (f.st === 'ko') return ['hurt', 0, POSES.hurt[0]];
+    const i = Math.floor(time * 3) % 4;
+    return ['idle', i, POSES.idle[i]];
+  }
+
+  function drawFighter(f, reflect) {
+    const [name, i, pose] = poseFor(f);
+    const img = sprite(f.look, `${name}${i}`, pose, time % 3.4 < 0.13, f.flash > 0);
+    cx.save();
+    cx.translate(Math.round(f.x), FEET_Y);
+    if (f.st === 'ko') { cx.translate(0, 4 * f.down); cx.rotate(-f.facing * (Math.PI / 2) * ease(f.down)); }
+    cx.scale(f.facing * SCALE, reflect ? -SCALE : SCALE);
+    cx.drawImage(img, -24, -49);
+    cx.restore();
+  }
+
+  function render() {
+    cx.save();
+    if (shakeT > 0) cx.translate(Math.round((Math.random() - 0.5) * 2 * shakeAmp), Math.round((Math.random() - 0.5) * 2 * shakeAmp));
+    cx.drawImage(bg, 0, 0);
+    // floating diamonds
+    DIAMONDS.forEach((d) => {
+      const y = (((d.y - time * 6 + d.p * 10) % 75) + 75) % 75 + 4;
+      cx.globalAlpha = 0.45 + 0.35 * Math.sin(time * 2 + d.p);
+      cx.fillStyle = '#2dd4bf';
+      for (let k = 0; k < d.s; k++) { // a diamond: widening to the middle row, then narrowing
+        cx.fillRect(Math.round(d.x - k), Math.round(y + k), k * 2 + 1, 1);
+        cx.fillRect(Math.round(d.x - (d.s - 1 - k)), Math.round(y + d.s + k), (d.s - 1 - k) * 2 + 1, 1);
+      }
+      cx.globalAlpha = 1;
+    });
+    // shadows + reflections
+    ['hero', 'foe'].forEach((who) => {
+      const f = F[who];
+      cx.fillStyle = 'rgba(0,0,0,0.3)'; cx.fillRect(Math.round(f.x - 18), FEET_Y, 36, 3);
+      if (f.st !== 'ko') { cx.globalAlpha = 0.16; drawFighter(f, true); cx.globalAlpha = 1; }
+    });
+    // the fighters (the one striking is drawn on top)
+    const order = F.hero.st === 'attack' ? ['foe', 'hero'] : ['hero', 'foe'];
+    order.forEach((who) => drawFighter(F[who]));
+    // guard shield
+    ['hero', 'foe'].forEach((who) => {
+      const f = F[who];
+      if (f.st !== 'guard') return;
+      cx.strokeStyle = `rgba(125,211,252,${0.9 - f.t})`; cx.lineWidth = 2;
+      cx.beginPath(); cx.ellipse(f.x + f.facing * 14, FEET_Y - 40, 14 + f.t * 6, 40, 0, 0, 7); cx.stroke();
+    });
+    // stun stars
+    ['hero', 'foe'].forEach((who) => {
+      const f = F[who];
+      if (!f.stun) return;
+      for (let k = 0; k < 3; k++) { const a = time * 5 + k * 2.1; cx.fillStyle = '#fde047'; cx.fillRect(Math.round(f.x + Math.cos(a) * 14), Math.round(FEET_Y - 100 + Math.sin(a) * 4), 3, 3); }
+    });
+    parts.forEach((p) => { cx.globalAlpha = Math.max(0, p.life / p.max); cx.fillStyle = p.c; cx.fillRect(Math.round(p.x), Math.round(p.y), 2, 2); });
+    cx.globalAlpha = 1;
+    // vignette
+    const v = cx.createRadialGradient(AW / 2, AH / 2, 50, AW / 2, AH / 2, 150);
+    v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,0.38)');
+    cx.fillStyle = v; cx.fillRect(0, 0, AW, AH);
+    cx.restore();
+  }
+
+  function loop(now) {
+    const dt = Math.min(0.05, (now - last) / 1000); last = now; time += dt;
+    update(dt); render();
+    raf = requestAnimationFrame(loop);
+  }
+  raf = requestAnimationFrame(loop);
+
+  return { attack, hit, guard, stun, ko, victory, shake, other, destroy: () => cancelAnimationFrame(raf) };
+}

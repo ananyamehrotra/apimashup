@@ -192,3 +192,16 @@ export function takeTurn(state, action, rng = Math.random) {
   const end = { hero, foe, turn: state.turn + 1, outcome: hero.hp === 0 ? 'defeat' : null };
   return { mid, end, heroEvent, foeEvent };
 }
+
+/* ---------- combo counter (for the fighting-game HUD) ---------- */
+
+export const NO_COMBO = { hits: 0, damage: 0 };
+
+// Hits you land chain into a combo. It keeps growing while the villain cannot answer (stunned) and ends
+// the moment the villain strikes back. Guarding adds nothing and does not break the chain.
+export function extendCombo(combo, heroEvent, foeEvent) {
+  const landed = heroEvent?.hits?.length ? heroEvent : null;
+  let next = landed ? { hits: combo.hits + landed.hits.length, damage: combo.damage + landed.damage } : combo;
+  if (foeEvent && foeEvent.kind !== 'stunned') next = NO_COMBO; // the villain interrupts
+  return next;
+}
