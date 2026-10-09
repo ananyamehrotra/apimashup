@@ -1,0 +1,176 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Cinzel', ui-serif, Georgia, serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --color-void: #07061a;
+  --color-panel: #12102b;
+  --color-edge: #2c2857;
+  --color-gold: #fbbf24;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at 50% 30%, #1a1446 0%, var(--color-void) 65%);
+  color: #e8e6ff;
+  font-family: var(--font-sans);
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---- isekai effects ---- */
+
+.magic-spin,
+.magic-spin-reverse {
+  transform-origin: 200px 200px;
+  animation: magic-spin 40s linear infinite;
+}
+
+.magic-spin-reverse {
+  animation-duration: 28s;
+  animation-direction: reverse;
+}
+
+.magic-fast .magic-spin {
+  animation-duration: 9s;
+}
+
+.magic-fast .magic-spin-reverse {
+  animation-duration: 6s;
+}
+
+@keyframes magic-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mote {
+  opacity: 0;
+  animation: mote-rise linear infinite;
+}
+
+@keyframes mote-rise {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(24px, -105vh);
+    opacity: 0;
+  }
+}
+
+.speed-lines {
+  -webkit-mask-image: radial-gradient(circle, transparent 28%, black 62%);
+  mask-image: radial-gradient(circle, transparent 28%, black 62%);
+  animation: speed-flicker 0.12s steps(2) infinite;
+}
+
+@keyframes speed-flicker {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(1.7deg) scale(1.03);
+  }
+}
+
+.pulse-ring {
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.5, 1.9);
+    opacity: 0;
+  }
+}
+
+.sheen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 35%, rgba(255, 255, 255, 0.22) 50%, transparent 65%);
+  background-size: 250% 100%;
+  background-position: 130% 0;
+  animation: sheen 1.4s ease-out 0.5s 1 forwards;
+}
+
+@keyframes sheen {
+  to {
+    background-position: -130% 0;
+  }
+}
+
+/* ---- reborn sheet ---- */
+
+.panel {
+  background: rgba(11, 9, 32, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.85), 0 0 2px rgba(0, 0, 0, 0.9);
+}
+
+.shimmer {
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0.07) 30%, rgba(255, 255, 255, 0.22) 50%, rgba(255, 255, 255, 0.07) 70%);
+  background-size: 220% 100%;
+  animation: shimmer 1.3s linear infinite;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 120% 0;
+  }
+  to {
+    background-position: -120% 0;
+  }
+}
+
+.kenburns {
+  animation: kenburns 40s ease-in-out infinite alternate;
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1.1) translate(0, 0);
+  }
+  to {
+    transform: scale(1.25) translate(-2%, -2%);
+  }
+}
