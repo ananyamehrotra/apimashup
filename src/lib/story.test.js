@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import { buildStory, createBattle, intentFor, takeTurn } from './story.js';
 
 const character = (over = {}) => ({
-  country: { name: 'France', capital: 'Paris' },
+  country: { name: 'France', capital: 'Paris', population: 69081996, blurb: 'France is a republic in Western Europe.' },
+  gold: 470,
   title: 'French Knight',
   class: { name: 'Knight' },
   rarity: { name: 'Common' },
@@ -28,7 +29,9 @@ test('the story names the country, the anime, the form and the villain', () => {
   const story = buildStory(character(), world, origin());
   const all = JSON.stringify(story);
   for (const word of ['France', 'Paris', 'Frieren', 'Fern', 'Aura', 'Spain', 'The Azure Realm']) assert.ok(all.includes(word), word);
+  assert.ok(all.includes('69.1 million people'));
   assert.equal(story.secondChoice[0].id, 'ally');
+  for (const option of [...story.firstChoice, ...story.secondChoice]) assert.ok(story.reactions[option.id], option.id);
 });
 
 test('islands get a different choice, rivals become shadows, missing villains still work', () => {

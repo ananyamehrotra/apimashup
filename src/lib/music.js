@@ -5,6 +5,7 @@
 import { useSyncExternalStore } from 'react';
 
 const VOLUME = 0.3;
+const DUCKED_VOLUME = 0.08; // while the narrator is speaking
 
 const files = import.meta.glob('/songs/*.mp3', { eager: true, query: '?url', import: 'default' });
 
@@ -24,6 +25,7 @@ let audio = null;
 let index = -1;
 let failures = 0;
 let muted = false;
+let ducked = false;
 let nowPlaying = null;
 const listeners = new Set();
 
@@ -43,7 +45,7 @@ export function nextTrack() {
 export function startMusic() {
   if (audio || !tracks.length) return;
   audio = new Audio();
-  audio.volume = VOLUME;
+  audio.volume = ducked ? DUCKED_VOLUME : VOLUME;
   audio.muted = muted;
   audio.addEventListener('playing', () => {
     failures = 0;
@@ -55,6 +57,11 @@ export function startMusic() {
     else setNowPlaying(null);
   });
   nextTrack();
+}
+
+export function setMusicDucked(value) {
+  ducked = value;
+  if (audio) audio.volume = value ? DUCKED_VOLUME : VOLUME;
 }
 
 export function setMusicMuted(value) {

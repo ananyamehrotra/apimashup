@@ -12,6 +12,7 @@ import { MagicCircle, Particles, SpeedLines } from './components/Effects.jsx';
 import { loadCountries, pickRandom } from './lib/countries.js';
 import { summonOrigin } from './lib/jikan.js';
 import { nextTrack, setMusicMuted, startMusic, useNowPlaying } from './lib/music.js';
+import { setNarrationMuted } from './lib/narrator.js';
 import { play, setMuted } from './lib/sound.js';
 import { generateCharacter, getRanges, worldKeyFor } from './lib/statGenerator.js';
 import { WORLDS } from './lib/worlds.js';
@@ -114,8 +115,14 @@ export default function App() {
   }, []);
 
   const handleIntroDone = useCallback(() => {
-    setPhase((current) => (current === 'intro' ? 'story' : current));
+    setPhase((current) => (current === 'intro' ? 'sheet' : current));
   }, []);
+
+  // Starting the story is a click, so it can also start the music on shared links.
+  const beginStory = () => {
+    startMusic();
+    setPhase('story');
+  };
 
   const handleStoryDone = useCallback((result) => {
     setSaga(result.outcome === 'skipped' ? null : result);
@@ -186,6 +193,7 @@ export default function App() {
   const toggleMute = () => {
     setMuted(!muted);
     setMusicMuted(!muted);
+    setNarrationMuted(!muted);
     setMutedState(!muted);
   };
 
@@ -309,6 +317,28 @@ export default function App() {
           <SystemLog key={character.country.code} character={character} world={world} />
 
           <div className="relative mx-auto max-w-5xl px-3 py-16 sm:px-5">
+            {origin.status === 'ready' && !saga && (
+              <motion.button
+                type="button"
+                onClick={beginStory}
+                className="panel mb-4 flex w-full items-center justify-between gap-4 rounded-2xl border border-rose-400/60 px-5 py-4 text-left shadow-[0_0_30px_-6px_rgba(244,63,94,0.7)] transition hover:bg-rose-500/15"
+                initial={{ opacity: 0, y: -16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.2 }}
+              >
+                <span>
+                  <span className="block font-mono text-[11px] tracking-[0.3em] text-rose-300 uppercase">【 Quest available 】</span>
+                  <span className="block text-sm text-white sm:text-base">
+                    {origin.data.villain
+                      ? `Something from ${origin.data.title} has followed you into ${character.country.name}.`
+                      : `A shadow has followed you into ${character.country.name}.`}
+                  </span>
+                </span>
+                <span className="shrink-0 rounded-full bg-gradient-to-r from-rose-500 to-amber-500 px-5 py-2.5 font-display font-bold whitespace-nowrap text-white">
+                  ⚔ Begin your story
+                </span>
+              </motion.button>
+            )}
             {/* everything inside cardRef is what Download PNG captures */}
             <motion.div
               ref={cardRef}
@@ -351,7 +381,7 @@ export default function App() {
               </button>
               <button
                 type="button"
-                onClick={() => setPhase('story')}
+                onClick={beginStory}
                 disabled={origin.status === 'loading'}
                 className="rounded-full bg-gradient-to-r from-rose-500 to-amber-500 px-6 py-3 font-display font-bold text-white shadow-[0_0_24px_rgba(244,63,94,0.5)] transition hover:scale-105 disabled:opacity-50"
               >

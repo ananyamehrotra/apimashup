@@ -8,8 +8,8 @@ Spin a 3D globe, land on a random country, and get reborn as an RPG character bu
 2. **Spin the Globe** picks a random country; the globe whirls, slows, and zooms in on it.
 3. An isekai intro plays (truck-kun, "You died", a summoning circle) and the portal opens onto the country's world.
 4. [Jikan](https://jikan.moe) supplies an anime whose genre suits that world. One of its main characters becomes your past-life form, and its villain follows you over.
-5. **Story mode** plays in an arena that stays on screen throughout: your pixel hero walks forward as the tale unfolds, two choices change your stats, and it ends in a turn-based boss fight against the villain.
-6. The character sheet opens: the hero banner, a playable pixel-art hero coloured from the flag, the status window, and the origin story.
+5. The character sheet opens: the hero banner, a playable pixel-art hero coloured from the flag, the status window, and the origin story.
+6. **Begin your story** starts story mode, in an arena that stays on screen throughout: your pixel hero walks forward as a narrator reads the tale aloud, two choices change your stats, and it ends in a turn-based boss fight against the villain.
 7. **Reroll Destiny** does it again. **Download PNG** saves the sheet, and **Copy share link** gives a link like `?c=JPN&a=1535&f=71` that reopens the same roll.
 
 ## Worlds
@@ -87,6 +87,10 @@ songs/                Background music (.mp3)
 ## Built with
 
 React, Vite, Tailwind CSS, react-globe.gl, Motion, and html-to-image. Sound effects are synthesised in the browser with the Web Audio API.
+
+## Narration
+
+Story lines are read aloud with the browser's built-in speech synthesis (no audio files or API), with a deeper voice for the villain. The music turns down while a line is spoken and the story advances when the line ends. Voices differ between browsers and devices; where none is available the story is click-through. The speaker button mutes narration, music and effects together.
 
 ## Background music
 

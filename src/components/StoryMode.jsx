@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { motion } from 'motion/react';
+import { hush, narrate } from '../lib/narrator.js';
 import { beep, play } from '../lib/sound.js';
 import { createStage, heroLook } from '../lib/spriteForge.js';
 import { buildStory, createBattle, intentFor, takeTurn } from '../lib/story.js';
@@ -8,7 +9,7 @@ import { Particles } from './Effects.jsx';
 
 const TYPE_MS = 16;
 const HALF_TURN_MS = 950;
-const STRIDE_MS = 1500; // how long the hero walks on after each line of story
+const AUTO_NEXT_MS = 550; // pause after the narrator finishes a line
 const CHAPTERS = {
   opening: 'Chapter I · Awakening',
   choice1: 'Chapter I · Awakening',
@@ -26,12 +27,16 @@ const PICK_MOVE = { train: 'attack', study: 'victory', feast: 'jump', ally: 'vic
 function Dialogue({ lines, accent, onLine, onDone }) {
   const [index, setIndex] = useState(0);
   const [shown, setShown] = useState(0);
+  const [spoken, setSpoken] = useState(-1); // last line the narrator finished reading
   const line = lines[index];
   const typing = shown < line.text.length;
 
+  // Each line is reported and read aloud once, when it first appears.
   useEffect(() => {
     onLine(line);
-    // report each line once, when it first appears
+    const tone = line.speaker === 'System' ? 'system' : line.speaker ? 'villain' : 'narrator';
+    narrate(line.text, { tone, onEnd: () => setSpoken(index) });
+    return hush;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
 
@@ -41,13 +46,21 @@ function Dialogue({ lines, accent, onLine, onDone }) {
     return () => clearTimeout(timer);
   }, [typing, shown]);
 
-  const advance = () => {
-    if (typing) return setShown(line.text.length);
+  const next = () => {
     if (index === lines.length - 1) return onDone();
     setIndex(index + 1);
     setShown(0);
     play('blip');
   };
+  const advance = () => (typing ? setShown(line.text.length) : next());
+
+  // Once a line has been read aloud, the story moves on by itself.
+  useEffect(() => {
+    if (spoken !== index) return;
+    const timer = setTimeout(next, AUTO_NEXT_MS);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [spoken, index]);
 
   useEffect(() => {
     const onKey = (event) => {
@@ -129,7 +142,6 @@ export default function StoryMode({ character, world, origin, onFinish }) {
   const look = useMemo(() => heroLook(character), [character]);
   const canvasRef = useRef(null);
   const stageRef = useRef(null);
-  const strideTimer = useRef(null);
 
   const [step, setStep] = useState('opening');
   const [picks, setPicks] = useState([]);
@@ -152,31 +164,23 @@ export default function StoryMode({ character, world, origin, onFinish }) {
   useEffect(() => {
     const stage = createStage(canvasRef.current, look, beep);
     stageRef.current = stage;
-    return () => {
-      clearTimeout(strideTimer.current);
-      stage.destroy();
-    };
+    stage.press('right', true); // the hero walks forward for the whole story
+    return () => stage.destroy();
   }, [look]);
-
-  // The hero keeps moving forward through the story.
-  const stride = useCallback((ms = STRIDE_MS) => {
-    stageRef.current?.press('right', true);
-    clearTimeout(strideTimer.current);
-    strideTimer.current = setTimeout(() => stageRef.current?.press('right', false), ms);
-  }, []);
 
   const handleLine = useCallback(
     (line) => {
-      if (line.portrait === 'villain') {
-        if (!revealed) play('impact');
-        setRevealed(true);
-        clearTimeout(strideTimer.current);
-        stageRef.current?.press('right', false); // stop dead when the enemy speaks
-      } else {
-        stride();
-      }
+      if (line.portrait !== 'villain') return;
+      if (!revealed) play('impact');
+      setRevealed(true);
     },
-    [revealed, stride],
+    [revealed],
+  );
+
+  // The first choice is answered by a line of story before the next chapter.
+  const risingLines = useMemo(
+    () => [{ text: story.reactions[picks[0]] }, ...story.rising].filter((line) => line.text),
+    [story, picks],
   );
 
   const pick = (option, nextStep) => {
@@ -191,7 +195,7 @@ export default function StoryMode({ character, world, origin, onFinish }) {
     const allPicks = [...picks, option.id];
     pick(option, 'battle');
     setBattle(createBattle(character, origin, allPicks));
-    setLog(`${story.foe} blocks your path. Watch for the heavy attack and guard against it.`);
+    setLog(`${story.reactions[option.id]} At dawn, ${story.foe} blocks your path. Watch for the heavy attack and guard against it.`);
   };
 
   const act = (action) => {
@@ -205,7 +209,6 @@ export default function StoryMode({ character, world, origin, onFinish }) {
       play('blip');
     } else {
       stageRef.current?.attack();
-      stride(260); // lunge forward with every blow
       setHit((h) => ({ side: 'foe', id: h.id + 1, text: `-${heroEvent.damage}` }));
       play(heroEvent.kind === 'attack' ? 'land' : 'reveal');
     }
@@ -218,6 +221,7 @@ export default function StoryMode({ character, world, origin, onFinish }) {
         play(foeEvent.kind === 'heavy' ? 'impact' : 'land');
       }
       if (!end.outcome) return setBusy(false);
+      stageRef.current?.press('right', false); // the journey ends here, one way or the other
       if (end.outcome === 'victory') {
         stageRef.current?.victory();
         play('legendary');
@@ -233,6 +237,7 @@ export default function StoryMode({ character, world, origin, onFinish }) {
     setBattle(createBattle(character, origin, picks));
     setLog(`You stand back up. ${story.foe} is waiting.`);
     setStep('battle');
+    stageRef.current?.press('right', true);
     stageRef.current?.jump();
   };
 
@@ -338,7 +343,7 @@ export default function StoryMode({ character, world, origin, onFinish }) {
           {step === 'choice1' && (
             <Choice prompt={`Your first days in ${character.country.name}`} options={story.firstChoice} accent={accent} onPick={(option) => pick(option, 'rising')} />
           )}
-          {step === 'rising' && <Dialogue key="rising" lines={story.rising} accent={accent} onLine={handleLine} onDone={() => setStep('choice2')} />}
+          {step === 'rising' && <Dialogue key="rising" lines={risingLines} accent={accent} onLine={handleLine} onDone={() => setStep('choice2')} />}
           {step === 'choice2' && <Choice prompt="One night to prepare" options={story.secondChoice} accent={accent} onPick={startBattle} />}
 
           {step === 'battle' && (
