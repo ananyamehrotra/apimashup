@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { AP_MAX, createBattle, intentFor, specialsFor, takeTurn } from './combat.js';
+import { AP_MAX, NO_COMBO, createBattle, extendCombo, intentFor, specialsFor, takeTurn } from './combat.js';
 
 const character = (over = {}) => ({
   country: { name: 'France', capital: 'Paris' },
@@ -150,4 +150,19 @@ test('damage and hp never go out of range', () => {
     assert.ok(state.hero.ap >= 0 && state.hero.ap <= AP_MAX);
     assert.ok(state.foe.brk >= 0 && state.foe.brk <= state.foe.brkMax);
   }
+});
+
+test('combos chain hit counts and damage, survive a stun, and end when the villain strikes', () => {
+  const hit = (hits) => ({ hits, damage: hits.reduce((a, b) => a + b, 0) });
+  const strike = { kind: 'strike' };
+  // the villain answers: the combo is already over by the end of the turn
+  assert.deepEqual(extendCombo(NO_COMBO, hit([10]), strike), NO_COMBO);
+  // the villain is stunned: the chain keeps growing
+  let combo = extendCombo(NO_COMBO, hit([10, 12, 8]), { kind: 'stunned' });
+  assert.deepEqual(combo, { hits: 3, damage: 30 });
+  combo = extendCombo(combo, hit([20]), { kind: 'stunned' });
+  assert.deepEqual(combo, { hits: 4, damage: 50 });
+  // guarding lands nothing and does not break the chain; a missing foe event (the finishing blow) keeps it
+  assert.deepEqual(extendCombo(combo, { kind: 'guard', hits: [], damage: 0 }, { kind: 'stunned' }), combo);
+  assert.deepEqual(extendCombo(NO_COMBO, hit([30, 30]), null), { hits: 2, damage: 60 });
 });
